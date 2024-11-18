@@ -1,6 +1,6 @@
 # About
 
-AI Methodologist at Charles University with a background in software quality engineering and automation. Focused on practical applications of generative AI in education. Particularly interested in exploring both responsible and efficient AI adoption strategies.
+AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a background in software quality engineering and automation. Focused on practical applications of generative AI in education. Particularly interested in exploring both responsible and efficient AI adoption strategies.
 
 **Connect with me**: [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek) ⋅ [Behance](https://www.behance.net/PetrBeranek)
 
@@ -34,7 +34,8 @@ AI Methodologist at Charles University with a background in software quality eng
 
 ## Professional & Personal Development
 
-**Technical Education**
+**Professional Development**
+* Charles University, _various workshops and seminars on use, risks and impact of generative AI in academia_ (2024)
 * Harvard University, _CS50's Introduction to Computer Science_ (online, 2024)
 * freeCodeCamp, _JavaScript Algorithms and Data Structures Certification_ (online, 2023)
 * Red Hat University, _Red Hat System Administration I_ (online, 2023)
@@ -45,8 +46,8 @@ AI Methodologist at Charles University with a background in software quality eng
 * Massachusetts Institute of Technology, _Introduction to Computer Science and Programming in Python_ (online, 2017)
 
 **Languages**
-* AKCENT International House Prague, _English C1_ (2019)
-* Charles University, _English B2_ (2017)
+* AKCENT International House Prague, _English courses from B2 to C1_ (2019)
+* Charles University, _English courses from B1 to B2_ (2017)
 
 **Personal Development**
 * tinyhabits.com, _The Tiny Habits Method_ (online, 2022)
