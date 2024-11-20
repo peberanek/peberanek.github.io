@@ -13,7 +13,7 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 * Curating content for university AI portal and coordinating university-wide AI seminars
 * Establishing collaboration initiatives including AI Newsletter and cross-faculty working group
 * Contributing to university-wide AI adoption strategies, including exploration of both commercial and open-source AI models
-* Attending conferences to stay current with AI developments
+* Attending conferences to stay current with AI developments (e.g. Microsoft, prg.ai, University of Copenhagen)
 
 **Red Hat, _Software Quality Engineer_ (10/2019 - 3/2022, 10/2022 - 7/2023)**
 * Performed manual and automated testing of Anaconda Installer
