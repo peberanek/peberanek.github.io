@@ -2,7 +2,7 @@
 
 AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a background in software quality engineering and automation. Focused on practical applications of generative AI in education. Particularly interested in exploring both responsible and efficient AI adoption strategies.
 
-**Connect with me**: [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek) ⋅ [Behance](https://www.behance.net/PetrBeranek)
+**Connect with me**: [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek)
 
 # Curriculum Vitae
 
