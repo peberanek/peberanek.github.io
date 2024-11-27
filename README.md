@@ -35,6 +35,7 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 ## Professional & Personal Development
 
 **Professional Development**
+* Computer Help, _Microsoft 365 Copilot in Office Apps_ (online, 2024)
 * Charles University, _various workshops and seminars on use, risks and impact of generative AI in academia_ (2024)
 * Harvard University, _CS50's Introduction to Computer Science_ (online, 2024)
 * freeCodeCamp, _JavaScript Algorithms and Data Structures Certification_ (online, 2023)
@@ -61,7 +62,7 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 ## Skills & Tools
 
 * Languages: English (C1), Czech (native speaker)
-* AI Tools: ChatGPT, Claude, GitHub Copilot, hands-on experience with prompt engineering
+* AI Tools: ChatGPT, Claude, Microsoft & GitHub Copilot, hands-on experience with prompt engineering
 * Programming and automation: Python, shell scripting, git & GitHub
 * Operating Systems: Linux (Ubuntu, RHEL/Fedora)
 * Basic knowledge: JavaScript, SQL, Rust, C, Linux containers, RPM packaging
