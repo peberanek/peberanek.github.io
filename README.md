@@ -4,7 +4,7 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 
 <img src="/media/portrait.jpg" alt="portrait" width="250" style="max-width: 100%;">
 
-**Connect with me**: [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek)
+**Connect with me**: [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek) ⋅ [Blog](/blog.md)
 
 # Curriculum Vitae
 
