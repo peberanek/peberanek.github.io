@@ -1,5 +1,34 @@
 # Blog
 
+## 2025-03-03
+
+Před nějakou dobou jsem zkoušel [Obsidian](https://obsidian.md/). I když jsem u něj nakonec nezůstal (kvůli nedostatečné emulaci editoru Vim), tak musím ocenit, že moje poznámky ukládá jako obyčejné textové soubory. Můžu je tak editovat třeba ve VSCode:
+
+> File over app is a philosophy: if you want to create digital artifacts that last, they must be files you can control, in formats that are easy to retrieve and read. Use tools that give you this freedom.
+>
+>File over app is an appeal to tool makers: accept that all software is ephemeral, and give people ownership over their data.  
+>-- [Steph Ango](https://stephango.com/file-over-app) (Obsidian CEO)
+
+Nebo slovy [Andreje Karpathyho](https://x.com/karpathy/status/1761467904737067456):
+
+> \- Your notes are simple plain-text markdown files stored locally on your computer. Obsidian is just UI/UX sugar of pretty rendering and editing files.  
+> \- Extensive plugins ecosystem and very high composability with any other tools you wish to use because again it's all just plain-text files on your disk. [...]  
+> \- There are no attempts to "lock you in", actually as far as I can tell Obsidian is completely free of any user-hostile dark patterns.  
+
+Obdobnou filozofii razí i [Plain Text Accounting (PTA)](https://plaintextaccounting.org/). Konkrétně už řadu let využívám [Beancount](https://plaintextaccounting.org/):
+
+```
+2024-11-12 * "Vstupenka na vyhlidkovou vez"
+  Majetek:Banky:CSOB:Bezny-ucet  -140 CZK
+  Vydaje:Ostatni
+```
+
+Díky tomu, že jsou to obyčejné textové soubory, mohou nad nimi snadno pracovat nástroje jako `git`, `grep`, `sed` a další.
+
+Navíc, Beancount je psaný v Pythonu a dá se s ním řada věcí automatizovat, třeba [import transakcí](https://github.com/beancount/beangulp). Vedle manuálního stažení textových souborů nabízí některé instituce i API. Dřív jsem si s tím trochu hrál a napsal vlastní nástroj [Beanclerk](https://github.com/peberanek/beanclerk) (zveřejnil jsem k tomu i klienty pro [Fio banku](https://github.com/peberanek/fio-banka) a [Banku Creditas](https://github.com/peberanek/creditas)). Dneska bych to nejspíš udělal o dost jinak, ale nástroje vesele slouží dodnes.
+
+Řadu těch nástrojů třeba jednoho dne nahradí nějaký velký jazykový model, protože jsou to všechno přece jen textové soubory. Uvidíme.
+
 ## 2025-02-26
 
 > You should start a blog. Having your own little corner of the internet is good for the soul!  
