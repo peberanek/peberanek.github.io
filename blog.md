@@ -2,7 +2,9 @@
 
 ## 2025-03-05
 
-Dneska jsem vyzkoušel nástroj do příkazové řádky, nazvaný jednoduše [llm](https://llm.datasette.io/en/stable/). (Vypadá užitečně, a hlavně se mi líbí, že dokáže využít i lokálně běžící [Ollamu](https://ollama.com/).)
+### llm
+
+Dneska jsem vyzkoušel nástroj do příkazové řádky, nazvaný jednoduše [llm](https://llm.datasette.io/en/stable/) (jeho autorem je Simon Willison, který, mimo jiné, píše [zajímavý blog](https://simonwillison.net/)). Skvělé je, že `llm` dokáže volat i modely běžící přes [Ollamu](https://ollama.com/).
 
 > A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine.
   
@@ -10,7 +12,7 @@ Dneska jsem vyzkoušel nástroj do příkazové řádky, nazvaný jednoduše [ll
 llm "Tell me a joke about LLMs."
 ```
 
-Nainstaloval jsem jednoduše přes [`uv`](https://docs.astral.sh/uv/) (samozřejmě je stále [možné využít i `pip`](https://llm.datasette.io/en/stable/setup.html#installation)):
+Nainstaloval jsem přes [uv](https://docs.astral.sh/uv/) (samozřejmě je [možné použít i pip](https://llm.datasette.io/en/stable/setup.html#installation)):
 ```bash
 uv tool install llm
 ```
@@ -31,14 +33,15 @@ Interaktivní chat:
 llm chat
 ```
 
-Skvělé je, že pomocí [pluginů](https://llm.datasette.io/en/stable/plugins/index.html) lze připojit [řad dalších modelů](https://llm.datasette.io/en/stable/plugins/directory.html), včetně již zmíněné [Ollamy](https://github.com/taketwo/llm-ollama):
+Skvělé je, že pomocí [pluginů](https://llm.datasette.io/en/stable/plugins/index.html) lze připojit [řadu dalších modelů](https://llm.datasette.io/en/stable/plugins/directory.html), včetně již zmíněné Ollamy (tu je potřeba mít nainstalovanou, spouštěnou a mít stažený příslušný model):
 ```bash
 llm install llm-ollama
-llm "Tell me a joke about LLMs" -m llama3.2
+llm "Tell me a joke about LLMs." -m llama3.2
 ```
 
-
 ## 2025-03-03
+
+### Otevřené formáty
 
 Před nějakou dobou jsem zkoušel [Obsidian](https://obsidian.md/). I když jsem u něj nakonec nezůstal (kvůli nedostatečné emulaci editoru Vim), tak musím ocenit, že moje poznámky ukládá jako obyčejné textové soubory. Můžu je tak editovat třeba ve VSCode:
 
@@ -68,6 +71,8 @@ Navíc, Beancount je psaný v Pythonu a dá se s ním řada věcí automatizovat
 Řadu těch nástrojů třeba jednoho dne nahradí nějaký velký jazykový model, protože jsou to všechno přece jen textové soubory. Uvidíme.
 
 ## 2025-02-26
+
+### Nový blog
 
 > You should start a blog. Having your own little corner of the internet is good for the soul!  
 -- [Simon Willison](https://simonwillison.net/2022/Nov/6/what-to-blog-about/)
