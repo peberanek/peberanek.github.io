@@ -1,5 +1,43 @@
 # Blog
 
+## 2025-03-05
+
+Dneska jsem vyzkoušel nástroj do příkazové řádky, nazvaný jednoduše [llm](https://llm.datasette.io/en/stable/). (Vypadá užitečně, a hlavně se mi líbí, že dokáže využít i lokálně běžící [Ollamu](https://ollama.com/).)
+
+> A CLI utility and Python library for interacting with Large Language Models, both via remote APIs and models that can be installed and run on your own machine.
+  
+```bash
+llm "Tell me a joke about LLMs."
+```
+
+Nainstaloval jsem jednoduše přes [`uv`](https://docs.astral.sh/uv/) (samozřejmě je stále [možné využít i `pip`](https://llm.datasette.io/en/stable/setup.html#installation)):
+```bash
+uv tool install llm
+```
+
+Mám OpenAI API Key, tak jsem ho hned využil:
+```bash
+llm keys set openai
+```
+
+Vypsat dostupné modely lze následovně:
+```bash
+llm models default  # defaultni model je gpt-4o-mini
+llm models  # vypise vsechny modely
+```
+
+Interaktivní chat:
+```bash
+llm chat
+```
+
+Skvělé je, že pomocí [pluginů](https://llm.datasette.io/en/stable/plugins/index.html) lze připojit [řad dalších modelů](https://llm.datasette.io/en/stable/plugins/directory.html), včetně již zmíněné [Ollamy](https://github.com/taketwo/llm-ollama):
+```bash
+llm install llm-ollama
+llm "Tell me a joke about LLMs" -m llama3.2
+```
+
+
 ## 2025-03-03
 
 Před nějakou dobou jsem zkoušel [Obsidian](https://obsidian.md/). I když jsem u něj nakonec nezůstal (kvůli nedostatečné emulaci editoru Vim), tak musím ocenit, že moje poznámky ukládá jako obyčejné textové soubory. Můžu je tak editovat třeba ve VSCode:
