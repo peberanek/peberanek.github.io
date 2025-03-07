@@ -2,6 +2,64 @@
 
 # Blog
 
+## 2025-03-07
+
+### Open-source AI Sandbox
+
+<img src="/media/open_webui.jpg" alt="AI Sandbox screenshot" width="980" style="max-width: 100%;">
+
+#### Motivace
+
+V roli metodika AI na Univerzitě Karlově mě překvapilo, jak obtížné je i pro takto velkou instituci získat přístup k enterprise verzi chatbotů jako ChatGPT. (Naši uživatelé sice mají k dispozici Microsoft Copilot for Education. Ten je ale v řadě případů nedostačující.) Generativní AI je nová technologie jejíž přínosy (i rizika) teprve objevujeme, takže vidina finančně nákladné investice s nejistým výsledkem není moc lákavá. Zároveň si firmy kladou vysoké požadavky na minimální počet licencí a cenu.
+
+S tím souvisí i riziko neefektivního využívání, jak se přesvědčili např. na Univerzitě Palackého v Olomouci. Pořídili překladač DeepL Pro Advanced for Teams za ~12500 EUR/rok (52 licencí), aby nakonec zjistili, že to byla slepá ulička:
+
+> \- Licencí bylo málo, každý chtěl licenci jen pro sebe  
+> \- Mnozí z těch, kdo chtěli licenci, si ji nakonec neaktivovali, zůstali viset v systému  
+> \- Ti, kteří licenci dostali, ji pořádně nevyužívají, cca 50 přeložených dokumentů měsíčně  
+> \- Ti, kteří ji chtějí využívat intenzivně, jsou omezeni 20 soubory měsíčně  
+-- [Nasazení překladače DeepL na UP](https://euniscz.sharepoint.com/:p:/r/sites/vykonny-vybor/_layouts/15/Doc.aspx?sourcedoc=%7B9E19412C-EEEA-4314-A171-66D755B36D28%7D&file=UPOL%20EUNIS%202024%20DeepL.pptx&action=edit&mobileredirect=true)
+
+Komplikované bylo i zařídit přihlašování pomocí univerzitního SSO. Vydali se proto cestou vývoje vlastní aplikace využívající DeepL API. Díky tomu mají ke službě přístup všichni zaměstnanci. V rámci finančního modelu pay-as-you-go se (vyjma několika pevných poplatků) platí za počet přeložených znaků. Za uživatele, co aplikaci nevyužívají, se neplatí nic. Uživatelé mají zároveň virtuální peněženku s kreditním limitem, který je motivuje k šetrnému využívání.
+
+S podobným nápadem, ale ve formě _chatbota_, přišli na americkém Harvardu. Na konci roku 2023 řešili situaci, kdy jim firmy jako OpenAI nebyly schopné nebo ochotné nabídnout akceptovatelné smluvní podmínky. Vytvořili si proto vlastní aplikaci s názvem Harvard AI Sandbox (více viz [demo](https://www.youtube.com/watch?v=61zn8Q6lK08)):
+
+> The AI Sandbox provides a secure environment in which to explore Generative AI, mitigating many security and privacy risks and ensuring the data entered will not be used to train any vendor large language models (LLMs). It offers a single interface that enables access to the latest LLMs from OpenAI, Anthropic, Google, and Meta.  
+-- [Harvard AI Sandbox](https://www.huit.harvard.edu/ai-sandbox)
+
+Výhodou API bývá i závazek firem, že nebudou využívat vložená data k dalšímu trénování modelů (nutno vždy ověřit v obchodních podmínkách).
+
+Nutno podotknout, že _výsledný chatbot není náhradou jedna ku jedné za ChatGPT, Claude nebo Gemini_. Tyto produkty budou nejspíš vždy o krok napřed. Na druhou stranu ale _stačí, aby byl dostatečně dobrý pro praktické využití_. AI Sandbox tak může pokrýt základní poptávku nebo sloužit při výuce, a drahé produkty pořídit těm, kdo je skutečně využijí.
+
+#### Implementace
+
+Nevím o tom, že by Harvard zveřejnil zdrojový kód své aplikace. Zároveň mám dlouhodobě dobré zkušenosti s open-source softwarem. Nabízí se tak otázka, zda už náhodou neexistuje dostatečně dobrá alternativa, použitelná přinejmenším jako proof of concept.
+
+Hlavní kritéria výběru:
+
+1. Jedná se o populární projekt s aktivním vývojem. Kód je plně auditovatelný. Ideálně nabízí i enterprise support.
+1. Přes API lze využívat pokročilé modely od OpenAI, Anthropic a Google (případně i další).
+1. Aplikace je víceuživatelská, s jednoduchou administrací a s rozdělením uživatelů podle rolí a skupin. Ideálně s autentizací pomocí SSO.
+1. Lze sledovat využívání modelů, a u placených omezit útratu. Ideálně formou již zmíněné peněženky.
+1. Lze vkládat více souborů.
+
+Doplňková kritéria:
+
+1. Lze využívat lokálně běžící open-source modely.
+1. Snadná rozšířitelnost o další funkcionalitu. Ideálně pomocí Pythonu.
+1. Podpora různých modalit, nejen text, ale i čtení a generování obrázků, hlasu nebo videa.
+1. Možnost nasazení na serveru i na desktopu (pro maximální soukromí).
+1. Uživatelské rozhraní je i v češtině.
+
+Postupně jsem prošel a vyzkoušel řadu aplikací (mimo jiné [LibreChat](https://github.com/danny-avila/LibreChat), [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm), [Jan](https://github.com/janhq/jan), [GPT4All](https://github.com/nomic-ai/gpt4all), [Text generation web UI](https://github.com/oobabooga/text-generation-webui)) a výše uvedená kritéria (s výjimkou peněženky) nyní nejlépe splňuje [Open WebUI](https://github.com/open-webui/open-webui). Běh open-source modelů zajišťuje [Ollama](https://github.com/ollama/ollama), a to zejména z pohledu jednoduchosti (od kolegy jsem však slyšel, že plánují přejít na [vLLM](https://github.com/vllm-project/vllm)).
+
+Open WebUI podporuje defaultně jen připojení na OpenAI a s ní kompatibilní API. Pro připojení k Anthropic a Google je potřeba využít dodatečné funkce, ať už vlastní, nebo [vytvořené komunitou](https://openwebui.com/functions). Nevýhodou je, že je to kód navíc, který je potřeba zkontrolovat a udržovat. Na druhou stranu to vypadá, že možnosti rozšířitelnosti pomocí [Tools, Functions & Pipelines](https://docs.openwebui.com/features/plugin/) jsou [zajímavé](https://www.reddit.com/r/LocalLLaMA/comments/1h4mq5f/supercharged_openwebui_my_magical_toolkit_for/).
+
+#### Jak si AI Sandbox vyzkoušet?
+
+* Projekt [E-infra](https://www.e-infra.cz/) hostuje vlastní [testovací instanci Open WebUI](https://chat.ai.e-infra.cz/) s několika vybranými open-source modely.
+* Pro instalaci na vlastním serveru jsem vytvořil jednoduchý [návod](https://github.com/peberanek/ai-sandbox) včetně Docker Compose.
+
 ## 2025-03-05
 
 ### llm
