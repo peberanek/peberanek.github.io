@@ -1,6 +1,6 @@
 [Blog](/README.md) ⋅ [Curriculum Vitae](/cv.md) ⋅ [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek)
 
-# Blog: O technologii z různých úhlů
+# Blog
 
 ## 2025-03-09
 
@@ -80,7 +80,7 @@ Zkušenosti s nasazením a pilotním provozem plánuji nasdílet v některém z 
 
 #### Jak si AI Sandbox vyzkoušet?
 
-* Projekt [E-infra](https://www.e-infra.cz/) hostuje [testovací instanci Open WebUI](https://chat.ai.e-infra.cz/) s několika open-source modely. K přihlášení mi stačilo mít vytvořený účet v rámci [MetaCentra CESNETu](https://www.metacentrum.cz/cs/VO/metavo/index.html).
+* Projekt [E-infra](https://www.e-infra.cz/) hostuje [testovací instanci Open WebUI](https://docs.cerit.io/en/docs/web-apps/chat-ai) s několika open-source modely.
 * Pro instalaci na vlastním serveru jsem vytvořil jednoduchý [návod](https://github.com/peberanek/ai-sandbox) včetně Docker Compose.
 
 ## 2025-03-05
