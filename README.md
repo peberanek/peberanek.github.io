@@ -1,6 +1,13 @@
 [Blog](/README.md) ⋅ [Curriculum Vitae](/cv.md) ⋅ [Email](mailto:beranek@duck.com) ⋅ [GitHub](https://github.com/peberanek) ⋅ [X (Twitter)](https://x.com/peberanek)
 
-# Blog
+# Blog: O technologii z různých úhlů
+
+## 2025-03-09
+
+### Amarův zákon
+
+> We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.  
+-- [Roy Amara](https://en.wikipedia.org/wiki/Roy_Amara)
 
 ## 2025-03-08
 
