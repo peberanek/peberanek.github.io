@@ -2,6 +2,15 @@
 
 # Blog
 
+## 2025-03-10
+
+### "Vibe Coding"
+
+[Will the future of software development run on vibes?](https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/) ([via](https://simonwillison.net/2025/Mar/6/vibe-coding/))
+
+* Prací programátora je zařídit, aby počítač dělal co po něm chceme. To, že člověk musí programovat, je nutnost, nikoliv podstata práce.
+* Computer a Compiler byli dříve názvy profesí. Dneska jsou to automaty. Generativní AI dnes umožňuje vytvářet jednoduché aplikace prostřednictvím přirozeného jazyka, a tento tred se bude, pravděpodobně prohlubovat. Pravděpodobně i Programmer bude jednoho dne automat, a člověk se přesune spíše do role tvůrce aplikace - "AppMaker" ?.
+
 ## 2025-03-09
 
 ### Amarův zákon
