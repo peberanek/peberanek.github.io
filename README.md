@@ -45,8 +45,6 @@ inherent in internet culture. On Sydney’s list of things it might try, stealin
 codes and creating novel viruses are the most terrifying, but making people argue
 until they kill one another is something social media is already doing.  
 
-Článek je z května 2023 a některé predikce stále vypadají trochu nadsazené. Na druhou stranu, k velkým škodám ve společnosti není třeba, aby se mezi sebou začali lidi zabíjet. Úplně stačí, když se spolu rozhádáme natolik, že přestaneme spolupracovat, komunikovat a naše společnost se dříve nebo později rozpadne nebo podlehne nátlaku a vlivu zvenčí.
-
 ## 2025-03-07
 
 ### Open-source AI Sandbox
