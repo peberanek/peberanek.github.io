@@ -6,6 +6,8 @@
 
 ### Ventolin
 
+<img src="https://www.fleda.cz//data/files/Ventolin-Krezek1654.jpg" alt="Ventolin: foto z brněnského klubu Fléda" width="980" style="max-width: 100%;">
+
 Český hudebník David Doubek alias [Ventolin](https://www.ventolin.cz/). Hudební texty na rozhraní experimentu, absurdity, ale taky skrytého významu a vtipu. To vše ruku v ruce s kvalitní elektronickou hudbou. Nejvíc mě zaujaly skladby:
 
 * [Sovy](https://www.youtube.com/watch?v=Rz-GbKTt81c)
@@ -32,6 +34,8 @@ Dnes jsem náhodou zjistil, že o něm dokonce vznikl [krátký dokument](https:
 
 > We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.  
 -- [Roy Amara](https://en.wikipedia.org/wiki/Roy_Amara)
+
+Tímto díky [Martinu Richterovi](https://cz.linkedin.com/in/mr-martin-richter) za jeho přednášku a zmínku o Amarově zákoně.
 
 ## 2025-03-08
 
