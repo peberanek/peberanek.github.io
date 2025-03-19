@@ -2,6 +2,21 @@
 
 # Blog
 
+## 2025-03-19
+
+### Ventolin
+
+Český hudebník David Doubek alias [Ventolin](https://www.ventolin.cz/). Hudební texty na rozhraní experimentu, absurdity, ale taky skrytého významu a vtipu. To vše ruku v ruce s kvalitní elektronickou hudbou. Nejvíc mě zaujaly skladby:
+
+* [Sovy](https://www.youtube.com/watch?v=Rz-GbKTt81c)
+* [Disco Science](https://www.youtube.com/watch?v=jjTOYerHRVo)
+* [Totem](https://www.youtube.com/watch?v=ZdZZ0cgawJg)
+* [Supersonik](https://www.youtube.com/watch?v=nFl24aJnLZ4)
+* [Vyšší inteligence](https://www.youtube.com/watch?v=DxuyO0_RopY)
+* [Když jedu z hub](https://www.youtube.com/watch?v=jGiAXU-8Vn8)
+
+Dnes jsem náhodou zjistil, že o něm dokonce vznikl [krátký dokument](https://www.youtube.com/watch?v=E6h6ZFLB1dE).
+
 ## 2025-03-10
 
 ### "Vibe Coding"
