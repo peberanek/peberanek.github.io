@@ -53,7 +53,7 @@ until they kill one another is something social media is already doing.
 
 ### Open-source AI Sandbox
 
-<img src="/media/open_webui.jpg" alt="AI Sandbox screenshot" width="980" style="max-width: 100%;">
+<img src="/media/open_webui.png" alt="Open WebUI screenshot" width="980" style="max-width: 100%;">
 
 #### Motivace
 
