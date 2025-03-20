@@ -37,7 +37,7 @@ Dnes jsem náhodou zjistil, že o něm dokonce vznikl [krátký dokument](https:
 > We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.  
 -- [Roy Amara](https://en.wikipedia.org/wiki/Roy_Amara)
 
-Tímto díky [Martinu Richterovi](https://cz.linkedin.com/in/mr-martin-richter) za jeho přednášku a zmínku o Amarově zákoně.
+Tímto díky [Martinu Richterovi](https://cz.linkedin.com/in/mr-martin-richter) za zmínku o Amarově zákoně.
 
 ## 2025-03-08
 
