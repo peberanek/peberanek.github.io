@@ -2,6 +2,28 @@
 
 # Blog
 
+## 2025-03-20
+
+### Brainstorming s Claudem: `sudo` bez hesla
+
+Dnes jsem požádal Clauda 3.7 Sonnet aby mi poradil s následující situací: mám shellový skript pro update systému a dalších aplikací, a některé příkazy v něm vyžadují `sudo`, resp. spouštět příkaz s právy roota. Na mé pracovní stanici s Ubuntu se ten skript spouští v podstatě denně a začíná být dost nepraktické pokaždé zadávat heslo. Claude mimo jiné přišel s návrhem povolit dané příkazy pomocí pluginu `sudoers` (který jsem do té doby neznal), a rovnou mi vypsal, co a jak mám nastavit:
+
+```bash
+sudo visudo -f /etc/sudoers.d/update
+```
+
+A do souboru poté přidat zhruba toto (`myuser` je třeba nahradit skutečným jménem uživatele):
+```
+# Allow running commands without password
+myuser ALL=(root) NOPASSWD: /usr/bin/apt update, /usr/bin/apt upgrade -y, /usr/bin/snap refresh
+```
+
+Použitelné řešení, tak říkajíc na první dobrou.
+
+Co si odnáším:
+* Jasně a srozumitělně popsaný problém už je v podstatě z poloviny vyřešený. Nejasné nebo odfláknuté zadání málokdy přináší uspokojivé výsledky. Zde se může do určité míry zrcadlit i vnitřní mentální postoj: už jsem problém promyslel a chce se mi ho řešit, nebo vlastně ani moc nechce a už bych byl nejradši od toho pryč?
+* Pokročilé modely jsou skvělé na první průzkum možných řešení. Je to mnohem větší zábava než lovit v diskusích a ve fórech. I když třeba hned nedostanu použitelné řešení, výsledky mě často navedou správným směrem nebo objevím něco nového.
+
 ## 2025-03-19
 
 ### Ventolin
