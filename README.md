@@ -6,7 +6,9 @@
 
 ### Ventolin
 
-<img src="https://www.fleda.cz//data/files/Ventolin-Krezek1654.jpg" alt="Ventolin: foto z brněnského klubu Fléda" width="980" style="max-width: 100%;">
+<img src="https://www.fleda.cz//data/files/Ventolin-Krezek1654.jpg" alt="Ventolin na pódiu v klubu Fléda" width="980" style="max-width: 100%;">
+
+_Foto výše: Ventolin na pódiu [v brněnském klubu Fléda](https://www.fleda.cz/photo/default/291/)_
 
 Český hudebník David Doubek alias [Ventolin](https://www.ventolin.cz/). Hudební texty na rozhraní experimentu, absurdity, ale taky skrytého významu a vtipu. To vše ruku v ruce s kvalitní elektronickou hudbou. Nejvíc mě zaujaly skladby:
 
