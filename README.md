@@ -6,7 +6,7 @@
 
 ### Brainstorming s Claudem: `sudo` bez hesla
 
-Dnes jsem požádal Clauda 3.7 Sonnet aby mi poradil s následující situací: mám shellový skript pro update systému a dalších aplikací, a některé příkazy v něm vyžadují `sudo`, resp. spouštět příkaz s právy roota. Na mé pracovní stanici s Ubuntu se ten skript spouští v podstatě denně a začíná být dost nepraktické pokaždé zadávat heslo. Claude mimo jiné přišel s návrhem povolit dané příkazy pomocí pluginu `sudoers` (který jsem do té doby neznal), a rovnou mi vypsal, co a jak mám nastavit:
+Dnes jsem požádal Clauda 3.7 Sonnet aby mi poradil s následující situací: mám shellový skript pro update systému a dalších aplikací, a některé příkazy v něm vyžadují `sudo`, resp. spouštět příkaz s právy roota. Na mé pracovní stanici s Ubuntu se ten skript spouští v podstatě denně a začíná být dost nepraktické pokaždé zadávat heslo. Claude přišel s návrhem povolit dané příkazy pomocí pluginu sudoers ("default sudo security policy plugin"; více viz `man sudoers`), a rovnou mi vypsal, co a jak mám nastavit:
 
 ```bash
 sudo visudo -f /etc/sudoers.d/update
@@ -18,11 +18,7 @@ A do souboru poté přidat zhruba toto (`myuser` je třeba nahradit skutečným 
 myuser ALL=(root) NOPASSWD: /usr/bin/apt update, /usr/bin/apt upgrade -y, /usr/bin/snap refresh
 ```
 
-Použitelné řešení, tak říkajíc na první dobrou.
-
-Co si odnáším:
-* Jasně a srozumitělně popsaný problém už je v podstatě z poloviny vyřešený. Nejasné nebo odfláknuté zadání málokdy přináší uspokojivé výsledky. Zde se může do určité míry zrcadlit i vnitřní mentální postoj: už jsem problém promyslel a chce se mi ho řešit, nebo vlastně ani moc nechce a už bych byl nejradši od toho pryč?
-* Pokročilé modely jsou skvělé na první průzkum možných řešení. Je to mnohem větší zábava než lovit v diskusích a ve fórech. I když třeba hned nedostanu použitelné řešení, výsledky mě často navedou správným směrem nebo objevím něco nového.
+Funguje to dobře.
 
 ## 2025-03-19
 
@@ -43,15 +39,6 @@ _Foto výše: Ventolin na pódiu [v brněnském klubu Fléda](https://www.fleda.
 
 Dnes jsem náhodou zjistil, že o něm dokonce vznikl [krátký dokument](https://www.youtube.com/watch?v=E6h6ZFLB1dE).
 
-## 2025-03-10
-
-### "Vibe Coding"
-
-[Will the future of software development run on vibes?](https://arstechnica.com/ai/2025/03/is-vibe-coding-with-ai-gnarly-or-reckless-maybe-some-of-both/) ([via](https://simonwillison.net/2025/Mar/6/vibe-coding/))
-
-* Prací programátora je zařídit, aby počítač dělal co po něm chceme. To, že člověk musí programovat, je nutnost, nikoliv podstata práce.
-* Computer a Compiler byli dříve názvy profesí. Dneska jsou to automaty. Generativní AI dnes umožňuje vytvářet jednoduché aplikace prostřednictvím přirozeného jazyka, a tento tred se bude, pravděpodobně prohlubovat. Pravděpodobně i Programmer bude jednoho dne automat, a člověk se přesune spíše do role tvůrce aplikace - "AppMaker" ?.
-
 ## 2025-03-09
 
 ### Amarův zákon
@@ -59,7 +46,7 @@ Dnes jsem náhodou zjistil, že o něm dokonce vznikl [krátký dokument](https:
 > We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.  
 -- [Roy Amara](https://en.wikipedia.org/wiki/Roy_Amara)
 
-Tímto díky [Martinu Richterovi](https://cz.linkedin.com/in/mr-martin-richter) za zmínku o Amarově zákoně.
+Tímto díky [Martinu Richterovi](https://cz.linkedin.com/in/mr-martin-richter) za zmínku.
 
 ## 2025-03-08
 
@@ -130,6 +117,10 @@ Zkušenosti s nasazením a pilotním provozem plánuji nasdílet v některém z 
 
 #### Jak si AI Sandbox vyzkoušet?
 
+* Open WebUI [lze nainstalovat na vlastním počítači různými způsoby](https://docs.openwebui.com/getting-started/quick-start/). Za mě nejjednodužší je použít [uv](https://docs.astral.sh/uv/):
+  ```
+  uvx --python 3.11 open-webui@latest serve
+  ```
 * Projekt [E-infra](https://www.e-infra.cz/) hostuje [testovací instanci Open WebUI](https://docs.cerit.io/en/docs/web-apps/chat-ai) s několika open-source modely.
 * Pro instalaci na vlastním serveru jsem vytvořil jednoduchý [návod](https://github.com/peberanek/ai-sandbox) včetně Docker Compose.
 
