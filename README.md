@@ -4,44 +4,42 @@
 
 ## 2025-03-30
 
-### Reinforcement Learning
+### AI jako nástroj hledání nových řešení
 
-[Alphago (2017)](https://www.youtube.com/watch?v=WXuK6gekU1Y) ([via](https://www.youtube.com/watch?v=7xTGNNLPyMI)):
+Andrej Karpathy ve svém videu [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) (konkrétně v části o Reinforcement Learning) zmiňuje film [Alphago (2017)](https://www.youtube.com/watch?v=WXuK6gekU1Y). Vřele doporučuji. Film pojednává o stejnojmenném programu, který jako první dokázal porazit Lee Sedola - jednoho z nejlepších hráčů hry Go, považované za výrazně komplexnější než třeba šachy. Ve filmu mě zaujala mimo jiné úvodní scéna zmiňující jinou hru - Breakout:
 
-> Virtual environments and games, we think they're the perfect platform for developing and testing AI algorithms.
-Games are very convenient, in that a lot of them have scores, so it's very easy to measure incremental progress. [...]
+> Virtual environments and games, we think they're the perfect platform for developing and testing AI algorithms. Games are very convenient, in that a lot of them have scores, so it's very easy to measure incremental progress. [...]
 >
 > So let's start off with Breakout. So here you control the bat and ball, and you're trying to break through this rainbow-colored wall. The agent system has to learn everything for itself,
-just from the raw pixels. It doesn't know what it's controlling. It doesn't even know what the object of the game is.
-Now, at the beginning, after 100 games, you can see the agent is not very good. It's missing the ball most of the time.
-But it's starting to get the hang of the idea that the bat should go towards the ball.
->
-> Now, after 300 games, it's about as good as any human can play this, and pretty much gets the ball back every time. We thought, "Well, that's pretty cool."
-But we left the system playing for another 200 games, and it did this amazing thing. It found the optimal strategy
-was to dig a tunnel around the side, and put the ball round the back of the wall.
->
-> _The researchers working on this, the amazing AI developers, well, they're not so good at Breakout, and they didn't know about that strategy. So, they learned something from their own system,
-which is, uh, you know, pretty funny and quite instructive_, I think, about the potential for general AI.
+just from the raw pixels. It doesn't know what it's controlling. It doesn't even know what the object of the game is. Now, at the beginning, after 100 games, you can see the agent is not very good. It's missing the ball most of the time. But it's starting to get the hang of the idea that the bat should go towards the ball.
 
-<img src="/media/breakout.png" alt="Breakout screenshot" width="980" style="max-width: 100%;">
+<img src="/media/breakout_1.png" alt="Breakout game screenshot" width="650" style="max-width: 100%;">
+
+> Now, after 300 games, it's about as good as any human can play this, and pretty much gets the ball back every time. We thought, "Well, that's pretty cool." But we left the system playing for another 200 games, and it did this amazing thing. It found the optimal strategy was to dig a tunnel around the side, and put the ball round the back of the wall.
+>
+> **The researchers** working on this, the amazing AI developers, well, they're not so good at Breakout, and they **didn't know about that strategy. So, they learned something from their own system, which is, uh, you know, pretty funny and quite instructive**, I think, about the potential for general AI.
+
+<img src="/media/breakout_2.png" alt="Breakout game screenshot" width="650" style="max-width: 100%;">
 
 ## 2025-03-20
 
-### Brainstorming s Claudem: `sudo` bez hesla
+### `sudo` bez hesla
 
-Dnes jsem požádal Clauda 3.7 Sonnet aby mi poradil s následující situací: mám shellový skript pro update systému a dalších aplikací, a některé příkazy v něm vyžadují `sudo`, resp. spouštět příkaz s právy roota. Na mé pracovní stanici s Ubuntu se ten skript spouští v podstatě denně a začíná být dost nepraktické pokaždé zadávat heslo. Claude přišel s návrhem povolit dané příkazy pomocí pluginu sudoers ("default sudo security policy plugin"; více viz `man sudoers`), a rovnou mi vypsal, co a jak mám nastavit:
+Požádal jsem Clauda 3.7 Sonnet aby mi poradil s následující situací: mám shellový skript a některé příkazy vyžadují `sudo`, resp. spouštět příkaz s právy roota. Skript se spouští docela často a začíná být nepraktické pokaždé zadávat heslo. Claude přišel s návrhem povolit dané příkazy pomocí pluginu sudoers ("default sudo security policy plugin"; více viz `man sudoers`), který jsem do té doby neznal. Rovnou mi vypsal, co a jak mám nastavit:
 
 ```bash
 sudo visudo -f /etc/sudoers.d/update
 ```
 
-A do souboru poté přidat zhruba toto (`myuser` je třeba nahradit skutečným jménem uživatele):
+A do souboru přidat např. následující:
 ```
 # Allow running commands without password
 myuser ALL=(root) NOPASSWD: /usr/bin/apt update, /usr/bin/apt upgrade -y, /usr/bin/snap refresh
 ```
 
-Funguje to dobře.
+Uživatel `myuser` může spouštět `/usr/bin/apt update`, `/usr/bin/apt upgrade -y`, a `/usr/bin/snap refresh` jako `root` bez nutnosti se autentizovat. Příkazy musí být zadány i včetně všech uvedených parametrů (tj. `apt upgrade -y`, cestu není třeba zadávat), jinak je heslo vyžadováno.
+
+Vzhledem k rostoucím schopnostem a znalostem současných modelů začíná být pocitově jednodužší (i zábavnější) jako první konzultovat problém s chatbotem, než "jít hledat na internetu". A to nejen v situacích, kdy jsou související informace s velkou pravděpodobností hojně zastoupené v trénikových datasetech. Ono totiž, jak říká jeden můj bohatý příbuzný, "I blbej nápad je dobrej nápad. Ne sám o sobě, ale tím, že nás může mentálně odblokovat a nasměrovat k použitelnému řešení."
 
 ## 2025-03-19
 
