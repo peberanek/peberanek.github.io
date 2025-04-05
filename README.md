@@ -4,20 +4,48 @@
 
 ## 2025-04-05
 
-### O psaní blogů
+### Nové jazykové modely a S&P 500
+
+#### 25.3.2025
+
+Google vydal [Gemini 2.5 Pro Experimental](https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/). Nyní #1 na [LM Arena Leaderboard](https://lmarena.ai/?leaderboard).
+
+#### 31.3.2025
+
+> TL;DR: we are excited to release a powerful new open-weight language model with reasoning in the coming months, and we want to talk to devs about how to make it maximally useful: https://openai.com/open-model-feedback/
+>
+> we are excited to make this a very, very good model!  
+-- [Sam Altman](https://x.com/sama/status/1906793591944646898) ([via](https://simonwillison.net/2025/Apr/1/brad-lightcap/))
+
+#### 4.4.2025
+
+<img src="/media/spx_20250405.png" alt="TradingView screenshot (SPX 500)" style="max-width: 100%;">
+
+_Screenshot z aplikace TradingView zachycují propad indexu S&P 500 (denní graf za poslední rok; propad za poslední 2 dny o -10,5%)._
+
+#### 5.4.2025
+
+Dnes - _v sobotu_ - vydala Meta celou rodinu open-weight modelů [Llama 4](https://ai.meta.com/blog/llama-4-multimodal-intelligence/). Nyní #2 na LM Arena Leaderboard.
+
+OpenAI:
+
+> change of plans: we are going to release o3 and o4-mini after all, probably in a couple of weeks, and then do GPT-5 in a few months.  
+-- [Sam Altman](https://x.com/sama/status/1908167621624856998) ([via](https://simonwillison.net/2025/Apr/4/sam-altman/))
+
+### O smyslu psaní blogů
 
 > Blogging is small-p political again, today. It’s come back round. It’s a statement to put your words in a place where they are not subject to someone else’s algorithm telling you what success looks like; when you blog, your words are not a vote for the values of someone else’s platform.
 >
 > [...]
 >
-> I don’t make any money out of [it], not directly. But it’s so, so worth it. I don’t how how to put a figure on the value of friends, work, ideas, opportunities and enjoyment I’ve got out of simply “thinking out loud” over the years.  
--- [Matt Webb: People and Blogs](https://manuelmoreale.com/pb-matt-webb) ([via](https://simonwillison.net/))
+> I don’t make any money out of [my blog], not directly. But it’s so, so worth it. I don’t how how to put a figure on the value of friends, work, ideas, opportunities and enjoyment I’ve got out of simply “thinking out loud” over the years.  
+-- [Matt Webb: People and Blogs](https://manuelmoreale.com/pb-matt-webb) ([via](https://simonwillison.net/2025/Apr/5/matt-webb/))
 
 ### Různí chatboti v jedné aplikaci
 
 Už pár let používám open-source aplikaci [Ferdium](https://ferdium.org/). Díky ní můžu mít různé služby, např. Gmail, Google Kalendář nebo Discord v jednom rozhraní bez nutnosti používat běžný prohlížeč. Zároveň můžu být přihlášený k pracovnímu i soukromému účtu zároveň aniž bych se musel odhlašovat a přepínat. Jednu službu lze přidat vícekrát, pokaždé s jiným účtem, protože každá běží izolovaně. Díky Ferdiu se mi tak nemýchají dohromady věci jako čtení emailů, chatování a prohlížení internetu. Mohu se i lépe soustředit - notifikace zůstávají ve Ferdiu a dají se případně vypnout.
 
-Stejný princip jde uplatnit i pro různé chatboty a další AI nástroje. Namísto lovení záložek v prohlížeči je mám nyní přehledně ve Ferdiu, viz níže.
+Stejný princip jde uplatnit i pro různé chatboty a další AI nástroje. Namísto lovení záložek v prohlížeči mohou být přehledně ve Ferdiu, viz níže. (Ferdium je postavené na technologii [Electron](https://www.electronjs.org/) - jedná se tedy v principu o webové stránky běžící v Chromiu. Služby tudíž nejsou plnohodnotné desktopové aplikace.)
 
 <img src="/media/ferdium.png" alt="Ferdium screenshot" style="max-width: 100%;">
 
