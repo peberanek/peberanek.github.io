@@ -6,15 +6,17 @@
 
 ### Různí chatboti v jedné aplikaci
 
-Už pár let používám open-source aplikaci [Ferdium](https://ferdium.org/). Díky ní můžu mít různé služby, např. Gmail, Google Kalendář nebo Discord v jednom rozhraní bez nutnosti používat běžný prohlížeč. Zároveň můžu být přihlášený k pracovnímu i soukromému účtu aniž bych se musel odhlašovat a přepínat. Službu si jednoduše přidám 2x, pokaždé s jiným účtem, protože každá běží izolovaně. Díky Ferdiu se mi tak nemýchají dohromady věci jako čtení email, chatování a prohlížení internetu. Mohu se i lépe soustředit - všechny notifikace zůstávají ve Ferdiu a i tam se dají vypnout.
+Už pár let používám open-source aplikaci [Ferdium](https://ferdium.org/). Díky ní můžu mít různé služby, např. Gmail, Google Kalendář nebo Discord v jednom rozhraní bez nutnosti používat běžný prohlížeč. Zároveň můžu být přihlášený k pracovnímu i soukromému účtu zároveň aniž bych se musel odhlašovat a přepínat. Jednu službu lze přidat vícekrát, pokaždé s jiným účtem, protože každá běží izolovaně. Díky Ferdiu se mi tak nemýchají dohromady věci jako čtení emailů, chatování a prohlížení internetu. Mohu se i lépe soustředit - notifikace zůstávají ve Ferdiu a dají se případně vypnout.
 
-Stejný princip jde uplatnit i pro různé chatboty a další AI nástroje. Namísto lovení záložek v prohlížeči je mám přehledně ve Ferdiu, viz níže.
+Stejný princip jde uplatnit i pro různé chatboty a další AI nástroje. Namísto lovení záložek v prohlížeči je mám nyní přehledně ve Ferdiu, viz níže.
 
 <img src="/media/ferdium.png" alt="Ferdium screenshot" style="max-width: 100%;">
 
-Jak je vidět v levém panelu, ikona Claude.ai je tam 2x - jednou jako soukromý a jednou jako pracovní účet.
+_Screenshot aplikace Ferdium. Vytvořeno s pomocí [Screely](https://screely.com/) a [GIMP](https://www.gimp.org/)._
 
-Zhruba před rokem jsem zkoušel přidat službu ChatGPT, ale nešlo se mi přihlásit. Nyní to vypadá, že problém byl odstraněn. Některé služby (ChatGPT, Claude, Perplexity) jsou dostupné v katalogu služeb, jiné (Google AI Studio, NotebookLM, Open WebUI) je potřeba přidat manuálně - při vytváření stačí doplnit URL. Co se týče Open WebUI, měl jsem trochu obavu, jestli Ferdium uvidí i lokálně běžící server, konkrétně `http://0.0.0.0:8080/`, a vidí ho.
+Jak je vidět v levém panelu, ikona Anthropic (Claude) je tam 2x - jednou jako soukromý a jednou jako pracovní účet.
+
+Zhruba před rokem jsem zkoušel přidat službu ChatGPT, ale nešlo se mi přihlásit. Nyní to vypadá, že problém byl odstraněn. Některé služby (ChatGPT, Claude, Perplexity) jsou dostupné v katalogu služeb, jiné (Google AI Studio, NotebookLM, Open WebUI) je potřeba přidat manuálně, resp. doplnit URL. Co se týče Open WebUI, měl jsem trochu obavu, jestli se Ferdium dokáže připojit i na lokálně běžící server, konkrétně `http://0.0.0.0:8080/`, a ano, zvládne to.
 
 Užitečnou funkcionalitou jsou 'workspaces', díky které mám AI nástroje v samostatném pracovním prostoru (viz obrázek výše), ve kterém mě nerozptylují ikony Gmalu nebo Discordu.
 
@@ -54,10 +56,10 @@ just from the raw pixels. It doesn't know what it's controlling. It doesn't even
 <img src="/media/breakout_1.png" alt="Breakout game screenshot" width="650" style="max-width: 100%;">
 
 > Now, after 300 games, it's about as good as any human can play this, and pretty much gets the ball back every time. We thought, "Well, that's pretty cool." But we left the system playing for another 200 games, and it did this amazing thing. It found the optimal strategy was to dig a tunnel around the side, and put the ball round the back of the wall.
->
-> **The researchers** working on this, the amazing AI developers, well, they're not so good at Breakout, and they **didn't know about that strategy. So, they learned something from their own system, which is, uh, you know, pretty funny and quite instructive**, I think, about the potential for general AI.
 
 <img src="/media/breakout_2.png" alt="Breakout game screenshot" width="650" style="max-width: 100%;">
+
+> **The researchers** working on this, the amazing AI developers, well, they're not so good at Breakout, and they **didn't know about that strategy. So, they learned something from their own system, which is, uh, you know, pretty funny and quite instructive**, I think, about the potential for general AI.
 
 ## 2025-03-20
 
@@ -83,7 +85,7 @@ Vzhledem k rostoucím schopnostem a znalostem současných modelů začíná bý
 
 ### Ventolin
 
-<img src="https://www.fleda.cz//data/files/Ventolin-Krezek1654.jpg" alt="Ventolin na pódiu v klubu Fléda" width="980" style="max-width: 100%;">
+<img src="https://www.fleda.cz//data/files/Ventolin-Krezek1654.jpg" alt="Ventolin na pódiu v klubu Fléda" style="max-width: 100%;">
 
 _Foto výše: Ventolin na pódiu [v brněnském klubu Fléda](https://www.fleda.cz/photo/default/291/)_
 
@@ -123,7 +125,9 @@ until they kill one another is something social media is already doing.
 
 ### Open-source AI Sandbox
 
-<img src="/media/open_webui.png" alt="Open WebUI screenshot" width="980" style="max-width: 100%;">
+<img src="/media/open_webui.png" alt="Open WebUI screenshot" style="max-width: 100%;">
+
+_Screenshot aplikace Open WebUI. Vytvořeno s pomocí [Screely](https://screely.com/) a [GIMP](https://www.gimp.org/)._
 
 #### Motivace
 
