@@ -4,6 +4,15 @@
 
 ## 2025-04-05
 
+### O psaní blogů
+
+> Blogging is small-p political again, today. It’s come back round. It’s a statement to put your words in a place where they are not subject to someone else’s algorithm telling you what success looks like; when you blog, your words are not a vote for the values of someone else’s platform.
+>
+> [...]
+>
+> I don’t make any money out of [it], not directly. But it’s so, so worth it. I don’t how how to put a figure on the value of friends, work, ideas, opportunities and enjoyment I’ve got out of simply “thinking out loud” over the years.  
+-- [Matt Webb: People and Blogs](https://manuelmoreale.com/pb-matt-webb) ([via](https://simonwillison.net/))
+
 ### Různí chatboti v jedné aplikaci
 
 Už pár let používám open-source aplikaci [Ferdium](https://ferdium.org/). Díky ní můžu mít různé služby, např. Gmail, Google Kalendář nebo Discord v jednom rozhraní bez nutnosti používat běžný prohlížeč. Zároveň můžu být přihlášený k pracovnímu i soukromému účtu zároveň aniž bych se musel odhlašovat a přepínat. Jednu službu lze přidat vícekrát, pokaždé s jiným účtem, protože každá běží izolovaně. Díky Ferdiu se mi tak nemýchají dohromady věci jako čtení emailů, chatování a prohlížení internetu. Mohu se i lépe soustředit - notifikace zůstávají ve Ferdiu a dají se případně vypnout.
