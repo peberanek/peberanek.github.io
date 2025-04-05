@@ -2,6 +2,22 @@
 
 # Blog
 
+## 2025-04-05
+
+### Různí chatboti v jedné aplikaci
+
+Už pár let používám open-source aplikaci [Ferdium](https://ferdium.org/). Díky ní můžu mít různé služby, např. Gmail, Google Kalendář nebo Discord v jednom rozhraní bez nutnosti používat běžný prohlížeč. Zároveň můžu být přihlášený k pracovnímu i soukromému účtu aniž bych se musel odhlašovat a přepínat. Službu si jednoduše přidám 2x, pokaždé s jiným účtem, protože každá běží izolovaně. Díky Ferdiu se mi tak nemýchají dohromady věci jako čtení email, chatování a prohlížení internetu. Mohu se i lépe soustředit - všechny notifikace zůstávají ve Ferdiu a i tam se dají vypnout.
+
+Stejný princip jde uplatnit i pro různé chatboty a další AI nástroje. Namísto lovení záložek v prohlížeči je mám přehledně ve Ferdiu, viz níže.
+
+<img src="/media/ferdium.png" alt="Ferdium screenshot" style="max-width: 100%;">
+
+Jak je vidět v levém panelu, ikona Claude.ai je tam 2x - jednou jako soukromý a jednou jako pracovní účet.
+
+Zhruba před rokem jsem zkoušel přidat službu ChatGPT, ale nešlo se mi přihlásit. Nyní to vypadá, že problém byl odstraněn. Některé služby (ChatGPT, Claude, Perplexity) jsou dostupné v katalogu služeb, jiné (Google AI Studio, NotebookLM, Open WebUI) je potřeba přidat manuálně - při vytváření stačí doplnit URL. Co se týče Open WebUI, měl jsem trochu obavu, jestli Ferdium uvidí i lokálně běžící server, konkrétně `http://0.0.0.0:8080/`, a vidí ho.
+
+Užitečnou funkcionalitou jsou 'workspaces', díky které mám AI nástroje v samostatném pracovním prostoru (viz obrázek výše), ve kterém mě nerozptylují ikony Gmalu nebo Discordu.
+
 ## 2025-04-04
 
 ### AI jako nástroj (ne)komunikace
