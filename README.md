@@ -2,6 +2,15 @@
 
 # Blog
 
+## 2025-04-08
+
+### Když Llama 4 Maverick není tak úplně Maverick
+
+Andrej Karpathy nedávno [vyjádřil jistou nedůvěru](https://youtu.be/7xTGNNLPyMI?t=11815) k výsledkům na [LM Arena Leaderboard](https://lmarena.ai/?leaderboard) v posledních měsících. A hle, Meta nám tak trochu podváděla:
+
+> Meta’s interpretation of our policy did not match what we expect from model providers. Meta should have made it clearer that “Llama-4-Maverick-03-26-Experimental” was a customized model to optimize for human preference. As a result of that we are updating our leaderboard policies to reinforce our commitment to fair, reproducible evaluations so this confusion doesn’t occur in the future.  
+-- [lmarena.ai](https://x.com/lmarena_ai/status/1909397817434816562) ([via](https://buttondown.com/ainews/archive/ainews-llama-4s-controversial-weekend-release/))
+
 ## 2025-04-05
 
 ### Nové jazykové modely a S&P 500
