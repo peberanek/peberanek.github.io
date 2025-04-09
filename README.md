@@ -2,6 +2,14 @@
 
 # Blog
 
+## 2025-04-09
+
+### Na něco se těšit
+
+Známý chirung [profesor Pavel Pafko říká, že je důležité se pořád na něco těšit](https://strednicechy.rozhlas.cz/jsme-zhyckani-ano-prospelo-nam-slapat-do-kopce-odpovida-profesor-pavel-pafko-9448286):
+
+> "Lidem říkám, že člověk, kterej se ráno vzbudí musí mít nějaký plán na ten den, který bude následovat. Často ten plán nesplníme, protože nám do toho přijdou situace neplánované, které nám ten plán rozbourají. Ale těšit se ráno jenom na to, že ten den vydržím, pak se navečeřím a pak půjdu spát, tak ten den neměl být takový."
+
 ## 2025-04-08
 
 ### Ohýbání LM Arena Leaderboardu
