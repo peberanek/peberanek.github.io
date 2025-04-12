@@ -21,6 +21,8 @@ Andrej Karpathy [vyjádřil jistou nedůvěru](https://youtu.be/7xTGNNLPyMI?t=11
 
 Pokud se jedná o upravený model, který není normálně k dispozici, říkám si proč nebyl z žebříčku odebrán.
 
+_Update(2025-04-12)_: Zdá se, že Llama-4-Maverick-03-26-Experimental už byla z žebříčku odebrána, a [Llama-4-Maverick-17B-128E-Instruct](https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct) si nevede nijak oslnivě. Dnes okolo 32. místa.
+
 ## 2025-04-05
 
 ### Nové jazykové modely a panika (nejen) na trzích
