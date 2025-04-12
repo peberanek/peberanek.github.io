@@ -10,6 +10,8 @@ Známý chirung [profesor Pavel Pafko říká, že je důležité se pořád na 
 
 > "Lidem říkám, že člověk, kterej se ráno vzbudí musí mít nějaký plán na ten den, který bude následovat. Často ten plán nesplníme, protože nám do toho přijdou situace neplánované, které nám ten plán rozbourají. Ale těšit se ráno jenom na to, že ten den vydržím, pak se navečeřím a pak půjdu spát, tak ten den neměl být takový."
 
+Otázka "Na co se dneska můžu těšit?" může být někdy dost těžká. A přesto, dá se jí upravit třeba na "Jak to zařídit, abych se dneska vůbec mohl na něco těšit?", nebo "Jakou malou radost si dneska můžu dopřát?".
+
 ## 2025-04-08
 
 ### Ohýbání LM Arena Leaderboardu
