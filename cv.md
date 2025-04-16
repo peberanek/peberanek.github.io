@@ -9,12 +9,13 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 ## Experience
 
 **Charles University, _AI Methodologist_ (3/2024 - present)**
-* Coordinate testing of an internal AI project, organize educational events, and support the adoption of AI tools.
-* Lead beginner workshops and develop educational materials.
-* Maintain and contribute to the content of the university's website [ai.cuni.cz](https://ai.cuni.cz/).
-* Initiated the university-wide AI working group on Generative AI.
-* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html) .
-* Attend AI-related conferences to stay up to date with industry trends.
+* Responsible for deployment and testing of a secure internal chatbot.  
+* Curate educational materials and occasionally lead workshops for beginners.  
+* Co-create content for [ai.cuni.cz](https://ai.cuni.cz/).  
+* Initiated the university-wide working group on Generative AI.
+* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html).  
+* Collaborate with external partners on AI-related topics.  
+* Attend conferences and workshops to stay up to date with developments in the field.  
 
 **Red Hat, _Software Quality Engineer_ (10/2019 - 3/2022, 10/2022 - 7/2023)**
 * Helped with manual and automated testing of [Anaconda](https://fedoraproject.org/wiki/Anaconda)
@@ -66,7 +67,7 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 * Generative AI: ChatGPT, OpenAI API, Anthropic API, Open WebUI & Ollama, GitHub Copilot
 * Programming and automation: Python, shell scripting, git & GitHub
 * System administration: Linux (Ubuntu, RHEL/Fedora)
-* Minor experience with: Linux containers, CI/CD pipelines, RPM packaging, SQL, JavaScript
+* Minor experience with: Docker, CI/CD pipelines, RPM packaging, SQL, JavaScript
 
 ## Interests & Activities
 
