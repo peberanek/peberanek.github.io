@@ -67,7 +67,7 @@ AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a bac
 * Generative AI: ChatGPT, OpenAI API, Anthropic API, Open WebUI & Ollama, GitHub Copilot
 * Programming and automation: Python, shell scripting, git & GitHub
 * System administration: Linux (Ubuntu, RHEL/Fedora)
-* Minor experience with: Docker, CI/CD pipelines, RPM packaging, SQL, JavaScript
+* Minor experience with: Docker & Kubernetes, CI/CD pipelines, RPM packaging, SQL, JavaScript
 
 ## Interests & Activities
 
