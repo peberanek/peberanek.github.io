@@ -2,6 +2,38 @@
 
 # Blog
 
+## 2025-06-07
+
+### Open Weights vs Open Source AI
+
+Deep Dive audio overview (vygenerováno pomocí NotebookLM)
+
+<audio controls>
+  <source src="media/deep_dive_open_weights.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+[Open Weights: not quite what you’ve been told](https://opensource.org/ai/open-weights): Článek ukazuje, že "open-source" a Open Weights modely nejsou jedno a totéž. _Open Weights_ znamená přístup k finálním parametrům daného modelu, nikoliv však ke kódu použitému k vytvoření tréninkového datasetu, ani k datasetu samotnému, nebo alespoň k jeho detailnímu popisu pokud není možné z právních důvodů dataset zveřejnit. Open Weights modely je tak velmi těžné, né-li nemožné replikovat, auditovat a porozumět procesu jejich tréninku. Tato neprůhlednost může být problém jak pro regulátory (jak se na Open Weights dívá AI Act?), tak pro spolupráci na dalším vývoji. (Co se týče regulace, jeden z problémů vidím v neporozumění základním pojmům, jako rozdíl mezi chatbotem a samotným modelem, který pak vede k unáhlené snaze plošně zakazovat používání čínských modelů.)
+
+```
+To better understand why Open Weights and Open Source AI differ so drastically, consider the following comparison:
+```
+
+| **Feature** | **Open Weights** | **Open Source AI** |
+|-------------|------------------|-------------------|
+| **Weights & Biases** | Released | Released |
+| **Training Code** | Not Shared | Fully Shared |
+| **Intermediate Checkpoints** | Withheld | Nice to have |
+| **Training dataset** | Not Shared/Not disclosed | Released* |
+| **Training Data Composition** | Partially/Not Disclosed | Fully Disclosed |
+
+```
+Clearly, Open Weights mark a notable advancement over fully proprietary solutions by offering the final model parameters. However, Open Source AI goes further by unlocking the entire development process. This holistic openness enables complete reproducibility, thorough bias audits, and robust community-driven improvements.
+
+* When legally allowed. [...]
+```
+
+
 ## 2025-05-02
 
 ### Mark Zuckerberg (nejen) o Chatbot Aréně
