@@ -6,33 +6,31 @@
 
 ### Open Weights vs Open Source AI
 
-Deep Dive audio overview (vygenerováno pomocí NotebookLM)
+Deep Dive audio overview (vygenerováno z článku odkazovaného níže pomocí NotebookLM):
 
 <audio controls>
   <source src="media/deep_dive_open_weights.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
+<br>
 
-[Open Weights: not quite what you’ve been told](https://opensource.org/ai/open-weights): Článek ukazuje, že "open-source" a Open Weights modely nejsou jedno a totéž. _Open Weights_ znamená přístup k finálním parametrům daného modelu, nikoliv však ke kódu použitému k vytvoření tréninkového datasetu, ani k datasetu samotnému, nebo alespoň k jeho detailnímu popisu pokud není možné z právních důvodů dataset zveřejnit. Open Weights modely je tak velmi těžné, né-li nemožné replikovat, auditovat a porozumět procesu jejich tréninku. Tato neprůhlednost může být problém jak pro regulátory (jak se na Open Weights dívá AI Act?), tak pro spolupráci na dalším vývoji. (Co se týče regulace, jeden z problémů vidím v neporozumění základním pojmům, jako rozdíl mezi chatbotem a samotným modelem, který pak vede k unáhlené snaze plošně zakazovat používání čínských modelů.)
+[Open Weights: not quite what you’ve been told](https://opensource.org/ai/open-weights): Článek ukazuje, že "open-source" a Open Weights modely nejsou jedno a totéž. _Open Weights_ znamená přístup k finálním parametrům daného modelu, nikoliv však ke kódu použitému k vytvoření tréninkového datasetu, ani k datasetu samotnému, nebo alespoň k jeho detailnímu popisu pokud není možné z právních důvodů dataset zveřejnit. Open Weights modely je tak velmi těžné, né-li nemožné replikovat, auditovat, porozumět procesu jejich tréninku a tím pádem i všem aspektům jejich chování (např. skrytý bias).
 
-```
-To better understand why Open Weights and Open Source AI differ so drastically, consider the following comparison:
-```
+Tato neprůhlednost může být problém jak pro regulátory (jak se na Open Weights dívá AI Act?), tak pro spolupráci na dalším vývoji. (Co se týče regulace, jeden z problémů vidím i v neporozumění základním pojmům, jako rozdíl mezi chatbotem a samotným modelem, kdy chatbot může sbírat citlivé údaje, ale samotný model nikoliv. Už jsem se v praxi setkal s tím, že toto neporozumění může vést ke snaze plošně odrazovat od používání čínských modelů, třebaže běží na vlastním hardware a používají je edukovaní uživatelé.)
 
-| **Feature** | **Open Weights** | **Open Source AI** |
-|-------------|------------------|-------------------|
-| **Weights & Biases** | Released | Released |
-| **Training Code** | Not Shared | Fully Shared |
-| **Intermediate Checkpoints** | Withheld | Nice to have |
-| **Training dataset** | Not Shared/Not disclosed | Released* |
-| **Training Data Composition** | Partially/Not Disclosed | Fully Disclosed |
-
-```
-Clearly, Open Weights mark a notable advancement over fully proprietary solutions by offering the final model parameters. However, Open Source AI goes further by unlocking the entire development process. This holistic openness enables complete reproducibility, thorough bias audits, and robust community-driven improvements.
-
-* When legally allowed. [...]
-```
-
+> To better understand why Open Weights and Open Source AI differ so drastically, consider the following comparison:
+>
+> | **Feature** | **Open Weights** | **Open Source AI** |
+> |-------------|------------------|-------------------|
+> | **Weights & Biases** | Released | Released |
+> | **Training Code** | Not Shared | Fully Shared |
+> | **Intermediate Checkpoints** | Withheld | Nice to have |
+> | **Training dataset** | Not Shared/Not disclosed | Released* |
+> | **Training Data Composition** | Partially/Not Disclosed | Fully Disclosed |
+>
+> Clearly, Open Weights mark a notable advancement over fully proprietary solutions by offering the final model parameters. However, Open Source AI goes further by unlocking the entire development process. This holistic openness enables complete reproducibility, thorough bias audits, and robust community-driven improvements.
+> 
+> \* When legally allowed. [...]
 
 ## 2025-05-02
 
@@ -54,6 +52,8 @@ Clearly, Open Weights mark a notable advancement over fully proprietary solution
 V článku o [AI Sandboxu](https://peberanek.github.io/#open-source-ai-sandbox) jsem zmínil Open WebUI jakožto flexibilní rozhraní (chatbota) pro komunikaci s různými modely generativní AI. Nyní jsem zjistil, že je k dispozici i formou [rozšírení pro Rancher Desktop](https://www.suse.com/c/rancher_blog/rancher-desktop-1-17-with-open-webui-extension-and-more/) (a dokonce je součástí platformy [SUSE AI](https://documentation.suse.com/suse-ai/1.0/html/AI-deployment-intro/index.html)).
 
 Musím říct, že instalace rozšíření nebyla úplně přímočará. Nainstaloval jsem Rancher Desktop a kliknul na instalaci rozšíření. Ta ale nedoběhla a zůstala tzv. viset, což je trochu nešťastná první zkušenost. Po restartu celé aplikace už ale instalace doběhla v pořádku. Líbí se mi, že Open WebUI běží přímo v okně Rancher Desktopu, takže se není potřeba nikam přepínat. Není ani potřeba vytvářet nového uživatele, vytvoří se defaultní uživatel `User`. Propojení s existující instancí Ollama proběhlo automaticky, což je taky fajn. Nevýhodou může být starší verze Open WebUI (0.5.20) oproti upstreamu (0.6.5).
+
+_Update(2025-06-08)_: Vypnout autentizaci pro lokálního uživatele lze pomocí proměnné prostředí `WEBUI_AUTH`, nicméně to lze pouze v případě, že ještě nebyl vytvořen žádný uživatel. Více viz [dokumentace](https://docs.openwebui.com/getting-started/env-configuration#webui_auth).
 
 ## 2025-04-15
 
