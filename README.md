@@ -86,16 +86,6 @@ Další poznámky:
 > However, this isn't the end of the story. The systems within which we operate play a crucial role in shaping our jobs as well. [...] Let's say an AI can deliver a lecture better than I can. Would students be willing to outsource their learning to AI? [...] Would the deans of the university feel comfortable using AI in this way? Would the magazines and sites that rank schools punish us for doing so? My job is connected to many other jobs, customers and stakeholders. Even if AI automates my job, the systems in which it works are less obvious.  
 -- [Ethan Mollick: "Co-Intelligence: Living and Working with AI", p. 125-126](https://www.moreusefulthings.com/book)
 
-## 2025-04-09
-
-### Na něco se těšit
-
-Známý chirung [profesor Pavel Pafko říká, že je důležité se pořád na něco těšit](https://strednicechy.rozhlas.cz/jsme-zhyckani-ano-prospelo-nam-slapat-do-kopce-odpovida-profesor-pavel-pafko-9448286):
-
-> "Lidem říkám, že člověk, kterej se ráno vzbudí musí mít nějaký plán na ten den, který bude následovat. Často ten plán nesplníme, protože nám do toho přijdou situace neplánované, které nám ten plán rozbourají. Ale těšit se ráno jenom na to, že ten den vydržím, pak se navečeřím a pak půjdu spát, tak ten den neměl být takový."
-
-Otázka "Na co se dneska můžu těšit?" může být někdy dost těžká. A přesto, dá se jí upravit třeba na "Jak to zařídit, abych se dneska vůbec mohl na něco těšit?", nebo "Jakou malou radost si dneska můžu dopřát?".
-
 ## 2025-04-08
 
 ### Ohýbání LM Arena Leaderboardu
@@ -224,25 +214,6 @@ myuser ALL=(root) NOPASSWD: /usr/bin/apt update, /usr/bin/apt upgrade -y, /usr/b
 Uživatel `myuser` může spouštět `/usr/bin/apt update`, `/usr/bin/apt upgrade -y`, a `/usr/bin/snap refresh` jako `root` bez nutnosti se autentizovat. Příkazy musí být zadány i včetně všech uvedených parametrů (tj. `apt upgrade -y`, cestu není třeba zadávat), jinak je heslo vyžadováno.
 
 Vzhledem k rostoucím schopnostem a znalostem současných modelů začíná být pocitově jednodužší (i zábavnější) jako první konzultovat problém s chatbotem, než "jít hledat na internetu". A to nejen v situacích, kdy jsou související informace s velkou pravděpodobností hojně zastoupené v trénikových datasetech. Ono totiž, jak říká jeden můj bohatý příbuzný, "I blbej nápad je dobrej nápad. Ne sám o sobě, ale tím, že nás může mentálně odblokovat a nasměrovat k použitelnému řešení."
-
-## 2025-03-19
-
-### Ventolin
-
-<img src="https://www.fleda.cz//data/files/Ventolin-Krezek1654.jpg" alt="Ventolin na pódiu v klubu Fléda" style="max-width: 100%;">
-
-_Foto výše: Ventolin na pódiu [v brněnském klubu Fléda](https://www.fleda.cz/photo/default/291/)_
-
-Český hudebník David Doubek alias [Ventolin](https://www.ventolin.cz/). Hudební texty na rozhraní experimentu, absurdity, ale taky skrytého významu a vtipu. To vše ruku v ruce s kvalitní elektronickou hudbou. Nejvíc mě zaujaly skladby:
-
-* [Sovy](https://www.youtube.com/watch?v=Rz-GbKTt81c)
-* [Disco Science](https://www.youtube.com/watch?v=jjTOYerHRVo)
-* [Totem](https://www.youtube.com/watch?v=ZdZZ0cgawJg)
-* [Supersonik](https://www.youtube.com/watch?v=nFl24aJnLZ4)
-* [Vyšší inteligence](https://www.youtube.com/watch?v=DxuyO0_RopY)
-* [Když jedu z hub](https://www.youtube.com/watch?v=jGiAXU-8Vn8)
-
-Dnes jsem náhodou zjistil, že o něm dokonce vznikl [krátký dokument](https://www.youtube.com/watch?v=E6h6ZFLB1dE).
 
 ## 2025-03-09
 
