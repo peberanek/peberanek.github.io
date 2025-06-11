@@ -2,6 +2,19 @@
 
 # Blog
 
+## 2025-06-11
+
+### Přestaňme spoléhat na AI detektory
+
+Stále se u řady vyučujících setkávám se snahou vypořádat se s nástupem generativní AI nasazením tzv. AI detektorů:
+
+> This software aims to flag AI-generated content in student work. However, AI detection software is far from foolproof—in fact, it has high error rates and can lead instructors to falsely accuse students of misconduct (Edwards, 2023; Fowler, 2023). OpenAI, the company behind ChatGPT, even shut down their own AI detection software because of its poor accuracy (Nelson, 2023).  
+-- [AI Detectors Don’t Work. Here’s What to Do Instead](https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/) 
+
+Zároveň je dobré si uvědomit, že otázka zda "student použil nebo nepoužil AI" není černobílá, 1 nebo 0, ale spíše škála. Student mohl například použít nějakého chatbota pro brainstorming, nebo opravu a stylistickou úpravu svých cizojazyčných textů. Tím pádem AI použil, ale obsah jeho práce je stále jeho originálním výtvorem. Zároveň se domnívám, že se stále nenacházíme v době, kdy je nějaký model schopen bez nutnosti korekcí a oprav vygenerovat celou bakalářskou nebo diplomovou práci, která následně projde posudkem a obhajobou. (I když, v některých vzdělávacích institucích možná ano.)
+
+Výše citovaný článek doporučuji pro řadu praktických tipů, jak postupovat při vedení konstruktivní smysluplné diskuse o využívání AI nejen při psaní studentských prací.
+
 ## 2025-06-07
 
 ### Open Weights vs Open Source AI
