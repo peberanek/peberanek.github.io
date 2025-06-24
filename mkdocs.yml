@@ -1,0 +1,37 @@
+site_name: Petr Beránek
+site_url: https://peberanek.github.io/
+
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search
+  - blog:
+      blog_toc: true
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower  # default
+          percent_encode: false  # default
+          normalize: 'NFD'  # strip accents
+
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+  - Curriculum Vitae: cv.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
