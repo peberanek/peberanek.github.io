@@ -7,7 +7,7 @@ date: 2025-06-07
 Deep Dive audio overview (vygenerováno z článku odkazovaného níže pomocí NotebookLM):
 
 <audio controls>
-  <source src="../../assets/audio/deep_dive_open_weights.wav" type="audio/wav">
+  <source src="https://peberanek.github.io/assets/audio/deep_dive_open_weights.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 <br>
