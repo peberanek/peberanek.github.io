@@ -11,7 +11,7 @@ V diskusích z vývojáři občas zaznívá, že se místo psaní kódu stávaj�
 > So you can think really big thoughts and the leverage of having those big thoughts has just suddenly expanded enormously. I had this tweet two years ago where I said **"90% of my skills just went to zero dollars and 10% of my skills just went up 1000x"**. And this is exactly what I'm talking about - **having a vision, being able to set milestones towards that vision, keeping track of a design to maintain or control the levels of complexity as you go forward**. Those are hugely leveraged skills now compared to knowing where to put the ampersands and the stars and the brackets in Rust.  
 -- [Kent Beck](https://www.youtube.com/watch?v=aSXaxOdVtAQ&t=12m30s) ([via](https://simonwillison.net/2025/Jun/22/kent-beck/))
 
----
+<!-- more -->
 
 > Armin Ronacher had Claude and Claude Code do almost all of the work in building, testing, packaging and publishing a new Python library [..] [sloppy-xml-py](https://github.com/mitsuhiko/sloppy-xml-py), a lax XML parser (and violation of everything the XML Working Group hold sacred) which ironically is necessary because LLMs themselves frequently output "XML" that includes validation errors. [...]
 >
