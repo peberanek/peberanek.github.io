@@ -2,7 +2,7 @@
 date: 2025-06-14
 ---
 
-# Lekce z nasazování AI agentů: systém je víc než model
+# Systém je důležitější než model
 
 > The first observation is really that language models are awesome, but often they're only 20% of a much bigger system. If you have an Enterprise AI deployment, usually that means it's a RAG system. I think everybody here probably has heard of RAG. RAG is something that I originally pioneered with my team at Facebook Research when I was there. RAG is really kind of the standard way that you get generative AI to work on your data.
 >

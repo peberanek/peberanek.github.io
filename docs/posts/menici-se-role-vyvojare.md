@@ -1,5 +1,7 @@
 ---
 date: 2025-06-23
+links:
+  - posts/ai-jako-spolupracovnik.md
 ---
 
 # Měnící se role vývojáře
@@ -22,4 +24,4 @@ V diskusích z vývojáři občas zaznívá, že se místo psaní kódu stávaj�
 
 Jinými slovy, zkušeného schopného programátora GenAI nástroje mohou zbavit rutinních úkolů, jako je fyzické psaní kódu a jeho testování. A naopak člověka bez zkušeností mohou zavést do slepé uličky, protože nebude schopen vidět problémy jako vadný design nebo bezpečnostní zranitelnosti. _Augmentation, not a replacement._
 
-Zajímavá historická paralela: [_computer_](https://en.wikipedia.org/wiki/Computer_(occupation)) byl svého času název profese vykonávané lidmi. Nebudu překvapen, pokud jednoho dne bude _programmer_ (nebo _coder_) také jen softwarová komponenta, podobná jako např. _compiler_.
+Zajímavá historická paralela: [_computer_](https://en.wikipedia.org/wiki/Computer_(occupation)) byl svého času název profese vykonávané lidmi. Nebudu překvapen, pokud jednoho dne bude _programmer_ (nebo _coder_) také jen softwarová komponenta (podobně jako např. _compiler_), a role vývojáře bude postupně mnohem více o supervizi, ladění funkcionality, použitelnosti a komunikaci s uživateli.
