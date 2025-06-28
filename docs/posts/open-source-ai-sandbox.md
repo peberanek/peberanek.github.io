@@ -4,7 +4,7 @@ date: 2025-03-07
 
 # Open-source AI Sandbox
 
-![Open WebUI](../../assets/images/open_webui.png)
+![Open WebUI](../assets/images/open_webui.png)
 /// caption
 Screenshot aplikace Open WebUI. Vytvořeno pomocí [Screely](https://screely.com/) a [GIMP](https://www.gimp.org/).
 ///

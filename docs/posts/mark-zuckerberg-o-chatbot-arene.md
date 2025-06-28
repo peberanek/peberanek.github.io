@@ -4,7 +4,7 @@ date: 2025-05-02
 
 # Mark Zuckerberg o Chatbot Aréně
 
-Už dříve jsem psal o [ohýbání LM Arena (Chatbot Arena) Leaderboardu](../../blog/posts/ohybani-lm-arena-leaderboardu.md). Zuckerberg otevřeně přiznává, že upravili model tak, aby v žebříčku uspěl:
+Už dříve jsem psal o [ohýbání LM Arena (Chatbot Arena) Leaderboardu](../posts/ohybani-lm-arena-leaderboardu.md). Zuckerberg otevřeně přiznává, že upravili model tak, aby v žebříčku uspěl:
 
 > You also mentioned the whole Chatbot Arena thing, which I think is interesting and points to the challenge around how you do benchmarking. How do you know what models are good for which things?
 >

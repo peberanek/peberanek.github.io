@@ -13,10 +13,10 @@ Andrej Karpathy ve svém videu [Deep Dive into LLMs like ChatGPT](https://www.yo
 > So let's start off with Breakout. So here you control the bat and ball, and you're trying to break through this rainbow-colored wall. The agent system has to learn everything for itself,
 just from the raw pixels. It doesn't know what it's controlling. It doesn't even know what the object of the game is. Now, at the beginning, after 100 games, you can see the agent is not very good. It's missing the ball most of the time. But it's starting to get the hang of the idea that the bat should go towards the ball.
 
-![Breakout screenshot 1](../../assets/images/breakout_1.png)
+![Breakout screenshot 1](../assets/images/breakout_1.png)
 
 > Now, after 300 games, it's about as good as any human can play this, and pretty much gets the ball back every time. We thought, "Well, that's pretty cool." But we left the system playing for another 200 games, and it did this amazing thing. It found the optimal strategy was to dig a tunnel around the side, and put the ball round the back of the wall.
 
-![Breakout screenshot 2](../../assets/images/breakout_2.png)
+![Breakout screenshot 2](../assets/images/breakout_2.png)
 
 > **The researchers** working on this, the amazing AI developers, well, they're not so good at Breakout, and they **didn't know about that strategy. So, they learned something from their own system, which is, uh, you know, pretty funny and quite instructive**, I think, about the potential for general AI.

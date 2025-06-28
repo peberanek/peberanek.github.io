@@ -4,6 +4,9 @@ site_url: https://peberanek.github.io/
 theme:
   name: material
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
     - navigation.indexes
     - content.code.copy
     - content.code.annotate
@@ -12,6 +15,8 @@ plugins:
   - search
   - blog:
       blog_toc: true
+      blog_dir: .
+      archive_name: Archiv
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower  # default
@@ -19,9 +24,7 @@ plugins:
           normalize: 'NFD'  # strip accents
 
 nav:
-  - Home: index.md
-  - Blog:
-      - blog/index.md
+  - Blog: index.md
   - Curriculum Vitae: cv.md
 
 markdown_extensions:

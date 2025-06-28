@@ -17,7 +17,7 @@ Google vydal [Gemini 2.5 Pro Experimental](https://blog.google/technology/google
 
 ## 4.4.2025
 
-![TradingView screenshot (SPX 500)](../../assets/images/spx_20250405.png)
+![TradingView screenshot (SPX 500)](../assets/images/spx_20250405.png)
 /// caption
 Screenshot z aplikace TradingView zachycují propad indexu S&P 500 (denní graf za poslední rok; propad za poslední 2 dny o -10,5%).
 ///

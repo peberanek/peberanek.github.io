@@ -8,7 +8,7 @@ Už pár let používám open-source aplikaci [Ferdium](https://ferdium.org/). D
 
 Stejný princip jde uplatnit i pro různé chatboty a další AI nástroje. Namísto lovení záložek v prohlížeči mohou být přehledně ve Ferdiu, viz níže. (Ferdium je postavené na technologii [Electron](https://www.electronjs.org/) - jedná se tedy v principu o webové stránky běžící v Chromiu. Služby tudíž nejsou plnohodnotné desktopové aplikace.)
 
-![Ferdium screenshot](../../assets/images/ferdium.png)
+![Ferdium screenshot](../assets/images/ferdium.png)
 /// caption
 Screenshot aplikace Ferdium. Vytvořeno s pomocí [Screely](https://screely.com/) a [GIMP](https://www.gimp.org/).
 ///
