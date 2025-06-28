@@ -2,7 +2,7 @@
 date: 2025-06-28
 ---
 
-# Upgrade webu pomocí Material for MkDocs
+# Upgrade blogu pomocí Material for MkDocs
 
 Jak už jsem psal dříve, [Simon Willison mě inspiroval začít psát blog](../posts/zacinam-psat-blog.md). Jelikož jsem si nebyl jistý, jestli u toho dlouhodobě vydržím, snažil jsem se celou akci maximálně zjednodušit. Pro hosting jsem využil [GitHub Pages](https://pages.github.com/), protože jsou zdarma, a dokáží pěkně vyrendrovat obyčejný Markdown. Není tedy třeba psát žádný HTML kód, řešit šablony apod. Člověk se může hned soustředit na psaní a na celý blog ve finále stačí `README.md`.
 
@@ -25,7 +25,7 @@ uv run mkdocs new .
 
 1.  uv vytvoří pouze `pyproject.toml`.
 
-Tím se vytvoří virtuální prostředí (`.venv/`) s balíčkem `mkdocs`, jeho konfigurací a základní strukturou v adresáři `docs/`.
+Tím se vytvoří virtuální prostředí (`.venv/`) s programem `mkdocs`, jeho konfigurací a základní strukturou v adresáři `docs/`.
 
 ```
 .
@@ -46,10 +46,12 @@ Tím se vytvoří virtuální prostředí (`.venv/`) s balíčkem `mkdocs`, jeho
 
 ## Poznámky
 
-Výsledný zdrojový kód blogu (včetně nastavení a obsahu) si můžete prohlédnout [v repozitáři peberanek.github.io](https://github.com/peberanek/peberanek.github.io). Níže uvedu pár věcí, na které jsem během upgradu narazil:
+Vzhledem k tomu, že k Material for MkDocs existuje srozumitelný [video tutoriál](https://www.youtube.com/watch?v=xlABhbnNrfI), přehledná [dokumentace](https://squidfunk.github.io/mkdocs-material/getting-started/) a [návod pro blog](https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/), nebudu se o zde o nich detailně rozepisovat. Místy jsem se sice trochu zapotil, ale vše bylo ve finále řešitelné, někdy i s pomocí Clauda. Výsledný zdrojový kód blogu (včetně nastavení a obsahu) si můžete prohlédnout [v repozitáři peberanek.github.io](https://github.com/peberanek/peberanek.github.io).
+
+Níže uvádím pár věcí, na které jsem během upgradu narazil:
 
 * Opět z důvodu jednoduchosti jsem chtěl mít blog jako první stranu webu. Toho lze docílit pomocí nastavení `blog_dir`. Viz [konfigurace jako Blog only](https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/#blog-only). Skvělé je, že i přesto se dají přidávat další stránky, jako např. zmíněné [CV](https://peberanek.github.io/cv/).
-* Odkazování na jiný článek je potřeba udělat pomocí relativní cesty (např. `../posts/clanek-xyz.md`). Při odkazování pomocí `links` je ale třeba uvádět `posts/clanek-xyz.md`, což je trochu matoucí. Relativní odkazy ve vloženém HTML kódu (např. audio) nefungují spolehlivě ze všech míst (buď fungují na hlavní straně, nebo ve článku). Dá se to sice hacknout pomocí absolutního odkazu, jako `https://peberanek.github.io/assets/audio/...` (viz [Open Weights vs Open Source AI](../posts/open-weights-vs-open-source-ai.md)), ale samostatný hosting mediálních souborů by byl asi nejlepší.
+* Odkazování na jiný článek je potřeba udělat pomocí relativní cesty (např. `../posts/clanek-xyz.md`). Při [odkazování pomocí `links`](https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/?h=links#adding-related-links) je ale třeba uvádět `posts/clanek-xyz.md`, což je trochu matoucí. Relativní odkazy ve vloženém HTML kódu (např. audio) nefungují spolehlivě ze všech míst (buď fungují na hlavní straně, nebo ve článku). Dá se to sice hacknout pomocí absolutního odkazu, jako `https://peberanek.github.io/assets/audio/...` (viz [Open Weights vs Open Source AI](../posts/open-weights-vs-open-source-ai.md)), ale samostatný hosting mediálních souborů by byl asi nejlepší.
 * By default, odkazy na články se odvozují podle názvu a zůstává v nich diakritika, což se mi nelíbí (nechci řešit chyby spojené s enkódováním). Funkce, která se o tvorbu odkazů stará, lze naštěstí přenastavit:
 
     ``` yaml title="mkdocs.yml"
@@ -62,4 +64,7 @@ Výsledný zdrojový kód blogu (včetně nastavení a obsahu) si můžete prohl
               normalize: 'NFD'
     ```
 
-* Musím ocenit možnost automatického nastavení světlého nebo tmavého tématu, viz [Automatic light / dark mode](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=automatic#automatic-light-dark-mode).
+* Užitečný je i vestavěný [Search plugin](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/?h=search), který docela často využívám. Vyhledávání probíhá na straně klienta, a je možné ho nastavit tak, aby fungovalo i offline.
+* Fajn je také možnost automatického nastavení světlého nebo tmavého tématu, viz [Automatic light / dark mode](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=automatic#automatic-light-dark-mode).
+
+Výsledný web vypadá dobře a stejně dobře se zobrazuje i na mém smartphonu. Jsem zvědav, jak se Material for MkDocs v průběhu času osvědčí.
