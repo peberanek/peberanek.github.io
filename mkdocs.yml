@@ -42,6 +42,7 @@ plugins:
           case: lower  # default
           percent_encode: false  # default
           normalize: 'NFD'  # strip accents
+      pagination_per_page: 15
 
 nav:
   - Blog: index.md
