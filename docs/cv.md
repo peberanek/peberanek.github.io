@@ -1,6 +1,6 @@
 # Bc. Petr Beránek
 
-AI Methodologist at [Charles University](https://cuni.cz/UKEN-1.html) with a background in software quality engineering and automation. Exploring both efficient and responsible AI adoption strategies.
+Tinkering with open-source software: Linux, automation, generative AI, personal finance.
 
 ## Experience
 
