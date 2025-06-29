@@ -45,7 +45,8 @@ plugins:
       pagination_per_page: 15
 
 nav:
-  - Blog: index.md
+  - Blog:
+    - Home: index.md
   - Curriculum Vitae: cv.md
 
 markdown_extensions:
