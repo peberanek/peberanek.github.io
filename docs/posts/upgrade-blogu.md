@@ -44,6 +44,11 @@ Tím se vytvoří virtuální prostředí (`.venv/`) s programem `mkdocs`, jeho 
     uv tool install mkdocs --with mkdocs-material
     ```
 
+Následující příkaz spustí lokální server a vyrendruje existující dokumenty:
+``` sh
+uv run mkdocs serve
+```
+
 ## Poznámky
 
 Vzhledem k tomu, že k Material for MkDocs existuje srozumitelný [video tutoriál](https://www.youtube.com/watch?v=xlABhbnNrfI), přehledná [dokumentace](https://squidfunk.github.io/mkdocs-material/getting-started/) a [návod pro blog](https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog/), nebudu se o zde o nich detailně rozepisovat. Místy jsem se sice trochu zapotil, ale vše bylo ve finále řešitelné, někdy i s pomocí Clauda. Výsledný zdrojový kód blogu (včetně nastavení a obsahu) si můžete prohlédnout [v repozitáři peberanek.github.io](https://github.com/peberanek/peberanek.github.io).

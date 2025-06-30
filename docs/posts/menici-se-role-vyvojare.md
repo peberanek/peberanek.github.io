@@ -21,7 +21,7 @@ Nejprve komentář k odporu zaměstanců Amazonu více využívat generativní A
 > These days I can vibe code a prototype in single digit minutes.  
 -- [Simon Willison](https://simonwillison.net/2025/May/28/amazon-some-coders/)
 
-Využít _vibe coding_ k prototypování mi přijde jako skvělý nápad. Myslím, že jedním z důvodů, proč lidé tuto možnost nevidí, a automaticky jej zavrhují, je určité zmatení pojmů. Dokonce jsem se setkal s názorem (na odborné konferenci), že vibe coding znamená, že jakýkoliv kód vygenerovaný jazykovým modelem pošlu bezhlavě do produkce (což je, samozřejmě, nesmysl). Když jsem se snažil vysvětlit, že jej přece můžu využít jen na rychlou tvorbu prototypů, bylo mi odpovězeno, že to není vibe coding. Myslím, že v této diskusi by hodně pomohlo v prvé řadě si ujasnit pojmy.
+Využít [_vibe coding_](https://en.wikipedia.org/wiki/Vibe_coding) k prototypování mi přijde jako skvělý nápad. Myslím, že jedním z důvodů, proč lidé tuto možnost nevidí, a automaticky jej zavrhují, je jakási nejasnost nebo zmatení pojmů. Dokonce jsem se setkal s názorem (na konferenci o generativní AI ve vzdělávání), že vibe coding je nebezpečný, protože vede k nasazování software s potenciálními bezpečnostními chybami, klidně i na produkci. Když jsem se snažil vysvětlit, že jej přece můžu využít jen na rychlou tvorbu prototypů, kde jsou rizika minimální, bylo mi odpovězeno, že to není vibe coding. Myslím, že jakékoliv diskusi týkající se umělé inteligence by hodně pomohlo nejprve si ujasnit pojmy, abychom si rozuměli.
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ Dále, programování s asistencí generativní AI je mnohem více o supervizi:
 
 Ta čísla jsou očividně nadsazená. Nicméně, tím jak agenti dokáží generovat stále kvalitnější kód se hodnota pouhé schopnosti "psát kód" skutečně snižuje.
 
-A kód, který dnes dokáží agenti vygenerovat, začíná být skutečně dobrý:
+A kód, který dnes dokáží agenti - _pod vedením programátora_ - vygenerovat, začíná být skutečně dobrý:
 
 > Armin Ronacher had Claude and Claude Code do almost all of the work in building, testing, packaging and publishing a new Python library [...] [sloppy-xml-py](https://github.com/mitsuhiko/sloppy-xml-py), a lax XML parser (and violation of everything the XML Working Group hold sacred) which ironically is necessary because LLMs themselves frequently output "XML" that includes validation errors. [...]
 >
