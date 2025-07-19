@@ -3,11 +3,11 @@ date: 2025-07-05
 draft: true
 ---
 
-TODO: 'Čisté-jmění' místo 'Kapital'
-
 # Osobní účetnictví: Má to smysl?
 
-Následující text je zamyšlením nad posledními 10 lety, kdy jsem si začal vést osobní účetnictví, tj. kompletní přehled majetku a závazků, příjmů a výdajů. Od úplných začátků s tužkou a papírem až po automatizované zpracování pomocí open-source aplikací. V článku popisuji důvody, které mě k tomu vedly a sdílím své zkušenosti.
+TODO: aktualizovat screenshoty a jejich popis
+
+Následující text je zamyšlením nad posledními 10 lety, kdy si vedu osobní účetnictví, tj. kompletní přehled majetku a závazků, příjmů a výdajů. Od úplných začátků s tužkou a papírem až po automatizované zpracování pomocí open-source aplikací. V článku uvádím důvody, které mě k tomu vedly a sdílím své zkušenosti.
 
 ## Proč jsem s osobním účetnictvím začal
 
@@ -15,29 +15,29 @@ V roce 2015 jsem padnul na finanční dno a k tomu skončil na dva měsíce v ne
 
 <!-- more -->
 
-Jednou z oblastí, kterou Kiyosaki uvádí jako klíčovou pro budování bohatství, je znalost účetnictví. Nemá tím na mysli stát se expertem (ty je lepší si najmout), ale porozumět principům a umět je využít ve svůj prospěch. Základy účetnictví jsem měl na střední škole (jeden z těch předmětů, co si říkáte, že nikdy nevyužijete), a tak mě napadlo zkusit si vytvořit funkční model rozvahy, výsledovky a jednotlivých účtů, vše zjednodušené pro osobní potřebu.
+Jednou z oblastí, kterou Kiyosaki uvádí jako klíčovou pro budování bohatství, je znalost účetnictví. Nemá tím na mysli stát se účetním, ale porozumět principům a umět je využít ve svůj prospěch. Základy účetnictví jsem měl na střední škole (jeden z těch předmětů, co si říkáte, že nikdy nevyužijete), a tak mě napadlo vytvořit si funkční model rozvahy, výsledovky a jednotlivých účtů, vše zjednodušené pro osobní potřebu.
 
 Kdo někdy finančně zápasil, asi mi dá za pravdu, že přemýšlet a mluvit v tom stavu o penězích je bolest. Velká bolest. A taky strach, možná i pocit selhání. Člověk by nejraději dělal, že jeho finanční problémy neexistují, vytěsnil je, zapomněl. A tím se vše ještě zhorší. Ono to na první pohled vypadá logicky: protože máme finanční problémy, nechceme o nich mluvit. Já si ale dovolím tvrdit, že je tomu naopak: _protože jsme naučení o naší finanční realitě nemluvit, tabuizovat ji, nepřemýšlet nad ní, tak právě proto máme menší či větší finanční problémy_. A osobní účetnictví se mi osvědčilo jako nástroj, jak si toto přemýšlení ulehčit a dát mu systém.
 
-Zajímavé je, že jakmile jsem začal sepisovat svůj majetek, začaly se objevovat další a další zapomenuté peníze. A dluhy, poctivě vyčíslené, přestaly vypadat tak strašidelně. Dodnes vnímám jako velkou výhodu to, že už nemusím vše držet v hlavě. Možnost mít čísla a data vizualizovaná před sebou mi dává větší klid a mentální kapacitu pro hledání nových řešení. Ať už se jednalo o strategii placení dluhů, osekávání zbytečných výdajů nebo dnes třeba o investice.
+Zajímavé je, že jakmile jsem začal sepisovat svůj majetek, začaly se objevovat další a další zapomenuté peníze. A dluhy, poctivě vyčíslené, přestaly vypadat tak strašidelně. Dodnes vnímám jako velkou výhodu to, že už nemusím vše držet v hlavě. Možnost mít čísla a data vizualizovaná před sebou mi dává větší klid a mentální kapacitu pro hledání nových řešení. Ať už se jednalo o strategii placení dluhů, osekávání zbytečných výdajů nebo dnes třeba o investice. (Mimochodem, čím dál více začínám souhlasit s názorem, že investice s největší návratností jsou do ty vzdělání.)
 
 ## Od tužky a papíru k automatizaci
 
 ### Excel/Calc
 
-Na střední jsme účtovali ručně, takže jsem přirozeně začal s tužkou, papírem a opakováním _Učebnice účetnictví_ z roku 2006. Počítat vše manuálně nebo s kalkulačkou se však omrzí dost rychle, takže dalším logickým krokem byl Excel, resp. LibreOffice Calc (v principu je to totéž). Calc je fajn v tom, že dává značnou flexibilitu ve výpočtech a vizualizacích, aniž by musel člověk programovat. Dodnes ho využívám na některé přehledy. S množstvím dat ale začala narůstat i komplexita a s ní i nároky na údržbu a detekci chyb, takže jsem se zhruba po roce vydal hledat robustnější řešení.
+Na střední jsme účtovali ručně, takže jsem přirozeně začal s tužkou, papírem a opakováním _Učebnice účetnictví_ z roku 2006. Počítat vše manuálně nebo s kalkulačkou se však omrzí dost rychle, takže dalším logickým krokem byl Excel, resp. LibreOffice Calc (v principu je to totéž). Calc je fajn v tom, že dává značnou flexibilitu ve výpočtech a vizualizacích, aniž by musel člověk programovat. Dodnes ho využívám na některé přehledy. S množstvím dat ale začala narůstat i komplexita a s ní nároky na údržbu a detekci chyb, takže jsem se po nějaké době vydal hledat robustnější řešení.
 
 ### Pokus o vlastní databázi
 
-S úsměvem nyní vzpomínám na epizodku, kdy jsem v rámci kurzu Úvodu do databází dostal nápad, že bych přece mohl udělat PostgreSQL databázi s nějakým jednoduchým front-endem. Jako studijní projekt to bylo fajn, ale člověk nakonec zjistí, že jednodužší je použít něco už hotového.
+S úsměvem nyní vzpomínám na epizodku, kdy jsem v rámci kurzu Úvodu do databází dostal nápad, že bych přece mohl udělat PostgreSQL databázi s nějakým jednoduchým front-endem. Jako studijní projekt to bylo fajn, ale člověk nakonec zjistí, že než vlastní vývoj je zpravidla efektivnější použít něco už hotového a prověřeného.
 
 ### Komerční aplikace
 
-Jednou z možností bylo jít cestou aplikací jako [YNAB (You Need a Budget)](https://www.ynab.com/) nebo [Mint](https://mint.intuit.com/). Nicméně kombinace předplatného a nutnosti svěřovat své kompletní finanční informace nějaké společnosti mě nelákala. Zároveň může být později složité svá data získat zpět nebo převést jinam. Např. výše zmíněný Mint byl v roce 2023 ukončen, resp. začleněn pod [Credit Karma](https://en.wikipedia.org/wiki/Credit_Karma). Mimochodem, věděli jste, že existovala aplikace [Microsoft Money](https://en.wikipedia.org/wiki/Microsoft_Money)? Její podpora byla ukončena v roce 2011, prý pro nedostatečnou poptávku.
+Jednou z možností bylo jít cestou služeb jako [YNAB (You Need a Budget)](https://www.ynab.com/) nebo [Mint](https://mint.intuit.com/). Nicméně kombinace předplatného a nutnosti někomu svěřovat své kompletní finanční informace mě nelákala. Zároveň může být později složité data získat zpět nebo převést jinam. Např. výše zmíněný Mint byl v roce 2023 ukončen, resp. začleněn pod [Credit Karma](https://en.wikipedia.org/wiki/Credit_Karma). Mimochodem, věděli jste, že existovala aplikace [Microsoft Money](https://en.wikipedia.org/wiki/Microsoft_Money)? Její podpora byla ukončena v roce 2011, prý pro nedostatečnou poptávku.
 
 ### Open-source a GnuCash
 
-Ve vodách open-source jsem narazil na [HomeBank](https://www.gethomebank.org/), [ledger](https://ledger-cli.org/) a [GnuCash](https://gnucash.org/), přičemž nejvíc mě tehdy oslovila poslední z nich, a to kombinací podvojného účetnictví a GUI (které ledger, tuším, tehdy neměl). Na specifika grafického rozhraní jsem si zvyknul, a na nějakou dobu mi nevadilo ani manuální zadávání. GnuCash sice umí importovat data ze souboru, ale z důvodu osobní pohodlnosti jsem tuto funkci zatvrzele ignoroval. Například kvůli chybějícím ID transakcí, což by v praxi znamenalo vždy vše překontrolovat a opravovat případné duplicity.
+Ve vodách open-source jsem narazil na [HomeBank](https://www.gethomebank.org/), [ledger](https://ledger-cli.org/) a [GnuCash](https://gnucash.org/), přičemž nejvíc mě tehdy oslovila poslední z nich, a to kombinací podvojného účetnictví a "klikacího" rozhraní (které ledger, tuším, tehdy neměl). Na specifika rozhraní jsem si zvyknul, a na nějakou dobu mi nevadilo ani manuální zadávání. GnuCash sice umí importovat data ze souboru, ale z důvodu osobní pohodlnosti jsem tuto funkci zatvrzele ignoroval. Například kvůli chybějícím ID transakcí, což by v praxi znamenalo vždy vše překontrolovat a opravovat případné duplicity.
 
 Postupem času i GnuCash začalo ukazovat své limity. Základní automatizace pomocí Pythonu se nakonec dala zvládnout (motivovalo mě zjištění, že [Fio banka API](https://www.fio.cz/bankovni-sluzby/api-bankovnictvi) vrací ID transakcí i aktuální zůstatek). Vedle oficiálních [Python bindings](https://wiki.gnucash.org/wiki/Python_Bindings) existuje i slušně zdokumentovaný balíček [piecash](https://github.com/sdementen/piecash) (kredit autorovi), se kterým šla řada věcí udělat. Při hrátkách s kryptoměnami jsem ale narazil. GnuCash podporuje maximálně 6 desetinných míst a např. Bitcoin potřebuje 8 (jiné kryptoměny i více). Hackování tedy bylo dost a nastal čas hledat něco flexibilnějšího.
 
@@ -50,9 +50,9 @@ Postupem času i GnuCash začalo ukazovat své limity. Základní automatizace p
 > I believe that the method of double-entry counting should be taught to everyone at the high school level everywhere as it is a tremendously useful organizational skill, and I hope that this text can help spread its knowledge beyond professional circles.  
 -- [Martin Blais (z dokumentace k aplikaci Beancount)](https://beancount.github.io/docs/the_double_entry_counting_method.html#introduction)
 
-V rámci průzkumu jsem objevil [Plain Text Accounting (PTA)](https://plaintextaccounting.org/), což znamená vedení účetních záznamů v textových souborech. Vedle již zmíněné aplikace _ledger_ (nebo [hledger](https://hledger.org/)) tento přístup implementuje i [Beancount](https://github.com/beancount/beancount/), který je napsaný primárně v Pythonu (a částečně v C). Holt k některým věcem jsem potřeboval dospět, resp. být komfortní s prací v textovém editoru a v příkazové řádce.
+V rámci průzkumu jsem objevil [Plain Text Accounting (PTA)](https://plaintextaccounting.org/), což znamená ukládání účetních záznamů v textových souborech. Vedle již zmíněné aplikace _ledger_ (nebo [hledger](https://hledger.org/)) tento přístup implementuje i [Beancount](https://github.com/beancount/beancount/), který je napsaný v Pythonu (a částečně v C). Holt k některým věcem jsem potřeboval dospět, resp. být komfortní s prací v textovém editoru a v příkazové řádce.
 
-Není mojí ambicí v tomto článku poskytnout úvod do Beancountu (viz [dokumentace](https://beancount.github.io/docs/index.html)) ani do podvojného účetnictví (viz např. [tento detailní průvodce](https://beancount.github.io/docs/command_line_accounting_in_context.html)). Níže uvedu alespoň pár příkladů a ukázek jako malou ochutnávku.
+Není mojí ambicí v tomto článku poskytnout detailní úvod do Beancountu (viz [dokumentace](https://beancount.github.io/docs/index.html)) ani do podvojného účetnictví (viz např. [tento detailní průvodce](https://beancount.github.io/docs/command_line_accounting_in_context.html)). Níže uvedu alespoň pár příkladů jako malou ochutnávku.
 
 V případě zájmu je možné najít všechny příklady v následujícím repozitáři:
 
@@ -77,7 +77,7 @@ Níže následuje komentovaný příklad velmi jednoduché účetní knihy (angl
 ; Options (1)
 option "name_assets" "Majetek" (12)
 option "name_liabilities" "Zavazky" (13)
-option "name_equity" "Kapital" (14)
+option "name_equity" "Ciste-jmeni" (14)
 option "name_income" "Prijmy"
 option "name_expenses" "Vydaje"
 option "operating_currency" "CZK" (11)
@@ -86,7 +86,7 @@ option "operating_currency" "CZK" (11)
 2025-01-01 open Majetek:Banky:Easy-Bank:BU     CZK (3)
 2025-01-01 open Majetek:Banky:Easy-Bank:BU-EUR EUR (4)
 2025-01-01 open Majetek:Hotovost:Penezenka     CZK
-2025-01-01 open Kapital:Pocatecni-stav         CZK, EUR (5)
+2025-01-01 open Ciste-jmeni:Pocatecni-stav         CZK, EUR (5)
 2025-01-01 open Prijmy:Zamestnani:ABConsult    CZK
 2025-01-01 open Vydaje:Zakladni-potreby        CZK
   note: "jidlo, zakladni spotrebni zbozi a sluzby" (6)
@@ -96,7 +96,7 @@ option "operating_currency" "CZK" (11)
   Majetek:Banky:Easy-Bank:BU      50000 CZK
   Majetek:Banky:Easy-Bank:BU-EUR   2000 EUR
   Majetek:Hotovost:Penezenka        510 CZK
-  Kapital:Pocatecni-stav (8)
+  Ciste-jmeni:Pocatecni-stav (8)
 
 2025-01-02 * "Restaurace Koruna" "Obed" (9)
   transaction_id: "123456789" (10)
@@ -133,11 +133,46 @@ option "operating_currency" "CZK" (11)
 11. Měna preferovaná pro reporty. Vyžadováno nástrojem Fava. Viz další kapitola.
 12. Majetek, tedy to co vlastním.
 13. Závazky, tedy to co dlužím.
-14. Vlastní kapitál neboli čisté jmění. Automaticky vypočtený rozdíl mezi majetkem a závazky.
+14. Čisté jmění. Počítá se automaticky jako rozdíl mezi majetkem a závazky.
 
 !!! Poznámka
 
     Třebaže Beancount plně podporuje diakritiku, v praxi se mi osvědčilo ji nepoužívat. Píšu bez ní rychleji. Samozřejmě záleži na vkusu, resp. rozložení klávesnice.
+
+Kontrolu syntaxe a základních účetních pravidel provedeme pomocí příkazu `bean-check` (neměl by vypsat žádnou chybu):
+
+``` sh
+uv run bean-check ledger.beancount
+```
+
+Dalším užitečným příkazem je `bean-query`, který slouží k [dotazování pomocí jazyka podobnému SQL](https://beancount.github.io/docs/beancount_query_language.html):
+
+``` sh
+uv run bean-query ledger.beancount 'SELECT date, payee, narration, account, position WHERE account ~ "Majetek" AND date = 2025-01-02;'
+```
+
+```
+   date           payee        narr           account            position
+----------  -----------------  ----  --------------------------  --------
+2025-01-02  Restaurace Koruna  Obed  Majetek:Banky:Easy-Bank:BU  -200 CZK
+```
+
+``` sh
+uv run bean-query ledger.beancount 'balances'
+```
+
+```
+           account                 SUM((position))
+------------------------------  ---------------------
+Majetek:Banky:Easy-Bank:BU       89800 CZK
+Majetek:Banky:Easy-Bank:BU-EUR               2000 EUR
+Majetek:Hotovost:Penezenka        4510 CZK
+Kapital:Pocatecni-stav          -50510 CZK  -2000 EUR
+Prijmy:Zamestnani:ABConsult     -50000 CZK
+Vydaje:Zakladni-potreby           6200 CZK
+```
+
+K běžnému prohlížení účetní knihy je ale zpravidla jednodužší použít GUI, viz následující kapitola.
 
 ### Grafické uživatelské rozhraní Fava
 
@@ -147,7 +182,7 @@ Výše uvedenou knihu lze prohlížet a editovat pomocí grafického uživatelsk
 uv run fava ledger.beancount
 ```
 
-Aplikace běží jako server dostupný na adrese `http://127.0.0.1:5000` (adresa serveru by se měla objevit ve výstupu příkazu).
+Aplikace běží jako lokální server dostupný na adrese `http://127.0.0.1:5000` (adresa serveru by se měla objevit ve výstupu příkazu).
 
 Níže přidávám několik komentovaných screenshotů:
 
@@ -156,7 +191,7 @@ Níže přidávám několik komentovaných screenshotů:
 Přehled příjmů a výdajů
 ///
 
-Obrázek výše: Kvůli zachování účetních principů vychází kladné příjmy jako záporné číslo, což je ze začátku dost neintuitivní. Jednou z možných pomůcek je představa, že to jsou peníze, které někomu jinému ubyly.
+Obrázek výše: Kvůli zachování účetních principů vychází kladné příjmy jako záporné číslo, což může být ze začátku matoucí. Jednou z možných pomůcek je představa, že to jsou peníze, které někomu jinému ubyly.
 
 ![Fava screenshot](../assets/images/fava-2.png)
 /// caption
@@ -170,7 +205,7 @@ Obrázek výše: Namísto anglických označení Assets, Liabilities a Equity po
 Transakční žurnál
 ///
 
-Obrázek výše: Všechny transakce, resp. direktivy, jsou přehledně uvedeny v žurnálu. V žurnálu se dá filtrovat, ať už se jedná o typ direktivy, časové období, účet, tag nebo třeba protistranu (Payee).
+Obrázek výše: Všechny transakce a další direktivy jsou přehledně uvedeny v žurnálu. V žurnálu se dá filtrovat, ať už se jedná o typ direktivy, časové období, účet, tag nebo třeba protistranu (Payee).
 
 ![Fava screenshot](../assets/images/fava-3.png)
 /// caption
@@ -184,11 +219,11 @@ Obrázek výše: Po klikutí na název účtu se zobrazí transakce spojené s d
 Vestavěný editor transakcí
 ///
 
-Obrázek výše: Po kliknutí na datum transakce je možné transakci editovat.
+Obrázek výše: Po kliknutí na datum transakce je možné transakci editovat přímo ve webovém rozhraní.
 
 !!! Poznámka
 
-    Pro zájemce vytvořili správci aplikace Fava i [interaktivní demo](https://fava.pythonanywhere.com) s komplexní účetní knihou.
+    Pro zájemce vytvořili správci aplikace Fava [interaktivní demo](https://fava.pythonanywhere.com) s komplexní účetní knihou.
 
 ### Volání z Pythonu
 
@@ -246,7 +281,7 @@ Transaction(
             meta={'filename': '/home/petr/tmp/beancount-examples/ledger.beancount', 'lineno': 22}
         ),
         Posting(
-            account='Kapital:Pocatecni-stav',
+            account='Ciste-jmeni:Pocatecni-stav',
             units=-50510 CZK,
             cost=None,
             price=None,
@@ -266,7 +301,7 @@ Transaction(
             meta={'filename': '/home/petr/tmp/beancount-examples/ledger.beancount', 'lineno': 21}
         ),
         Posting(
-            account='Kapital:Pocatecni-stav',
+            account='Ciste-jmeni:Pocatecni-stav',
             units=-2000 EUR,
             cost=None,
             price=None,
@@ -337,67 +372,65 @@ uv run python3 write_transaction.py
   Majetek:Hotovost:Penezenka   1000 CZK
 ```
 
-Transakce nemusí být nutně validní. To je výhoda v případě, že potřebuji vytvořit transakci, pro kterou nemám kompletní informace a budu ji manuálně doplňovat. Případně lze transakci označit pomocí `FLAG_WARNING` namísto `FLAG_OK` v případech, kdy je transakce validní, ale stejně bude potřebovat další kontrolu.
-
-Svého času jsem se rozhodl napsat [Beanclerk](https://github.com/peberanek/beanclerk) (framework pro import transakcí prostřednictvím API). Řadu věcí by určitě šlo udělat lépe, nicméně funkci spolehlivě plní, takže ho uvádím jako studijní příklad.
+Není nutné, aby transakce byla validní. To je výhoda v případě, že potřebuji vytvořit transakci, pro kterou nemám kompletní informace a budu ji manuálně doplňovat. Případně lze transakci označit pomocí `FLAG_WARNING` namísto `FLAG_OK` v případech, kdy transakce validní je, ale stejně bude potřebovat dodatečnou kontrolu.
 
 ### Výhody a nevýhody
 
 Zásadní výhodou Beancountu je pro mě flexibilita:
 
-* jde používat s dalšími příkazy jako `git`, `grep` nebo `sed`,
+* nad účetními knihami jde volat standardní unixové příkazy jako `grep` nebo `sed`, a zároveň jdou verzovat např. pomocí Gitu,
 * vedle vestavěných příkazů jako `bean-check` (validace účetní knihy) jde doinstalovat další pomocné aplikace jako již zmíněná Fava, [beangulp](https://github.com/beancount/beangulp) (framework pro importování transakcí) nebo [pricehist](https://gitlab.com/chrisberkhout/pricehist) (importování směnných kurzů a cen aktiv).
-* díky podpoře pro prakticky jakékoliv aktivum (cizí měny, kryptoměny, akcie apod.) a možnosti zaznamenávat nákupní ceny (Cost basis) jde použít pro obchodování a daňové účely,
+* díky podpoře pro prakticky jakékoliv aktivum (cizí měny, kryptoměny, akcie, nemovitosti apod.) a možnosti zaznamenávat nákupní ceny (Cost basis) jde použít pro obchodování a daňové účely,
 * funkcionalitu jde libovolně rozšiřovat pomocí [systému pluginů](https://beancount.github.io/docs/beancount_scripting_plugins.html) nebo voláním Beancountu jako knihovny Pythonu (viz [API reference](https://beancount.github.io/docs/api_reference/index.html)),
 * už dříve jsem psal, že [soubor, resp. data jsou důležitější než aplikace](../posts/soubor-je-vic-nez-aplikace.md), a Beancount tuto filozofii naplňuje,
-* vzhledem k tomu, že účetní kniha je textový dokument, nabízí se zde zpracování pomocí velkých jazykových modelů (ideálně lokálně běžících - pro větší soukromí). Jak známo, jazykové modely nebývají přesné ve výpočtech, ale zároveň mohou volat nástroje (např. udělat dotaz pomocí [Beanquery MCP](https://github.com/vanto/beanquery-mcp)). V praxi jsem zatím neměl potřebu to využít, takže uvidíme.
+* vzhledem k tomu, že účetní kniha je textový dokument, nabízí se zde zpracování pomocí velkých jazykových modelů (ideálně lokálně běžících - pro větší soukromí). Jak známo, jazykové modely nebývají přesné ve výpočtech, zároveň ale dokáží volat nástroje (např. udělat dotaz pomocí [Beanquery MCP](https://github.com/vanto/beanquery-mcp)). V praxi jsem zatím neměl potřebu to využít, takže uvidíme.
 
 Dále oceňuji praktická rozšíření pro různé textové editory (např. pro [VSCode](https://marketplace.visualstudio.com/items?itemName=Lencerf.beancount)) a komunitní podporu formou [mailing listu (Google group)](https://groups.google.com/g/beancount).
 
-Co se týče dokumentace, ta je na jednu stranu velmi propracovaná, ale zároveň nepříliš udržovaná. Problém je v tom, že většina informací platí pro starší verzi Beancountu (v2), která má oproti nejnovější verzi (v3) několik podstatných rozdílů, což bývá pro začátečníky matoucí.
+Co se týče dokumentace, ta je na jednu stranu velmi propracovaná, ale zároveň nepříliš udržovaná. Problém je v tom, že většina informací platí pro starší verzi Beancountu (v2), která má oproti nejnovější verzi (v3) několik rozdílů, což bývá pro začátečníky matoucí.
 
 Tím se dostávám i ke dvěma hlavním nevýhodám:
 
 * autor Beancountu - Martin Blais - nemá v posledních letech na vývoj a udržování moc času, takže opravy a nové funkce přicházejí spíše sporadicky,
-* při velkém množství záznamů může být zpracování citelně pomalé. Ve staré účetní knize jsem měl okolo 8 tisíc transakcí, řadu z nich s nákupní cenou aktiva, a výpočty trvaly i několik vteřin, což začalo zpomalovat kontrolu v rozšíření pro VSCode (viz výše). Před rokem a půl jsem proto založil novou účetní knihu (od 1.1.2024, k dnešnímu dni cca 1400 transakcí) a rychlost je opět velmi svižná.
+* při velkém množství záznamů může být zpracování pomalé. Ve staré účetní knize jsem měl okolo 8 tisíc transakcí, řadu z nich s nákupní cenou aktiva, a výpočty trvaly i několik vteřin, což začalo zpomalovat rozšíření pro VSCode (viz výše). Před rokem a půl jsem proto založil novou účetní knihu (od 1.1.2024, k dnešnímu dni cca 1400 transakcí) a rychlost je opět velmi svižná.
 
 ## Faktory udržitelnosti
 
-Vedení osobního účetnictví není snadné a vyžaduje čas a úsilí. Navíc, naše finanční realita a některé účetní technikálie mohou být frustrující. Ze začátku jsem se na to i několikrát vykašlal, abych se ke svému "finančnímu přehledu" zase dříve či později vrátil. Protože mít přehled se mi v průběhu času vyplácí víc, než ho nemít. Níže uvádím 3 faktory, které vnímám jako zásadní pro dlouhodobou udržitelnost celé téhle aktivity:
+Vedení osobního účetnictví vyžaduje čas a úsilí. Navíc, naše finanční realita a některé účetní technikálie mohou být frustrující. Ze začátku jsem se na to i několikrát vykašlal, abych se ke svému "finančnímu přehledu" zase dříve či později vrátil. Protože mít přehled se mi v průběhu času vyplácí víc, než ho nemít. Níže uvádím 3 faktory, které vnímám jako zásadní pro dlouhodobou udržitelnost celé téhle aktivity.
 
 ### Jednoduchost
 
-> Simplicity changes behavior.  
--- [BJ Fogg](https://www.bjfogg.com/)
+Začít se dá třeba jen s tužkou, papírem a otázkou "Kolik mi každý měsíc zbyde? Kam vlastně moje peníze tečou?" nebo "Kolik můžu reálně investovat?". Člověk postupně začne zjišťovat, kolik peněz utrácí úplně zbytečně, a přirozeně se začnou rodit nápady na optimalizaci. Na nějakou dobu nejspíš vystačí jen Excel, resp. Calc.
 
-Samotné udržování účetních záznamů je nuda a proto jím chci trávit co nejméně času. Dříve jsem měl tendenci zaznamenávat přiliš mnoho detailů, což bylo často zbytečné. Např. každou provedenou transakci, rozepisovat některé položky:
+Aktualizace a údržba účetních knih není moc velká zábava a proto tím chci trávit co nejméně času. V praxi osvědčilo účtovat jen to podstatné a neztrácet čas příliš velkými detaily.
 
-- souhrn Zakladni potřeby
-- jidlo v hotovosti - jednou za cas souhrn
-- drazsi veci si poznacim, kvuli zarucni dobe - uz se hodilo - je jednoduzsi vyhledat v ucetni knize nez hledat uctenku
+Např. výdaje za jídlo (většinou) platím v hotovosti, jednou za čas spočítám rozdíl a ten zaúčtuji. Překvapivě tak zůstane velmi málo transakcí, které je potřeba zaúčtovat manuálně, zvlášť v kombinaci s automatizovaným importem dat z banky. (Doporučení od autora Beancountu. Díky!)
 
-Začít se dá třeba jen s tužkou, papírem a otázkou "Jak to, že mi každý měsíc zbyde jen tolik a tolik? (Pokud vůbec něco)", "Kolik můžu a chci investovat?" nebo "Kam vlastně moje peníze tečou?". Člověk postupně začne zjišťovat, kolik peněz utrácí úplně zbytečně, a přirozeně se začnou rodit nápady na optimalizaci. Na nějakou dobu nejspíš vystačí jen Excel, resp. Calc.
+Také používám jeden souhrnný účet `Výdaje:Základní-potřeby`, kam spadají jak výdaje za jídlo, tak i další spotřební zboží a služby jako drogerie, hygiena, holič apod. Typicky jde o větší nákupy v supermarketu, které se nevyplatí rozepisovat. Opět, co můžu - včetně služeb, platím v hotovosti a vyhnu se tak zápisu nepodstatných transakcí.
 
-Porozumět účetním pojmům jako aktiva, pasiva, náklady a výnosy může být složité. Mentálně jednodužší mi přijde používat označení jako majetek (to co mám), závazky (to co dlužím), kapitál (nebo též _čisté jmění_; rozdíl mezi majetkem a závazky), příjmy a výdaje.
-
-Také se mi v praxi osvědčilo účtovat jen to podstatné a neztrácet čas příliš velkými detaily. Např. výdaje za jídlo (většinou) platím v hotovosti, jednou za čas spočítám rozdíl a ten zaúčtuji. Překvapivě tak zůstane velmi málo transakcí, které je potřeba zaúčtovat ručně, zvlášť v kombinaci s automatickým importem dat z banky. (Doporučení od autora Beancountu. Díky!)
+Co se naopak detailně zapisovat vyplácí, jsou nákupy dražších věcí se zárukou. Díky možnosti rychle ověřit datum nákupu jsem už několikrát věc včas reklamoval (resp. "nenechal to být") a ušetřil tak pěkný peníz.
 
 ### Pravidelnost
 
 Když se nám daří udržovat věci jednoduché, máme pak větší kapacitu dělat je pravidelně. Ze začátku mi hodně psychicky pomáhalo držet své peníze pod kontrolou, takže jsem si zapisoval transakce každý den ráno. Byl to takový rituál. Dnes už mi díky automatizaci stačí udělat si sezení jednou za týden. V tomhle jsem asi stále trochu extrém. Obecně mi přijde, že lidem stačí sezení jednou za měsíc.
 
-Pravidelnost je pro mě zdrojem klidu. Co nesnese odklad (máloco), to vyřeším hned a zbytek můžu pustit z hlavy. Buď mě na to upozorní notifikace (custom skript pro Beancount), nebo se k tomu dostanu při příštím sezení. Oproti finančnímu stresu před pádem na dno to je velká úleva.
+Pravidelnost je pro mě také zdrojem klidu. Co nesnese odklad (máloco), to vyřeším hned a zbytek můžu pustit z hlavy. Buď mě upozorní notifikace (custom skript pro Beancount), nebo se k tomu dostanu při příštím sezení. Oproti finančnímu stresu před pádem na dno to je velká úleva.
 
 ### Automatizace
 * Automatizace může být jednoduchá (Excel) i sofistikovaná (Beancount, Beangulp, stahování přes API, Beangrow apod.).
+* Automatizace umoznuje skalovat.
 * snizuje casove a mentalni naklady na udrzbu - podporuje jednoduchost a pravidelnost
 * automatizace usetri hodne mentalni namahy a predchazi chybam - klicova pro udrzitelnost
+* Fio banka API, Creditas API, Beanclerk
+
+Svého času jsem se rozhodl napsat [Beanclerk](https://github.com/peberanek/beanclerk) (framework pro import transakcí prostřednictvím API). Řadu věcí by určitě šlo udělat lépe, nicméně funkci spolehlivě plní, takže ho uvádím jako studijní příklad.
 
 ## shrnuti, ma to smysl? benefity pro me, co jsem se naucil
 * mam prehled, vetsi sebejistotu, financni rozhodnuti jsou planovana (prirozene)
 * pravidelnost, stabilni zaklady a navyky pro financni investovani
 * budovani rezervy - pravidelnost dela divy, pozitivni zkusenost -> zkusenost pro investovani?
 * data pro vypocet dani
+* Beancount je s velkou pravdepodobnosti jen "docasne" reseni. Jeden clovek na mailing listu si zapisuje transakce od roku 1964.
 * Co je osobni ucetnictvi?
     * prehled majetku a zavazku, prijmu a vydaju
     * pravidelna aktivita - byt v kontaktu a vsimavy ke svemu financnimu zivotu. Uvedomeni si svych financnich navyku. Odvaha nenechat se dal ojebavat.
