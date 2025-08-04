@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cat << EOF > "docs/posts/${1}.md"
+---
+date: $(date -I)
+draft: true
+---
+
+# ${1}
+EOF

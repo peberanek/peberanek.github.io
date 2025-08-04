@@ -11,9 +11,9 @@ _Tinkering with open-source software, including Linux, automation, generative AI
 _AI Methodologist_ (3/2024 - present)
 
 * Responsible for testing and deployment of [AI Sandbox](https://github.com/peberanek/ai-sandbox){:target="_blank"}
-* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html){:target="_blank"}
-* Initiated the university-wide working group on Generative AI
 * Collaborate with external partners on AI-related topics
+* Initiated the university-wide working group on Generative AI
+* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html){:target="_blank"}
 * Attend conferences and workshops to stay up to date with developments in the field
 
 ### Red Hat
