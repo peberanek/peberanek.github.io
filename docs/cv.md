@@ -2,7 +2,7 @@
 
 [beranek@duck.com](mailto:beranek@duck.com) | +420 608 057 106 | [Blog](https://peberanek.github.io/){:target="_blank"} | [GitHub](https://github.com/peberanek){:target="_blank"}
 
-_Tinkering with open-source software, including Linux, automation, generative AI and tools for personal finance._
+_Tinkering with open-source software, including Linux, Python, generative AI and tools for personal finance._
 
 ## Experience
 
@@ -10,7 +10,7 @@ _Tinkering with open-source software, including Linux, automation, generative AI
 
 _AI Methodologist_ (3/2024 - present)
 
-* Responsible for testing and deployment of [AI Sandbox](https://github.com/peberanek/ai-sandbox){:target="_blank"}
+* Responsible for development and testing of AI Sandbox
 * Collaborate with external partners on AI-related topics
 * Initiated the university-wide working group on Generative AI
 * Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html){:target="_blank"}
@@ -39,9 +39,9 @@ _Junior Software Quality Engineer_ (3/2018 - 10/2018)
 * Performed manual testing of TELCO applications
 * Created test analysis and coordinated manual testing of a mobile game
 
-### Various roles in administration and services
+### Other
 
-(2012 - 2017)
+_Various roles in administration and services_ (2012 - 2017)
 
 ## Professional Development
 
@@ -79,7 +79,7 @@ _Junior Software Quality Engineer_ (3/2018 - 10/2018)
 
 ## Interests & Activities
 
-* Kickbiking, walking, swimming
-* Reading and continuous learning
+* Therapeutic fitness, kickbiking, walking, swimming
+* Reading, blogging and continuous learning
 * Experimenting with mindfulness and the Tiny Habits method
 * Personal finance
