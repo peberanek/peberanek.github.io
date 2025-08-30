@@ -1,5 +1,6 @@
 ---
 date: 2025-08-26
+draft: true
 ---
 
 # Open source AI Sandbox: Detaily a zkušenosti
@@ -154,3 +155,25 @@ Vedle toho je třeba zajistit administrátory, kteří službu nasadí, budou ji
 V případě aplikace Open WebUI je možné se dohodnout s hlavním vývojářem na enterprise předplatném se servisní podporou (např. pomoc s řešením technických problémů a opravy zjištěných chyb). Podle poslední nabídky se však platí předplatné podle počtu uživatelů a citelně se tak zvednou náklady na provoz. Alternativou je zajistit vlastního vývojáře, který by dokázal podobnou podporu poskytovat.
 
 Aplikace LiteLLM nabízí některé funkce (např. Single Sign-On, správa uživatelů podle organizací a projektů nebo pokročilé bezpečnostní funkce) formou enterprise předplatného, které se může pohybovat v řádech stovek až tisíců dolarů měsíčně. V počáteční fázi provozu by nemělo být potřeba, nicméně může začít dávat smysl ve chvíli, když se služba začne hojně využívat. 
+
+## Analýza rizik
+
+### Kybernetická bezpečnost
+
+Vedle rizik typických pro veřejně dostupné webové služby je třeba počítat s riziky spojenými s používáním velkých jazykových modelů:
+
+* **Únik dat prostřednictvím Prompt Injection**: Velké jazykové modely jsou trénované následovat instrukce, díky čemuž jsou tak užitečné. Nicméně se ukazuje, že model vykoná jak instrukce zadané uživatelem, tak _i záškodné instrukce ukryté ve vstupních datech_ (např. na webové stránce nebo v textu, který má shrnout). Navzdory tomu, že se jedná o známou, a [aktivně zneužívanou zranitelnost](https://simonwillison.net/tags/exfiltration-attacks/), žádný z výrobců modelů nebyl dodnes schopen ji uspokojivě vyřešit. Administrátoři proto musejí být obeznámeni s tímto typem útoku, a vždy důkladně zvážit, zda daný nástroj dostupný modelům (nebo kombinace nástrojů) neumožňuje aktivní zneužití. Za zvážení také stojí, zda vůbec využívat [populární MCP protokol](https://simonwillison.net/2025/Apr/9/mcp-prompt-injection/), dokud nebudou jeho bezpečnostní nedostatky vyřešeny.
+* Únik dat prostřednictvím služby 3. strany:
+* generování škodlivého obsahu: uživatelský vstup spustí vygenerování škodlivého obsahu, záměrně (Jail Break, LLM grooming) nebo nezáměrně - lze mitigovat nasazením tzv. Guardrails, neboli automatické analýzy a filtrování vstupů a výstupů; využíváním pouze kvalitních ověřeným modelů
+
+### Soulad s platnou legislativou
+
+* AI Act
+    * používání modelů vysoce rizikovým způsobem - hodnocení výsledků studia, nábor zaměstnanců, lékařské rady
+* GDPR a ochrana osobních údajů - opět guardrails, NDA pro adminy
+* Ochrana autorských práv - ochrana vstupů: na vstupech se netrénuje, ochrana výstupů: ochranu nedokáží garantovat ani velké tech spol jako MS, slibuje pomoc při soudních sporech
+
+### Provozní rizika
+
+* škálování - musíme ověřit v praxi
+* pouze 1 hlavní vývojář Open WebUI - vždy jde vytvořit fork a pak udržovat samostatně, příp. přejít na alternativní software (LibreChat)
