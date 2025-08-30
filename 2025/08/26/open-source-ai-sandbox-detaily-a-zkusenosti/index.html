@@ -1,0 +1,928 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://peberanek.github.io/2025/08/26/open-source-ai-sandbox-detaily-a-zkusenosti/">
+      
+      
+        <link rel="prev" href="../../04/aspekty-osobniho-ucetnictvi/">
+      
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Open source AI Sandbox: Detaily a zkušenosti - Petr Beránek</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#open-source-ai-sandbox-detaily-a-zkusenosti" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Petr Beránek" class="md-header__button md-logo" aria-label="Petr Beránek" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Petr Beránek
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Open source AI Sandbox: Detaily a zkušenosti
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../cv/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Curriculum Vitae
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Petr Beránek" class="md-nav__button md-logo" aria-label="Petr Beránek" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Petr Beránek
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Archiv
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Archiv
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2023/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2023
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../cv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Curriculum Vitae
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-strucny-popis" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Stručný popis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-duvody-vzniku" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Důvody vzniku
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Důvody vzniku">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-bezpecnost" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Bezpečnost
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-financni-efektivita" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Finanční efektivita
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-flexibilita" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Flexibilita
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vyuziti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Využití
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Využití">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bezne-pouziti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Běžné použití
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vyuka" class="md-nav__link">
+    <span class="md-ellipsis">
+      Výuka
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vyzkum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Výzkum
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vyvoj" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vývoj
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technicky-popis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technický popis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technický popis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chatbot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai-api-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI API Gateway
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dalsi-sluzby" class="md-nav__link">
+    <span class="md-ellipsis">
+      Další služby
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odhadovana-nakladovost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Odhadovaná nákladovost
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Odhadovaná nákladovost">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bezny-provoz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Běžný provoz
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-predplatne-a-servisni-podpora" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enterprise předplatné a servisní podpora
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-08-26 00:00:00+00:00" class="md-ellipsis">August 26, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              9 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="open-source-ai-sandbox-detaily-a-zkusenosti">Open source AI Sandbox: Detaily a zkušenosti</h1>
+<p><em>Už dříve jsem psal <a href="../../../03/07/open-source-ai-sandbox/">o motivaci pro vytvoření open source AI Sandboxu</a>. Cílem tohoto článku je záměr zpřesnit a doplnit o dosavadní zkušenosti z implementace v univerzitním prostředí.</em></p>
+<h2 id="1-strucny-popis">1. Stručný popis</h2>
+<p>Open source AI Sandbox (dále jen <em>AI Sandbox</em>) je koncipován jako <strong>webová služba pro jednoduchý bezpečný přístup k modelům GenAI</strong> (generativní umělé inteligence). Služba se skládá z: </p>
+<ol>
+<li><strong>Chatbota</strong> pro běžné uživatele podobného ChatGPT, </li>
+<li><strong>AI API Gateway</strong> pro výzkumníky a vývojáře, umožňující volat a používat modely GenAI z jejich vlastního software. </li>
+</ol>
+<p>AI Sandbox je sestaven z populárních open source projektů. Díky tomu je auditovatelný, přizpůsobitelný a dostupný všem zájemcům o nasazení a spolupráci. Je inspirován podobnými službami v Česku i v zahraničí – např. <a href="https://docs.cerit.io/en/docs/web-apps/chat-ai">Chat AI</a> (CERIT-SC / Masarykova Univerzita), <a href="https://www.huit.harvard.edu/ai-sandbox">AI Sandbox</a> (Harvard University) nebo <a href="https://uit.stanford.edu/service/aiplayground">AI Playground</a> (Stanford University). </p>
+<figure>
+<p><img alt="Open WebUI screenshot" src="../../../../assets/images/open_webui.gif" /></p>
+<figcaption>
+<p>Grafické uživatelské rozhraní Chatbota (aplikace Open WebUI)</p>
+</figcaption>
+</figure>
+<p>Příklad volání modelu přes AI API Gateway:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">openai</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">client</span> <span class="o">=</span> <span class="n">openai</span><span class="o">.</span><span class="n">OpenAI</span><span class="p">(</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;API-KEY&quot;</span><span class="p">,</span> <span class="c1"># set API key</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://GATEWAY-URL:4000&quot;</span>  <span class="c1"># set Gateway URL</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4.1-2025-04-14&quot;</span><span class="p">,</span> <span class="c1"># set an available model</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="p">{</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;this is a test request, write a short poem&quot;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="p">}</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">]</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">)</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+</span></code></pre></div>
+<!-- more -->
+
+<h2 id="2-duvody-vzniku">2. Důvody vzniku</h2>
+<h3 id="21-bezpecnost">2.1 Bezpečnost</h3>
+<p>S rostoucí popularitou aplikace ChatGPT došlo ke zvýšenému zájmu veřejnosti i organizací o nástroje využívající modely GenAI. Uživatelé jsou vynalézaví, a v případě, že jim univerzita neposkytne přístup k bezpečné a zároveň dostatečně dobré verzi těchto nástrojů, začnou používat jejich snadno dostupné varianty pro pracovní a studijní účely. Jedním z rizik bezplatných, příp. i některých placených variant je, že veškerá vkládaná data (text, dokumenty, obrázky apod.) jsou ukládána na cizích serverech a používána k dalšímu trénování modelů. </p>
+<p><strong>Hrozí tedy, že univerzita ztratí kontrolu nad citlivými daty</strong> (osobní a přihlašovací údaje, výzkumná data, smlouvy, nepublikované články, finanční zprávy, lékařské snímky apod.) a vystavuje se tak bezpečnostním, právním a reputačním rizikům. Nedávno například Národní úřad pro kybernetickou bezpečnost vydal <a href="https://nukib.gov.cz/cs/infoservis/aktuality/2279-nukib-vydal-varovani-pred-nekterymi-produkty-spolecnosti-deepseek/">Varování před některými produkty společnosti DeepSeek</a> s hodnocením hrozby '<em>na úrovni "Vysoká", tedy jako pravděpodobná až velmi pravděpodobná.</em>'</p>
+<p>Cílem AI Sandboxu je poskytnout snadno dostupné, kontrolované a bezpečné prostředí, ve kterém nebudou vkládaná data používána k trénování modelů GenAI (ani jakkoliv jinak), a ukládána budou buď na serverech univerzity nebo některé důvěryhodné partnerské organizace. </p>
+<h3 id="22-financni-efektivita">2.2 Finanční efektivita</h3>
+<p>Investice do pořízení bezpečných a zároveň výkonných nástrojů může být finančně nákladná. Z dosavadních zkušeností vyplývá, že <strong>většina uživatelů využije jen zlomek z ceny běžného předplatného</strong>, a naopak někteří pokročilí uživatelé dříve či později narazí na limity v počtu dotazů za den nebo měsíc. Navíc méně než 1/3 uživatelů nástroje skutečně využívá.</p>
+<p>AI Sandbox umožňuje využívat jak modely GenAI běžící na vlastním hardware, tak volat placené modely 3. stran přes API, kde se zpravidla platí jen za vygenerované tokeny. Pro představu, u nejnovějšího modelu GPT-5 lze <strong>za 1 dolar vygenerovat přibližně 100 tísíc tokenů, což je cca 50 tisíc slov v češtině neboli 1 kratší román.</strong> Neaktivní uživatelé tokeny negenerují, tedy se za ně neplatí. Tím se nabízí možnost redukovat náklady na běžné uživatele a poskytnout vyšší limity uživatelům pokročilým. </p>
+<p>Pro výzkumníky a vývojáře je cílem nabídnout přístup k modelům GenAI přes jednotné API rozhraní. Uživatel nemusí řešit bezpečnost, nabíjení kreditu nebo administraci. V ideálním případě se jen domluví na požadovaných modelech, limitech a formě úhrady výdajů. Následně obdrží API klíč a může začít modely používat. </p>
+<h3 id="23-flexibilita">2.3 Flexibilita</h3>
+<p>Oblast GenAI se vyvíjí velmi dynamicky. Modely a služby, které byly ještě před rokem považovány za špičku, bývají dnes překonané nebo nabízené zdarma. Cílem AI Sandboxu je být maximálně flexibilní jak po stránce použitých komponent, tak po stránce napojení na široký výběr poskytovatelů včetně vlastního hardware. Tím se <strong>zmírňuje i riziko vendor lock-in neboli závislosti na službách a produktech konkrétního dodavatele</strong>.</p>
+<p>Díky tomu, že AI Sandbox je open-source software, použité komponenty lze auditovat a upravovat. Nutno podotknout, že AI Sandbox ve funkci Chatbota není v tuto chvíli kompletní náhradou za nejpokročilejší komerční aplikace jako ChatGPT, Claude nebo Gemini. Jejich výrobci budou pravděpodobně vždy o krok napřed. Na druhou stranu, řadu případů použití dokáže pokrýt a zároveň <strong>může být rozšířen a upraven na míru cílovým skupinám a univerzitnímu prostředí</strong>.</p>
+<h2 id="vyuziti">Využití</h2>
+<p>Následující text popisuje některé příklady využití, požadavky a problémy, se kterými jsem se za poslední rok a půl v univerzitním prostředí setkal. </p>
+<h3 id="bezne-pouziti">Běžné použití</h3>
+<p>V rámci pilotního testování se ukazuje, že AI Sandbox, resp. Chatbot spolehlivě provádí úkoly jako analýzu textu a obrázků, stylistické úpravy a překlady textů, brainstorming nebo generování jednoduchého programového kódu. Samozřejmě vždy záleží na kvalitě dostupných modelů a nástrojů se kterými mohou modely pracovat.</p>
+<p>Uživatelé také mohou vytvářet asistenty podobné GPTs v ChatGPT. Navíc mají možnost ladit pokročilé parametry chatu jako System Prompt, Temperature nebo Reasoning Effort, které v jiných chatbotech nebývají k dispozici a tím dosáhnout většího přizpůsobení výstupů. </p>
+<h3 id="vyuka">Výuka</h3>
+<p>Typickým problémem je absence jednotného prostředí pro výuku s využitím GenAI. Univerzity sice mohou mít k dispozici jednoduché chatboty jako Microsoft Copilot s bezpečnostními garancemi enterprise licence. V praxi se však ukazuje, že uživatelé jsou často nespokojeni s kvalitou výstupů nebo s omezenou funkcionalitou. <strong>Členové akademické obce jsou tak nuceni používat bezplatné verze nástrojů jako ChatGPT, příp. si je platit sami.</strong> Řada z nich je tím znevýhodněna, a ani u placených verzí pro osobní použití nemají jistotu, že vkládaná data nejsou dále vytěžována. </p>
+<p>Cílem AI Sandboxu je toto jednotné prostředí poskytnout, přičemž toto prostředí může být dále upraveno podle potřeb cílových skupin. <a href="https://www.youtube.com/watch?v=KNUFNTj-yMQ">Například se ukazuje</a>, že <strong>vytvoření pedadogicky užitečného AI tutora s ověřitelnými výsledky je netriviální problém mimo rámec běžných chatbotů jako ChatGPT</strong>. Případné úpravy s sebou samozřejmě nesou náklady na vývoj a údržbu. Protože se však jedná o otevřený software, tuto činnost mohou provádět stávající vývojáři.</p>
+<h3 id="vyzkum">Výzkum</h3>
+<p>Podobně jako v případě výuky, problémem bývá <strong>absence bezpečného flexibilního přístupu pro potřeby výzkumu</strong>. Opakovaně se setkávám s návrhy na pořízení výkonných laptopů nebo serverů pro běh jazykových modelů lokálně. Výzkumníci tak činí v naději, že budou mít alespoň něco, a zároveň tyto modely poběží bezpečně na hardwaru pod jejich kontrolou. V praxi se však ukazuje, že tento hardware stačí jen na provoz méně výkonných modelů, které navíc bývají pomalé a pro češtinu zatím nepoužitelné. </p>
+<p>Teoreticky mohou výzkumníci získat přístup k výkonným modelům přes API poskytovatelů jako OpenAI, Anthropic nebo Google. V praxi jim ale striktní podmínky financování neumožňují tyto služby platit (např. není dovoleno nakoupit předplacený kredit), nebo nemají dostatečné bezpečnostní záruky pro vkládaná data, které zpravidla garantuje jen institucionální smlouva (např. pro služby Microsoft Azure nebo Google Cloud). </p>
+<p>Služba AI Sandbox, zejména AI API Gateway, nabízí výzkumníkům cestu jak generovat výstupy bezpečněji, rychleji, s minimální administrativní zátěží a za zlomek ceny nového hardware. </p>
+<h3 id="vyvoj">Vývoj</h3>
+<p>Jako perspektivní oblast pro GenAI se jeví asistence programátora/administrátora a generování programového kódu. Třebaže <a href="https://news.mit.edu/2025/can-ai-really-code-study-maps-roadblocks-to-autonomous-software-engineering-0716">využití v reálných podmínkách je stále omezené</a>, <strong>už dnes mohou i neprogramátoři vytvářet užitečné testovací prototypy a jednoúčelové programy</strong> - např. interaktivní hru pro přednášku nebo cvičení.</p>
+<p>Univerzitám je sice zdarma dostupný např. GitHub Copilot, <a href="https://github.com/education">bezplatně ho mohou ale využívat jen studenti a akademici</a>. AI API Gateway nabízí přístup k pokročilým programovacím agentům jako <a href="https://docs.litellm.ai/docs/tutorials/openai_codex">OpenAI Codex CLI</a>, <a href="https://docs.litellm.ai/docs/tutorials/claude_responses_api">Claude Code</a> nebo <a href="https://docs.litellm.ai/docs/tutorials/litellm_gemini_cli">Gemini CLI</a> všem uživatelům a s případnými garancemi institucionální smlouvy. Opět se platí pouze za vygenerované tokeny, čili je možné <strong>průběžně testovat skutečnou efektivitu těchto nástrojů bez nutnosti závazků k měsíčnímu předplatnému.</strong></p>
+<h2 id="technicky-popis">Technický popis</h2>
+<p>AI Sandbox je sestaven z populárních open source projektů. Zároveň je k němu možné připojit další služby. Na obrázku níže je schéma znázorňující cílové skupiny, jednotlivé komponenty a některé vybrané služby.</p>
+<figure>
+<p><img alt="Schéma AI Sandbox" src="../../../../assets/images/ai_sandbox_diagram.png" /></p>
+<figcaption>
+<p>Schéma AI Sandboxu</p>
+</figcaption>
+</figure>
+<h3 id="chatbot">Chatbot</h3>
+<p>Jako uživatelské rozhraní chatbota slouží aplikace <a href="https://docs.openwebui.com/">Open WebUI</a>, kterou úspěšně nasadili a provozují např. v rámci <a href="https://docs.cerit.io/en/docs/web-apps/chat-ai">Chat AI</a> (CERIT-SC / Masarykova Univerzita) nebo je součástí enterprise platformy <a href="https://www.suse.com/products/ai/">Suse AI</a> (SUSE S.A.). Aplikace je podobná ChatGPT. Mimo chatování s různými modely nabízí také možnost vkládat soubory a budovat znalostní báze, generovat obrázky, vytvářet asistenty podobné GPTs v ChatGPT nebo analyzovat data.</p>
+<div class="admonition poznámka">
+<p class="admonition-title">Poznámka</p>
+<p>Alternativně, služby AI Sandbox (Harvard University) a AI Playground (Stanford University) používají aplikaci <a href="https://www.librechat.ai/docs">LibreChat</a>, která je v principu velmi podobná. V době, kdy jsem ji pro naše účely testoval, však postrádala administrátorské rozhraní a proto se stalo Open WebUI preferovanou variantou.</p>
+</div>
+<p>Správu provádí uživatelé s rolí administrátora. Běžní uživatelé mohou být rozděleni do skupin s detailní kontrolou uživatelských oprávnění. K přihlašování lze využít <a href="https://docs.openwebui.com/features/sso/">různé metody SSO</a>.</p>
+<p>Vedle vestavěných nástrojů (Tools) jako Web Search a Code Interpreter je aplikace rozšířitelná o nástroje vlastní nebo <a href="https://openwebui.com/tools">vytvořené komunitou</a>. V principu se jedná moduly programovacího jazyka Python, což přináší velkou flexibilitu při implementaci. Na druhou stranu je potřeba kód důsledně zkontrolovat a zabezpečit nejen před standardními kybernetickými hrozbami, ale také před <a href="https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/">nebezpečnou trojkombinací umožňující zneužít Prompt Injection</a>. Administrátor určuje, jaké nástroje mohou uživatelé používat, nebo je úplně zakázat. Totéž platí pro přidávání funkcionality pomocí <a href="https://docs.openwebui.com/features/plugin/">Functions &amp; Pipelines</a>. </p>
+<p>Aplikace sama o sobě neumí počítat a limitovat útratu u placených modelů. Proto Ústřední knihovna Univerzity Karlovy spolupráci s Katedrou informatiky a výpočetní techniky Západočeské univerzity v Plni vyvíjí doplněk (také open source), který tuto funkcionalitu zajistí. V omezené míře by tuto funkcionalitu měla umět poskytnout i <a href="https://docs.litellm.ai/docs/tutorials/openweb_ui">AI API Gateway, resp. LiteLLM</a>.</p>
+<p>Chatbot je v současné době nasazen na Univerzitě Karlově v pilotním provozu s vybranou skupinou uživatelů.</p>
+<h3 id="ai-api-gateway">AI API Gateway</h3>
+<p>Jako jednotné API rozhraní slouží aplikace <a href="https://docs.litellm.ai/">LiteLLM</a>, která je stejným způsobem použita např. v <a href="https://uit.stanford.edu/news/developers-can-now-try-out-ai-api-gateway">AI Playground</a> (Stanford University). Cílovou skupinou uživatelů jsou technicky zdatní výzkumníci nebo vývojáři, kteří chtějí nebo potřebují volat modely z vlastních programů pomocí API klíčů. Připojit se je možné na široké množství poskytovatelů včetně open weights modelů běžících např. na lokálních GPU serverech nebo v univerzitních datacentrech.</p>
+<p>Všechny modely jsou volány pomocí OpenAI-kompatibilního API rozhraní, díky čemuž není nutné řešit implementační rozdíly jednotlivých poskytovatelů. Aplikace umožňuje přidělovat API klíče jednotlivcům i týmům, umožňuje určit, jaké modely budou pro daný API klíč k dispozici a s jakými limity. Součástí je také analytika o využívání a útratě. </p>
+<p>Správu a přidělování API klíčů provádí uživatelé s rolí administrátora. Přihlašování probíhá pomocí jména a hesla. Přihlášení přes SSO je součástí enterprise předplatného, které pro základní provoz není potřeba, nicméně s velkým množstvím uživatelů a komplexními případy použití může být žádoucí.</p>
+<h3 id="dalsi-sluzby">Další služby</h3>
+<p>Pro hosting široce dostupných <strong>open weights modelů</strong> (např. Llama, Gemma, Mistral) se nabízí využít existující GPU servery nebo datacentra. Univerzita tak má jistotu, že vkládaná data neopouští hardware pod její kontrolou. V praxi se často používá inferenční server <a href="https://docs.vllm.ai/en/stable/">vLLM</a>, na kterém staví např. technologická společnost Red Hat (IBM). Modely běžící na těchto serverech je poté možné připojit k LiteLLM i přímo k Open WebUI přes OpenAI-kompatibilní rozhraní.</p>
+<p>Nutno podotknout, že pro běh těch nejvýkonnějších open weights modelů je potřeba také velmi výkonná infrastruktura, kterou disponuje např. <a href="https://www.e-infra.cz/">konsorcium e-INFRA CZ</a> (jeho součástí je i CESNET). Další možností je běh menších modelů dotrénovaných a optimalizovaných pro specifické oblasti. Praktickou použitelnost takových modelů však bude třeba ověřit v praxi.</p>
+<p>Pro využívání <strong>proprietárních ("closed source") modelů</strong> se nabízí využít některého z velkých cloudových poskytovatelů a jejich služeb jako Microsoft Azure nebo Google Cloud. Třebaže pak data opouští prostředí AI Sandboxu, tito poskytovatelé zpravidla nabízí vysoké garance stran bezpečnosti a soukromí. Pro data s přiměřenou rizikovostí to může být velmi vhodná varianta, zejména z pohledu rychlosti zpracování, ceny a případných slev.</p>
+<h2 id="odhadovana-nakladovost">Odhadovaná nákladovost</h2>
+<h3 id="bezny-provoz">Běžný provoz</h3>
+<p>Na základě zkušeností z provozu obdobné služby na Harvard University a z pilotního testování jsou odhadované náklady placených modelů na 100 uživatelů okolo 8 tisíc Kč měsíčně. (Zpravidla 1/3 uživatelů službu reálně využívá, tedy 33. Z nich 2/3 (tedy 22) utratí méně než 1 dolar měsíčně. Předpokládejme, že zbytek (11) je velmi aktivní a utratí 30 dolarů měsíčně. Tedy (22*1 + 11*30) * kurz dolaru vůči Koruně (23) = 8096 Kč.) </p>
+<p>Protože se jedná pouze o odhad, je potřeba u placených modelů nastavit přiměřené limity a definovat tak maximální útratu. U modelů běžícím na vlastním hardware je potřeba počítat s odpovídajícími provozními náklady, protože pro rychlou odezvu musí mít modely neustále dostupnou výpočetní paměť. Výdaje za používání AI API Gateway se mohou výrazně lišit případ od případu, a proto je težké je předem odhadovat. Opět je možné si stanovit limity.</p>
+<p>Vedle toho je třeba zajistit administrátory, kteří službu nasadí, budou ji aktualizovat a udržovat, poskytnou uživatelskou podporu a budou nasazovat a testovat nové funkce.</p>
+<h3 id="enterprise-predplatne-a-servisni-podpora">Enterprise předplatné a servisní podpora</h3>
+<p>V případě aplikace Open WebUI je možné se dohodnout s hlavním vývojářem na enterprise předplatném se servisní podporou (např. pomoc s řešením technických problémů a opravy zjištěných chyb). Podle poslední nabídky se však platí předplatné podle počtu uživatelů a citelně se tak zvednou náklady na provoz. Alternativou je zajistit vlastního vývojáře, který by dokázal podobnou podporu poskytovat.</p>
+<p>Aplikace LiteLLM nabízí některé funkce (např. Single Sign-On, správa uživatelů podle organizací a projektů nebo pokročilé bezpečnostní funkce) formou enterprise předplatného, které se může pohybovat v řádech stovek až tisíců dolarů měsíčně. V počáteční fázi provozu by nemělo být potřeba, nicméně může začít dávat smysl ve chvíli, když se služba začne hojně využívat. </p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Petr Beránek
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "content.code.copy", "content.code.annotate", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
