@@ -1,5 +1,6 @@
 ---
 date: 2025-08-30
+draft: true
 ---
 
 # prof. Jiří Horáček o stavu duševního zdraví v České republice
