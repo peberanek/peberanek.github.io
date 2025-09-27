@@ -1,5 +1,9 @@
 ---
 date: 2025-09-27
+tags:
+  - ai
+  - ai-agents
+  - steve-jobs
 ---
 
 # AI a velká očekávání (2)

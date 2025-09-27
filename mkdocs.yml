@@ -43,10 +43,12 @@ plugins:
           percent_encode: false  # default
           normalize: 'NFD'  # strip accents
       pagination_per_page: 15
+  - tags
 
 nav:
   - Blog:
     - Home: index.md
+    - Tags: tags.md
   - Curriculum Vitae: cv.md
 
 markdown_extensions:
