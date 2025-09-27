@@ -1,5 +1,16 @@
 ---
 date: 2025-07-28
+tags:
+  - personal-finance
+  - accounting
+  - automation
+  - open-source
+  - python
+  - gnucash
+  - beancount
+  - ledger
+  - fava
+  - martin-blais
 ---
 
 # Osobní účetnictví: Má to smysl?
