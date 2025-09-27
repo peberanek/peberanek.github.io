@@ -36,7 +36,6 @@ plugins:
   - blog:
       blog_toc: true
       blog_dir: .
-      archive_name: Archiv
       post_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower  # default
