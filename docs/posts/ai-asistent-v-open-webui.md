@@ -11,7 +11,7 @@ tags:
   - claude-code
 ---
 
-# Volání nástrojů v Open WebUI
+# AI asistent v Open WebUI
 
 Množství příspěvků na mém blogu utěšeně roste a začíná dávat smysl je seskupovat pomocí tagů. Zároveň si říkám, že vymýšlení tagů je přesně úkol pro nějaký jazykový model: předhodit mu text článku a nechat si tagy vygenerovat, alespoň jako návrh. Z pohledu konzistentnosti by bylo zároveň dobré modelu poskytnout i seznam již existujících tagů, aby se jich držel a negeneroval nové varianty téhož (např. `ai-tutor`, `ai-tutors`, `ai-tutoring` apod.).
 
@@ -179,7 +179,7 @@ Can you spot any security issues with the code you just generated?
   - Better error handling for oversized responses
 ```
 
-Opravený kód viz níže. (Extrakce tagů pomocí regexu namísto parsování HTML je k diskusi, nicméně z tuto chvíli je to za mě použitelné řešení).
+Opravený kód viz níže. (O řadě implementačních detailů by se jistě dalo polemizovat, nicméně z tuto chvíli je to za mě použitelné řešení).
 
 ``` py
     def get_blog_tags(self) -> str:
@@ -216,6 +216,8 @@ Opravený kód viz níže. (Extrakce tagů pomocí regexu namísto parsování H
             return f"Error fetching blog tags: {str(e)}"
 ```
 
+(Jak už jsem psal dříve v souvislosti s [měnící se rolí vývojáře](../posts/menici-se-role-vyvojare.md), na vytváření prototypů jsou podobní agenti zajímavou pomůckou, ale k psaní produkčního kódu mají zatím daleko.)
+
 Jakmile máme v kartě _Tools_ nástroj vytvořený, s příslušným zdrojovým kódem, je potřeba ho zaškrtnou v dialogu asistenta/modelu a tím mu ho automaticky zpřístupnit. Je také je nutné otevřít nový chat. Ve starých zůstane, zdá se, nástroj nepřístupný.
 
-Vygenerovaný seznam tagů není zpravidla dokonalý a stále slouží spíš jako návrh než "copy-paste" řešení. I ta je ale vytvořený asistent zajímavou a praktickou ukázkou.
+Vygenerovaný seznam tagů není zpravidla dokonalý a stále slouží spíš jako návrh než "copy-paste" řešení. I tak je ale vytvořený asistent užitečnou praktickou ukázkou.
