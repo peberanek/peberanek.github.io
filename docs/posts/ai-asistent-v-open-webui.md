@@ -216,7 +216,7 @@ Opravený kód viz níže. (O řadě implementačních detailů by se jistě dal
             return f"Error fetching blog tags: {str(e)}"
 ```
 
-(Jak už jsem psal dříve v souvislosti s [měnící se rolí vývojáře](../posts/menici-se-role-vyvojare.md), na vytváření prototypů jsou podobní agenti zajímavou pomůckou, ale k psaní produkčního kódu mají zatím daleko.)
+(Jak už jsem psal dříve v souvislosti s [měnící se rolí vývojáře](../posts/menici-se-role-vyvojare.md), na vytváření prototypů jsou podobní agenti zajímavou pomůckou, ale k plně autonomnímu psaní produkčního kódu mají zatím daleko.)
 
 Jakmile máme v kartě _Tools_ nástroj vytvořený, s příslušným zdrojovým kódem, je potřeba ho zaškrtnou v dialogu asistenta/modelu a tím mu ho automaticky zpřístupnit. Je také je nutné otevřít nový chat. Ve starých zůstane, zdá se, nástroj nepřístupný.
 
