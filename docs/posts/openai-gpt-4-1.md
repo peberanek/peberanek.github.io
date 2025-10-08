@@ -1,5 +1,9 @@
 ---
 date: 2025-04-15
+tags:
+  - ai
+  - generative-ai
+  - openai
 ---
 
 # OpenAI GPT-4.1

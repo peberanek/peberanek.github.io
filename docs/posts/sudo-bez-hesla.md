@@ -1,5 +1,12 @@
 ---
 date: 2025-03-20
+tags:
+  - ai
+  - generative-ai
+  - ai-assistants
+  - claude
+  - linux
+  - automation
 ---
 
 # `sudo` bez hesla

@@ -1,5 +1,11 @@
 ---
 date: 2025-03-05
+tags:
+  - ai
+  - ai-assistants
+  - generative-ai
+  - ollama
+  - open-source
 ---
 
 # `llm`

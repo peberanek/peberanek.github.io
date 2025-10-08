@@ -1,5 +1,14 @@
 ---
 date: 2025-04-02
+tags:
+  - ai
+  - generative-ai
+  - ai-agents
+  - open-webui
+  - model-context-protocol
+  - open-source
+  - simon-willison
+  - software-development
 ---
 
 # Model Context Protocol (MCP)

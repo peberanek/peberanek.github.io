@@ -1,5 +1,10 @@
 ---
 date: 2025-06-28
+tags:
+  - blogging
+  - python
+  - open-source
+  - automation
 ---
 
 # Upgrade blogu pomocí Material for MkDocs

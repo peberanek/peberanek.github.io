@@ -1,5 +1,12 @@
 ---
 date: 2025-03-03
+tags:
+  - obsidian
+  - beancount
+  - open-source
+  - andrej-karpathy
+  - steph-ango
+  - software-development
 ---
 
 # Soubor je víc než aplikace

@@ -2,6 +2,15 @@
 date:
   created: 2025-06-23
   updated: 2025-06-30
+tags:
+  - ai
+  - generative-ai
+  - simon-willison
+  - kent-beck
+  - armin-ronacher
+  - vibe-coding
+  - software-development
+  - intelligence-augmentation
 ---
 
 # Měnící se role vývojáře

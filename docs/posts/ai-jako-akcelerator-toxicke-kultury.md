@@ -1,5 +1,10 @@
 ---
 date: 2025-03-08
+tags:
+  - ai
+  - ai-risks
+  - social-media
+  - jonathan-haidt
 ---
 
 # AI jako akcelerátor toxické kultury
