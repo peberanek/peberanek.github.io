@@ -2,7 +2,7 @@
 date: 2025-06-11
 tags:
   - ai
-  - ai-risks
+  - ai-ethics
   - generative-ai
   - intelligence-augmentation
   - creativity
