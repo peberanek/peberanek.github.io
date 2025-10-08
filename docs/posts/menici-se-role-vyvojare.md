@@ -6,8 +6,6 @@ tags:
   - ai
   - generative-ai
   - simon-willison
-  - kent-beck
-  - armin-ronacher
   - vibe-coding
   - software-development
   - intelligence-augmentation

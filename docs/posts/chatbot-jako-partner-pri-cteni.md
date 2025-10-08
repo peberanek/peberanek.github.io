@@ -7,7 +7,6 @@ tags:
   - andrej-karpathy
   - claude
   - generative-ai
-  - benjamin-graham
   - mr-market
   - intelligence-augmentation
 ---

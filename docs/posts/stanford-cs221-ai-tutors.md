@@ -5,7 +5,6 @@ tags:
   - generative-ai
   - ai-assistants
   - chatbots
-  - stanford-university
 ---
 
 # Stanford CS221 AI tutoring

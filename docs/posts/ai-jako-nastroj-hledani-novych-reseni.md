@@ -4,9 +4,7 @@ tags:
   - ai
   - ai-agents
   - reinforcement-learning
-  - alphago
   - andrej-karpathy
-  - lee-sedol
   - intelligence-augmentation
 ---
 

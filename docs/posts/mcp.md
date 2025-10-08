@@ -5,7 +5,6 @@ tags:
   - generative-ai
   - ai-agents
   - open-webui
-  - model-context-protocol
   - open-source
   - simon-willison
   - software-development

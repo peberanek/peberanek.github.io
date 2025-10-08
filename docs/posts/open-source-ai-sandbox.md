@@ -8,9 +8,6 @@ tags:
   - chatbots
   - open-source
   - open-webui
-  - harvard-university
-  - charles-university
-  - palacky-univerzity-olomouc
 ---
 
 # Open-source AI Sandbox

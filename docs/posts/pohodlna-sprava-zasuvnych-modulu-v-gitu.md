@@ -3,12 +3,9 @@ date:
   created: 2023-05-31
   updated: 2025-07-05
 tags:
-  - git
-  - pre-commit
   - automation
   - python
   - open-source
-  - pavel-herout
   - software-development
 ---
 
