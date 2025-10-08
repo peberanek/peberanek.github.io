@@ -9,6 +9,7 @@ tags:
   - vibe-coding
   - software-development
   - intelligence-augmentation
+  - creativity
 ---
 
 # Měnící se role vývojáře

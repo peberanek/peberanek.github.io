@@ -5,6 +5,7 @@ tags:
   - python
   - open-source
   - automation
+  - creativity
 ---
 
 # Upgrade blogu pomocí Material for MkDocs

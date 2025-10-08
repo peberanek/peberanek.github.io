@@ -9,6 +9,7 @@ tags:
   - generative-ai
   - mr-market
   - intelligence-augmentation
+  - creativity
 ---
 
 # Chatbot jako partner při čtení

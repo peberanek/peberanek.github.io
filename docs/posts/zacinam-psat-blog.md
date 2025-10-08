@@ -3,6 +3,7 @@ date: 2025-02-26
 tags:
   - blogging
   - simon-willison
+  - creativity
 ---
 
 # Začínám psát blog
