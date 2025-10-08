@@ -1,5 +1,9 @@
 ---
 date: 2025-06-07
+tags:
+  - ai
+  - generative-ai
+  - open-source
 ---
 
 # Open Weights vs Open Source AI

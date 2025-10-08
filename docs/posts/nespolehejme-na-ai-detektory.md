@@ -1,5 +1,10 @@
 ---
 date: 2025-06-11
+tags:
+  - ai
+  - ai-risks
+  - generative-ai
+  - intelligence-augmentation
 ---
 
 # Nespoléhejme na "AI detektory"

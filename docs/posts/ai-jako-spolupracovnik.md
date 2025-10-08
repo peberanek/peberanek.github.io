@@ -1,5 +1,10 @@
 ---
 date: 2025-04-14
+tags:
+  - ai
+  - generative-ai
+  - ethan-mollick
+  - intelligence-augmentation
 ---
 
 # AI jako spolupracovník

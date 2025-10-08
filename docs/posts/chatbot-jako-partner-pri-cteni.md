@@ -1,5 +1,15 @@
 ---
 date: 2025-06-13
+tags:
+  - ai
+  - generative-ai
+  - chatbots
+  - andrej-karpathy
+  - claude
+  - generative-ai
+  - benjamin-graham
+  - mr-market
+  - intelligence-augmentation
 ---
 
 # Chatbot jako partner při čtení

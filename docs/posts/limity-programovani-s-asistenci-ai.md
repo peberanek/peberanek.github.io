@@ -1,5 +1,11 @@
 ---
 date: 2025-06-29
+tags:
+  - ai
+  - generative-ai
+  - software-development
+  - jon-gjengset
+  - intelligence-augmentation
 ---
 
 # Limity programování s asistencí AI

@@ -1,5 +1,12 @@
 ---
 date: 2025-06-14
+tags:
+  - ai
+  - generative-ai
+  - ai-agents
+  - douwe-kiela
+  - retrieval-augmented-generation
+  - software-development
 ---
 
 # Systém je důležitější než model

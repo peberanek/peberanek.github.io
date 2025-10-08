@@ -1,5 +1,9 @@
 ---
 date: 2025-04-05
+tags:
+  - ferdium
+  - open-source
+  - chatbots
 ---
 
 # Různí chatboti v jedné aplikaci

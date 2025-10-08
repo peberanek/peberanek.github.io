@@ -1,5 +1,10 @@
 ---
 date: 2025-05-02
+tags:
+  - ai
+  - generative-ai
+  - lm-arena
+  - mark-zuckerberg
 ---
 
 # Mark Zuckerberg o Chatbot Aréně

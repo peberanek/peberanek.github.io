@@ -1,5 +1,8 @@
 ---
 date: 2025-03-09
+tags:
+  - roy-amara
+  - ai-risks
 ---
 
 # Amarův zákon

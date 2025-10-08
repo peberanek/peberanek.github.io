@@ -1,5 +1,16 @@
 ---
 date: 2025-03-07
+tags:
+  - ai
+  - generative-ai
+  - ai-sandbox
+  - ai-risks
+  - chatbots
+  - open-source
+  - open-webui
+  - harvard-university
+  - charles-university
+  - palacky-univerzity-olomouc
 ---
 
 # Open-source AI Sandbox

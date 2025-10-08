@@ -2,6 +2,12 @@
 date:
   created: 2025-04-20
   updated: 2025-06-08
+tags:
+  - ai
+  - generative-ai
+  - chatbots
+  - open-webui
+  - open-source
 ---
 
 # Open WebUI jako rozšíření pro Rancher Desktop

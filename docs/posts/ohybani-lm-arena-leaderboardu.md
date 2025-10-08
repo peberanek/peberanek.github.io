@@ -2,6 +2,13 @@
 date:
   created: 2025-04-08
   updated: 2025-04-12
+tags:
+  - ai
+  - generative-ai
+  - lm-arena
+  - andrej-karpathy
+  - meta
+  - llama
 ---
 
 # Ohýbání LM Arena Leaderboardu

@@ -1,5 +1,13 @@
 ---
 date: 2025-03-30
+tags:
+  - ai
+  - ai-agents
+  - reinforcement-learning
+  - alphago
+  - andrej-karpathy
+  - lee-sedol
+  - intelligence-augmentation
 ---
 
 # AI jako nástroj hledání nových řešení

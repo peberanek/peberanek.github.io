@@ -1,5 +1,7 @@
 ---
 date: 2025-08-04
+tags:
+  - personal-finance
 ---
 
 # Aspekty osobního účetnictvi

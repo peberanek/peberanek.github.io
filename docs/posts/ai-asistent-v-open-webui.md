@@ -2,6 +2,7 @@
 date: 2025-09-28
 tags:
   - ai
+  - generative-ai
   - ai-sandbox
   - ai-assistants
   - blogging
@@ -9,6 +10,7 @@ tags:
   - python
   - automation
   - claude-code
+  - chatbots
 ---
 
 # AI asistent v Open WebUI

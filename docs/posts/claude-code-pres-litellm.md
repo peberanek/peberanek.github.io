@@ -4,7 +4,8 @@ tags:
   - ai
   - ai-agents
   - claude-code
-  - litellm
+  - ai-sandbox
+  - generative-ai
   - fish-shell
 ---
 
