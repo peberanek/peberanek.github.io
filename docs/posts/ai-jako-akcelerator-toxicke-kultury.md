@@ -4,7 +4,6 @@ tags:
   - ai
   - ai-risks
   - social-media
-  - jonathan-haidt
 ---
 
 # AI jako akcelerátor toxické kultury

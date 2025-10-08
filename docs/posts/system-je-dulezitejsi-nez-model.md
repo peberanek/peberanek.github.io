@@ -4,7 +4,6 @@ tags:
   - ai
   - generative-ai
   - ai-agents
-  - douwe-kiela
   - retrieval-augmented-generation
   - software-development
 ---

@@ -7,8 +7,6 @@ tags:
   - generative-ai
   - lm-arena
   - andrej-karpathy
-  - meta
-  - llama
 ---
 
 # Ohýbání LM Arena Leaderboardu

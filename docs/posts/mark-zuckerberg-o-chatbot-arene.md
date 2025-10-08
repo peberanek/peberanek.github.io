@@ -4,7 +4,6 @@ tags:
   - ai
   - generative-ai
   - lm-arena
-  - mark-zuckerberg
 ---
 
 # Mark Zuckerberg o Chatbot Aréně

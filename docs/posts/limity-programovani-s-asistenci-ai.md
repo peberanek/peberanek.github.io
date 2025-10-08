@@ -4,7 +4,6 @@ tags:
   - ai
   - generative-ai
   - software-development
-  - jon-gjengset
   - intelligence-augmentation
 ---
 

@@ -1,7 +1,8 @@
 ---
 date: 2025-04-05
 tags:
-  - ferdium
+  - ai
+  - generative-ai
   - open-source
   - chatbots
 ---
