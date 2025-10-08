@@ -7,6 +7,7 @@ tags:
   - open-source
   - python
   - beancount
+  - creativity
 ---
 
 # Osobní účetnictví: Má to smysl?

@@ -5,6 +5,7 @@ tags:
   - ai-risks
   - generative-ai
   - intelligence-augmentation
+  - creativity
 ---
 
 # Nespoléhejme na "AI detektory"

@@ -6,6 +6,7 @@ tags:
   - reinforcement-learning
   - andrej-karpathy
   - intelligence-augmentation
+  - creativity
 ---
 
 # AI jako nástroj hledání nových řešení
