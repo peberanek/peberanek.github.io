@@ -1,6 +1,7 @@
 ---
-date: 2025-08-30
-draft: true
+date: 2025-10-10
+tags:
+  - social-media
 ---
 
 # prof. Jiří Horáček o stavu duševního zdraví v České republice
@@ -11,9 +12,7 @@ draft: true
 2. Žijeme převážně v digitálním světě, který má svá specifika a složitosti světa výrazně amplifikuje.
 3. Posledních 20 let jsme v geopolitické válce s Ruskem, které se snaží štěpit západní společnosti a tím posílit svoji pozici a vliv.
 
-K tomu dodávám, že všechny 3 body se mi zdají dost úzce propojené a navzájem se posilující. Vezměme si, jak se za poslední cca 20 let změnil přístup ke zprávám a zpravodajství. Dříve bývalo zvykem si dopoledne přečíst noviny, večer v osm se podívat zprávy, sem tam na nějaký související pořad, a to bylo vše. Dnes se zpravodajství vyznačuje neustálým proudem nových a nových informací, detailů, pitvání událostí "minutu po minutě", dostupných 24 hodin denně, 7 dní v týdnu v naší kapse. Dokonce nám můžou chodit notifikace, že se něco důležitého stalo a musíme to rychle zkontrolovat. A tím, jak je řada zpráv podbarvena strachem, strašením a pocitem ohrožení, máme přirozeně tendenci jim věnovat více a více pozornosti.
-
-Nevím, jak na menších městech, ale v Praze vnímám rostoucí zamoření veřejného prostoru stále agresivnější a vtíravější reklamou a maketingem. Reklamy a blikající obrazovky se staly běžnou součástí rušných stanic metra, nákupních center a větších ulic. Na některých trasách metra je blikající reklama už i na zdech tunelů. Lidé se neznají, nemluví spolu, neustále někam pospíchají, nestíhají, jsou ve stresu. To, že řada z nich utíká z tohoto prostředí do světa virtuální reality, nonstop zpráv a idealizovaných vztahů neustále při ruce v chytrém telefonu je vlastně zcela pochopitelné.
+Všechny 3 body se mi zdají dost propojené a navzájem se negativně posilují. Vezměme si, jak se za poslední cca 20 let změnil přístup ke zprávám a zpravodajství. Dříve bývalo zvykem si dopoledne přečíst noviny, večer v osm se podívat zprávy, sem tam na nějaký související pořad, a to bylo vše. Dnesní zpravodajství (někdo ho dokonce nazývá "infotainment", neboli zabavení se zprávami) se vyznačuje neustálým proudem nových a nových informací, detailů, pitvání událostí "minutu po minutě", dostupných 24 hodin denně, 7 dní v týdnu, ihned po ruce. Dokonce nám můžou chodit notifikace, že se něco důležitého stalo a musíme to rychle zkontrolovat. A tím, jak je řada zpráv podbarvena strachem, strašením a pocitem ohrožení, máme přirozeně tendenci jim věnovat více a více pozornosti.
 
 Prof. Horáček říká, že lidská psychika zatím není adaptovaná na život v digitálním světě, a proto je buď potřeba se přizpůsobit, nebo digitální svět regulovat.
 
@@ -21,7 +20,7 @@ Prof. Horáček říká, že lidská psychika zatím není adaptovaná na život
 
 <!-- more -->
 
-Jednou z věcí, co mi citelně pomohla je, že jsem začal na noc vypínat telefon a ráno mě budí dedikovaný budík. Jednoúčelové zařízení, co jen ukazuje čas a ve stanovenou chvíli pípá. Je to docela úleva vědět, že mě do rána nebude nikdo a nic otravovat. A zároveň, když je telefon vypnutí, sáhnout po něm a začít zírat na zprávy není snadné. Jednodužší je sáhnout po nějaké knížce, co už čeká vedle postele.
+Jednou z věcí, co mi citelně pomohla je, že jsem začal na noc vypínat telefon a ráno mě budí dedikovaný budík. Jednoúčelové zařízení, co jen ukazuje čas a ve stanovenou chvíli pípá. Je to docela úleva vědět, že mě do rána nebude nikdo a nic rušit. A zároveň, když je telefon vypnutý, není tak snadné po něm sáhnout začít konzumovat nějaký digitální obsah.
 
 Kdo je více ohrožený:
 
