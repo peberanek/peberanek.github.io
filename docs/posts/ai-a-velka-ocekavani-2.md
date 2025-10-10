@@ -3,6 +3,7 @@ date: 2025-09-27
 tags:
   - ai
   - ai-agents
+  - ai-predictions
 ---
 
 # AI a velká očekávání (2)
