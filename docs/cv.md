@@ -15,6 +15,7 @@ _AI Methodologist_ (3/2024 - present)
 * Initiated the university-wide working group on Generative AI
 * Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html){:target="_blank"}
 * Attend conferences and workshops to stay up to date with developments in the field
+* Facilitated a small team during a hackathon to develop AI tutors
 
 ### Red Hat
 
