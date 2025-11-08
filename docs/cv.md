@@ -10,7 +10,7 @@ _Tinkering with open-source software, including Linux, Python, generative AI and
 
 _AI Methodologist_ (3/2024 - present)
 
-* Responsible for development and testing of AI Sandbox
+* Responsible for development and testing of [AI Sandbox](https://github.com/peberanek/ai-sandbox)
 * Collaborate with external partners on AI-related topics
 * Initiated the university-wide working group on Generative AI
 * Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html){:target="_blank"}
@@ -73,10 +73,9 @@ _Various roles in administration and services_ (2012 - 2017)
 ## Skills & Tools
 
 * Languages: English (B2), Czech (native speaker)
-* Generative AI: ChatGPT, Claude, OpenAI API, Anthropic API, Open WebUI & Ollama
-* Programming and automation: Python, shell, git & GitHub
+* Generative AI: ChatGPT, Claude, Open WebUI, Ollama, LiteLLM, API platforms (OpenAI, Anthropic)
+* Programming and automation: Python, shell, git & GitHub, Claude Code, Docker, SQL
 * Linux system administration (Ubuntu, RHEL/Fedora)
-* Minor experience with: Docker, CI/CD pipelines, RPM packaging, SQL, JavaScript, GitHub Copilot
 
 ## Interests & Activities
 
