@@ -27,5 +27,5 @@ tags:
 > For the President of the European Commission to repeat the misleading marketing language
 > of US technology firms without independent scientific verification undermines Europe’s
 > credibility as a reliable and trusted source of scientific knowledge. This is particularly so
-> amidst a significant speculative bubble to which baseless AI hype is contributing.
+> amidst a significant speculative bubble to which baseless AI hype is contributing.  
 -- [Open letter: retract your unscientific AI hype](https://www.iccl.ie/wp-content/uploads/2025/11/20251110_Scientists-letter-to-the-President-AI-Hype.pdf) ([via](https://www.root.cz/zpravicky/evropska-komise-pouziva-chatgpt-navzdory-svym-vlastnim-pravidlum/))
