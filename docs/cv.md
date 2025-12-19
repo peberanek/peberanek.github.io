@@ -1,8 +1,8 @@
-# Bc. Petr Beránek
+# Petr Beránek
 
 [beranek@duck.com](mailto:beranek@duck.com) | +420 608 057 106 | [Blog](https://peberanek.github.io/){:target="_blank"} | [GitHub](https://github.com/peberanek){:target="_blank"}
 
-_Tinkering with open-source software, including Linux, Python, generative AI and tools for personal finance._
+_Tinkering with open-source software, including Linux, Python and generative AI_
 
 ## Experience
 
@@ -10,10 +10,10 @@ _Tinkering with open-source software, including Linux, Python, generative AI and
 
 _AI Methodologist_ (3/2024 - present)
 
-* Responsible for development and testing of [AI Sandbox](https://github.com/peberanek/ai-sandbox)
+* Responsible for development and testing of [AI Sandbox](https://github.com/peberanek/ai-sandbox){:target="_blank"}
 * Collaborate with external partners on AI-related topics
 * Initiated the university-wide working group on Generative AI
-* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AI-64.html){:target="_blank"}
+* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AIEN-33.html){:target="_blank"}
 * Attend conferences and workshops to stay up to date with developments in the field
 * Facilitated a small team during a hackathon to develop AI tutors
 
@@ -48,7 +48,6 @@ _Various roles in administration and services_ (2012 - 2017)
 
 * Charles University, _various workshops and seminars on use, risks and impact of generative AI_ (2024 - present)
 * Harvard University, _CS50's Introduction to Computer Science_ (online, 2024)
-* freeCodeCamp, _JavaScript Algorithms and Data Structures Certification_ (online, 2023)
 * Red Hat University, _Red Hat System Administration I_ (online, 2023)
 * Red Hat University, _Red Hat OpenShift I: Containers & Kubernetes_ (online, 2020)
 * AKCENT International House Prague, _English courses from B2 to C1_ (2019)
@@ -73,13 +72,13 @@ _Various roles in administration and services_ (2012 - 2017)
 ## Skills & Tools
 
 * Languages: English (B2), Czech (native speaker)
-* Generative AI: ChatGPT, Claude, Open WebUI, Ollama, LiteLLM, API platforms (OpenAI, Anthropic)
-* Programming and automation: Python, shell, git & GitHub, Claude Code, Docker, SQL
+* Generative AI: Open WebUI, LiteLLM, Ollama, API platforms (OpenAI, Anthropic, OpenRouter), ChatGPT, Claude
+* Programming and automation: Python, shell, git & GitHub, Claude Code, Docker
 * Linux system administration (Ubuntu, RHEL/Fedora)
 
 ## Interests & Activities
 
 * Therapeutic fitness, kickbiking, walking, swimming
-* Reading, blogging and continuous learning
+* Reading, blogging
 * Experimenting with mindfulness and the Tiny Habits method
 * Personal finance
