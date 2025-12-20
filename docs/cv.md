@@ -1,6 +1,6 @@
 # Petr Beránek
 
-[beranek@duck.com](mailto:beranek@duck.com) | +420 608 057 106 | [Blog](https://peberanek.github.io/){:target="_blank"} | [GitHub](https://github.com/peberanek){:target="_blank"}
+[beranek@duck.com](mailto:beranek@duck.com) | +420 608 057 106 | [Blog](index.md) | [Projects](projects.md) | [GitHub](https://github.com/peberanek)
 
 _Tinkering with open-source software, including Linux, Python and generative AI_
 
@@ -10,10 +10,10 @@ _Tinkering with open-source software, including Linux, Python and generative AI_
 
 _AI Methodologist_ (3/2024 - present)
 
-* Responsible for development and testing of [AI Sandbox](https://github.com/peberanek/ai-sandbox){:target="_blank"}
+* Responsible for development and testing of [AI Sandbox](projects.md/#ai-sandbox)
 * Collaborate with external partners on AI-related topics
 * Initiated the university-wide working group on Generative AI
-* Founded and co-develop the [AI Newsletter](https://ai.cuni.cz/AIEN-33.html){:target="_blank"}
+* Founded and co-develop the AI Newsletter
 * Attend conferences and workshops to stay up to date with developments in the field
 * Facilitated a small team during a hackathon to develop AI tutors
 
@@ -21,9 +21,9 @@ _AI Methodologist_ (3/2024 - present)
 
 _Software Quality Engineer_ (10/2019 - 3/2022, 10/2022 - 7/2023)
 
-* Contributed to development of an internal testing framework for [LVM](https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)){:target="_blank"} and Red Hat High Availability Cluster
+* Developed [an internal testing framework](projects.md/#internal-testing-framework-for-lvm) for LVM and Red Hat High Availability Cluster
 * Collaborated on test analysis, manual and automated testing of LVM
-* Helped with manual and automated testing of [Anaconda](https://fedoraproject.org/wiki/Anaconda){:target="_blank"}
+* Helped with manual and automated testing of Anaconda (the OS installer)
 * Took a 6-month break in 2022 to recover from post-COVID burnout
 
 ### ING Bank
@@ -54,7 +54,7 @@ _Various roles in administration and services_ (2012 - 2017)
 * GOPAS IT training center, _Git - Version Control System_ (2019)
 * Stanford University, _Introduction to Computer Networking_ (online, 2019)
 * Stanford University, _Introduction to Databases_ (online, 2018)
-* Massachusetts Institute of Technology, _Introduction to Computer Science and Programming in Python_ (online, 2017)
+* MIT, _Introduction to Computer Science and Programming in Python_ (online, 2017)
 * Charles University, _English courses from B1 to B2_ (2017)
 
 ## Personal Development
@@ -63,6 +63,8 @@ _Various roles in administration and services_ (2012 - 2017)
 * tinyhabits.com, _The Tiny Habits Method_ (online, 2022)
 * Bemindful.cz, _Mindfulness-based stress reduction training_ (online, 2022)
 * Khan Academy, _US History_ (online, 2017)
+* Khan Academy, _Computers and the Internet_ (online, 2017)
+* Khan Academy, _Math_ (online, 2016 - 2017)
 
 ## Education
 
@@ -81,4 +83,4 @@ _Various roles in administration and services_ (2012 - 2017)
 * Therapeutic fitness, kickbiking, walking, swimming
 * Reading, blogging
 * Experimenting with mindfulness and the Tiny Habits method
-* Personal finance
+* [Personal finance](projects.md/#personal-finance)

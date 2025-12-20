@@ -48,7 +48,8 @@ nav:
   - Blog:
     - Home: index.md
     - Tags: tags.md
-  - Curriculum Vitae: cv.md
+  - Projects: projects.md
+  - CV & Contact: cv.md
 
 markdown_extensions:
   - pymdownx.highlight:
