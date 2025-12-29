@@ -75,12 +75,13 @@ _Various roles in administration and services_ (2012 - 2017)
 
 * Languages: English (B2), Czech (native speaker)
 * Generative AI: Open WebUI, LiteLLM, Ollama, API platforms (OpenAI, Anthropic, OpenRouter), ChatGPT, Claude
-* Programming and automation: Python, shell, git & GitHub, Claude Code, Docker
+* Programming and automation: Python, shell, git & GitHub, Claude Code, Docker, SQL
 * Linux system administration (Ubuntu, RHEL/Fedora)
 
 ## Interests & Activities
 
 * Therapeutic fitness, kickbiking, walking, swimming
 * Reading, blogging
-* Experimenting with mindfulness and the Tiny Habits method
 * [Personal finance](projects.md/#personal-finance)
+* Experimenting with mindfulness and the Tiny Habits method
+* [Photography, digital art & design](https://www.behance.net/PetrBeranek)
