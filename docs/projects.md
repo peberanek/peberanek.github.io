@@ -4,7 +4,14 @@
 
 _Charles University_ (2024 - present)
 
-Open source platform for flexible centralized access to generative AI. Inspired by [Harvard AI Sandbox](https://www.huit.harvard.edu/ai-sandbox) and [Stanford AI Playground](https://uit.stanford.edu/aiplayground).
+The goal of this project is to provide users with access:
+
+1. to an **advanced chat interface**, similar to ChatGPT, with the ability to chat with various models (GPT, Claude, Gemini), including open-weights models hosted on-prem.
+2. to a **unified API** interface for researchers and developers.
+
+The main arguments for such a solution are cost-effectiveness compared to bulk subscription purchases, reducing users' motivation to use unapproved tools and services, and flexibility and control over services and their functionality. Inspired by [Harvard AI Sandbox](https://www.huit.harvard.edu/ai-sandbox), [Stanford AI Playground](https://uit.stanford.edu/aiplayground), and [Chat AI (e-INFRA CZ)](https://docs.cerit.io/en/docs/ai-as-a-service/chat-ai) projects.
+
+More information can be found at the links below:
 
 * [GitHub Repo](https://github.com/peberanek/ai-sandbox)
 * [AI Sandbox at Charles University](https://ai.cuni.cz/AI-75.html)
