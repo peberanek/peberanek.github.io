@@ -7,6 +7,8 @@ tags:
 
 # AI a velká očekávání (1)
 
+(Zvýraznění níže jsou moje.)
+
 > From the beginning, AI researchers were not shy about making predictions of their comming successes. The following statement by Herbert Simon in 1957 is often quoted:
 >
 > > It is not my aim to surprise or shock you - but the simplest way I can summarize is to say that there are now in the world machines that think, that learn and that create. Moreover, their ability to do these things is going to increase rapidly until - in a visible future - the range of problems they can handle will be coextensive with the range to which the human mind ha been applied.

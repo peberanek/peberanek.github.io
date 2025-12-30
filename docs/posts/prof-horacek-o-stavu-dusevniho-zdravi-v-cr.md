@@ -16,6 +16,8 @@ Všechny 3 body se mi zdají dost propojené a navzájem se negativně posilují
 
 Prof. Horáček říká, že lidská psychika zatím není adaptovaná na život v digitálním světě, a proto je buď potřeba se přizpůsobit, nebo digitální svět regulovat.
 
+(Zvýraznění níže jsou moje.)
+
 > Seberegulace je první skupina, to co můžeme udělat my, každý z nás, hned, ode dneška, od těďka. Třeba vypínat [telefon], koukat se chvilku do zeleně místo do obrazovky. To myslím zcela vážně. Je jasně prokázáno, že v okruhu asi 3 kilometrů **množství zeleně se kterou se setkáváme má pozitivní a profylaktický efekt na deprese a úzkosti**. Takto se prostě musíme naučit žít a tím vykompenzovat ten složitý svět.
 
 <!-- more -->
