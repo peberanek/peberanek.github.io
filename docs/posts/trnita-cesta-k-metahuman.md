@@ -3,6 +3,8 @@ date: 2025-12-30
 tags:
   - creativity
   - linux
+  - windows
+updated: 2026-01-01
 ---
 
 # Trnitá cesta k vyzkoušení MetaHuman pro Unreal Engine 5
@@ -13,13 +15,13 @@ Nedávno jsem zjistil, že existuje - k mému údivu bezplatně - pokročilý fr
 
 ## MetaHuman na Linuxu? Ano i ne
 
-Unreal Engine 5 je sice "zdarma" pro jednotlivce i společnosti [s ročními výnosy do 1 milionu USD](https://www.unrealengine.com/en-US/license), ale pro stažení je nutné přihlášení přes účet u Epic Games. OK, "zdarma" tedy bude pravděpodobně znamenat cílenou reklamu, neboli výrobce si to zkusí vybrat jinde. S tím jsem v rámci testování schopen žít. Horší už je to s doporučenými požadavky na operační systém - _Ubuntu 22.04_. To má sice stále oficiální podporu, ale dnes už je to přecejen starší vydání. Na mém stroji momentálně běží _Ubuntu 25.10_, takže nezbývalo, než to prostě vyzkoušet a připravit se na potenciální problémy.
+Unreal Engine 5 je sice [za určitých podmínek zdarma](https://www.unrealengine.com/en-US/license), ale pro stažení je nutné přihlášení přes účet u Epic Games. OK, "zdarma" tedy bude pravděpodobně znamenat cílenou reklamu, neboli výrobce si to zkusí vybrat jinde. To jsem v rámci testování ochoten podstoupit. Horší už je to v případě Linuxu s doporučenými požadavky na operační systém - _Ubuntu 22.04_. To má sice stále oficiální podporu, ale dnes už se jedná přecejen o starší vydání. Na mém stroji momentálně běží _Ubuntu 25.10_, takže nezbývalo, než to prostě vyzkoušet a připravit se na potenciální problémy.
 
 <!-- more -->
 
-Po stažení zazipovaného balíčku (30 GB) se bohužel problémy objevily - verze 5.7 byla v podstatě nepoužitelná a často padala. Zkusil jsem tedy verzi 5.6, která už fungovala slušně nepadala tak často. V ní ale nefunguje MetaHuman (resp. možnost vytvářet postavy, dostupná na Linuxu až [od verze 5.7](https://www.metahuman.com/en-US/releases/metahuman-5-7-is-now-available)). Existuje sice návod jak [rozjet verzi 5.7 v kontejneru](https://dev.epicgames.com/community/learning/tutorials/KWvY/metahuman-the-easiest-way-to-run-unreal-engine-5-7-natively-on-any-linux-distro), ale bez podpory GPU. Než se trápit s nastavováním nebo pokusy s virtuálními stroji, dal jsem ještě šanci svému staršímu laptopu s Windows 11. Má sice jen 8 GB RAM a slabší Nvidii (2 GB VRAM), ale naivně jsem doufal, že na něm třeba MetaHuman nějak poběží, a vyzkouším alespoň nějaké základní funkce.
+Po stažení zazipovaného balíčku (30 GB) se bohužel problémy objevily - verze 5.7 byla v podstatě nepoužitelná a často padala. Zkusil jsem tedy verzi 5.6, která už fungovala slušně nepadala tak často. V ní ale nefunguje MetaHuman (resp. možnost vytvářet postavy, dostupná na Linuxu až [od verze 5.7](https://www.metahuman.com/en-US/releases/metahuman-5-7-is-now-available)). Existuje sice návod jak [rozjet verzi 5.7 v kontejneru](https://dev.epicgames.com/community/learning/tutorials/KWvY/metahuman-the-easiest-way-to-run-unreal-engine-5-7-natively-on-any-linux-distro), ale bez podpory GPU, což je v případě grafického softwaru dost zásadní nedostatek. Než se trápit s nastavováním nebo pokusy s virtuálními stroji, dal jsem ještě šanci svému staršímu laptopu s Windows 11. Má sice jen 8 GB RAM a slabší Nvidii (2 GB VRAM), ale naivně jsem doufal, že na něm třeba MetaHuman nějak poběží, a vyzkouším alespoň nějaké základní funkce.
 
-Instalace Unreal Engine byla sice přímočará a aplikace se rozjela, ale pracovat s ní prakticky nešlo. Tahle možnost tedy taky padla, nicméně zvědavost mi nedala to vzdát.
+Instalace Unreal Engine byla přímočará a aplikace se rozjela, ale pracovat s ní prakticky nešlo. Tahle možnost tedy taky padla, nicméně zvědavost mi nedovolila to vzdát.
 
 ## Instalace Windows 11
 
@@ -29,6 +31,12 @@ Příprava a instalace byly přímočaré přesně do chvíle, než mi instalát
 
 Rufus tedy problém se Secure Bootem a TPM vyřešil. O krok později si však instalátor nedokázal poradit s tím, že na SSDčku byla vytvořená partition s NTFS filesystémem. Partition neuměl ani smazat. V tu chvíli jsem si říkal, že to už není možný - past vedle pasti. Naštěstí po rebootu do Linuxu a odebrání partition pomocí Gnome Disks mohla instalace pokračovat. Uf.
 
-V rámci tvorby obrazu jsem v souladu nastavením svého stroje vybral _Partition Scheme_ jako _MBR_. A to byla chyba. Při instalaci (po restartu) se totiž ukázálo, že z nějakého záhadného důvodu systém nenabootuje. Zkusil jsem tedy vypnout podporu pro BIOS a vytvořit nový instalační obraz s _Partition Scheme_ jako _GPT_... A instalace konečně doběhla. Zázrak.
+V rámci tvorby instalačního obrazu jsem v souladu nastavením svého stroje vybral _Partition Scheme_ jako _MBR_. A to byla chyba. Při instalaci (po restartu) se totiž ukázálo, že z nějakého záhadného důvodu systém nenabootuje - Windows bootloader se nechtěl načíst. Zkusil jsem tedy vypnout podporu pro BIOS a vytvořit nový instalační obraz s _Partition Scheme_ jako _GPT_... A instalace konečně doběhla. Zázrak.
 
-Po několika hodinách boje jsem konečně nainstaloval i Unreal Engine 7 a zprovoznil MetaHuman framework. Musím říct, že modely v MetaHuman vypadají velmi dobře, ale to už je na jiný článek.
+Po několika hodinách boje jsem tedy konečně nainstaloval i Unreal Engine 7 a zprovoznil MetaHuman framework. Musím říct, že modely v MetaHuman vypadají velmi dobře, ale to už je na jiný článek.
+
+## Poznámky závěrem
+
+Třebaže instalace software na Linuxu je někdy komplikovaná a některé aplikace ani zprovoznit nejdou, moje dosavadní uživatelská zkušenost s Windows není - bohužel - moc dobrá. Překvapilo mě, kolik různých umělých požadavků, vynucených přihlášení a aktualizací, různých notifikací, vyrušení a reklam se tam objevuje. Nemohu se zbavit dojmu, že se jedná spíš o reklamní a distribuční platformu pro placený software a služby, než o operační systém, který má sloužit uživateli. Což je škoda.
+
+Na druhou stranu je skvělé, že stále máme na výběr, alespoň co se týče osobního použití. Můžu provozovat Windows, ale ani nemusím. To stejné platí pro macOS, Linux, BSD atd. Samozřejmě s určitnými kompromisy. Snad v dohledné době vývojáři Unreal Engine přejdou na nějakou novější verzi Ubuntu.
