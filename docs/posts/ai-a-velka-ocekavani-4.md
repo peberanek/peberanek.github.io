@@ -10,8 +10,6 @@ tags:
 
 # AI a velká očekávání (4)
 
-(Zvýraznění níže jsou moje.)
-
 > Dear President von der Leyen,
 >
 > **We, experts in artificial intelligence (AI) and its societal impacts, are deeply concerned about
