@@ -3,7 +3,9 @@
 cat << EOF > "docs/posts/${1}.md"
 ---
 date: $(date -I)
-draft: true
+draft: true  # TODO: remove
+tags:
+  - TODO
 ---
 
 # ${1}
