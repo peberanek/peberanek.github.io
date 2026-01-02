@@ -57,3 +57,9 @@ When creating or modifying blog posts:
 
 - `main` - Production branch (triggers deployment)
 - Simple commits (like new blog posts) go to `main`, but if there are lots of changes, a feature branch may be needed
+
+## Python development
+- When developing Python code, use:
+  - `uv run ruff check` for linting
+  - `uv run ruff format` for formatting
+  - `uv run ty check` type checking

@@ -1,5 +1,7 @@
 ---
-date: 2025-09-28
+date:
+  created: 2025-09-28
+  updated: 2026-01-02
 tags:
   - ai
   - generative-ai
@@ -14,6 +16,8 @@ tags:
 ---
 
 # AI asistent v Open WebUI
+
+_Update_: Optimálnější řešení s [pomocí Claude Code a Agent Skills popisuji v novém článku](../posts/generovani-tagu-s-agent-skills.md).
 
 Množství příspěvků na mém blogu utěšeně roste a začíná dávat smysl je seskupovat pomocí tagů. Zároveň si říkám, že vymýšlení tagů je přesně úkol pro nějaký jazykový model: předhodit mu text článku a nechat si tagy vygenerovat, alespoň jako návrh. Z pohledu konzistentnosti by bylo zároveň dobré modelu poskytnout i seznam již existujících tagů, aby se jich držel a negeneroval nové varianty téhož (např. `ai-tutor`, `ai-tutors`, `ai-tutoring` apod.).
 

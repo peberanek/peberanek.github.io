@@ -1,10 +1,11 @@
 ---
-date: 2025-12-30
+date:
+  created: 2025-12-30
+  updated: 2026-01-01
 tags:
   - creativity
   - linux
   - windows
-updated: 2026-01-01
 ---
 
 # Trnitá cesta k vyzkoušení MetaHuman pro Unreal Engine 5
