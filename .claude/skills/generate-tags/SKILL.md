@@ -1,6 +1,6 @@
 ---
 name: generate-tags
-description: Generate the list of tags for a blog post.
+description: Generate tags for a blog post.
 ---
 
 List existing tags using the following script:

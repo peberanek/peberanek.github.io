@@ -1,5 +1,7 @@
 ---
-date: 2026-01-02
+date:
+  created: 2026-01-02
+  updated: 2026-01-03
 tags:
   - ai
   - claude-code
@@ -120,7 +122,26 @@ Nyní už jen stačí požádat Claude Code, aby vygeneroval tagy pro článek n
 
     Třebaže se mi povedlo podobným způsobem nastavit, aby agent nemusel žádat o svolení při spouštění příkazů jako `uv run ruff` nebo `uv run ty`, pro konkrétní adresáře nebo skripty (např. `"Bash(uv run .claude/skills/:*)"`) se mi to nedaří.
 
-Požádat agenta, aby vygeneroval tagy vyžaduje nějaké psaní a chvíli mu trvá, než si naplánuje potřebné kroky. Asistent v Open WebUI věděl hned, co má dělat. Na druhou stranu, výsledný seznam vypadá o něco kvalitněji (nenechávám agenta, aby vymýšlel nové tagy, což je mentálně jednodužší na kontrolu). Také není třeba nikam nic kopírovat. A hlavně tento skill zapadá do dosavadního workflow, kdy mi agent pomáhá s opravou gramatiky, překlepy nebo překlady. Takže jsem spokojen.
+~~Požádat agenta, aby vygeneroval tagy vyžaduje nějaké psaní~~ a chvíli mu trvá, než si naplánuje potřebné kroky. Asistent v Open WebUI věděl hned, co má dělat. Na druhou stranu, výsledný seznam vypadá o něco kvalitněji (nenechávám agenta, aby vymýšlel nové tagy, což je mentálně jednodužší na kontrolu). Také není třeba nikam nic kopírovat. A hlavně tento skill zapadá do dosavadního workflow, kdy mi agent pomáhá s opravou gramatiky, překlepy nebo překlady. Takže jsem spokojen.
+
+_Update:_ [Custom slash command](https://code.claude.com/docs/en/slash-commands#custom-slash-commands) je skvělý způsob jak si ušetřit psaní. Nový příkaz je opět jen soubor v Markdown:
+```yaml title=".claude/commands/gen-tags.md"
+---
+description: Generate tags for the given blog post
+argument-hint: [blog-post-path]
+allowed-tools: Bash(uv run:*)
+---
+
+Generate tags for $1. Use skill generate-tags.
+```
+Příkaz lze v interakci s Claude Code vyvolat následovně:
+```
+/gen-tags @docs/posts/vybrany-clanek.md
+```
+
+!!! Poznámka
+
+    V současné době [není možné pojmenovat příkaz stejně jako skill](https://github.com/anthropics/claude-code/issues/14945). Proto jsem musel název zkrátit na `gen-tags` namísto `generate-tags`.
 
 ## Další odkazy
 
