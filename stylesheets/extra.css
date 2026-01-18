@@ -1,0 +1,7 @@
+/* Print/PDF size */
+@media print {
+    .cv-portrait {
+        width: 50mm;
+        height: auto;
+    }
+}
