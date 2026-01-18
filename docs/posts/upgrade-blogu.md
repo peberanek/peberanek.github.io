@@ -1,5 +1,7 @@
 ---
-date: 2025-06-28
+date:
+  created: 2025-06-28
+  updated: 2026-01-18
 tags:
   - blogging
   - python
@@ -79,3 +81,30 @@ Níže uvádím pár věcí, na které jsem během upgradu narazil:
 * Fajn je také možnost automatického nastavení světlého nebo tmavého tématu, viz [Automatic light / dark mode](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=automatic#automatic-light-dark-mode).
 
 Výsledný web vypadá dobře a stejně dobře se zobrazuje i na mém smartphonu. Jsem zvědav, jak se Material for MkDocs v průběhu času osvědčí.
+
+_Update_: Do CV jsem si nově přidal portrét. Nicméně obrázek se by default nevykreslí ve správné velikosti při tisku (je moc velký). S pomocí GPT-5.2 jsem zjistil, že pro nastavení požadované velikosti je potřeba upravit jeho CSS styl.
+
+Nejprve je nutné přidat `extra_css` do konfigurace:
+
+```yaml title="mkdocs.yml"
+extra_css:
+  - stylesheets/extra.css
+```
+
+A následně soubor vytvořit soubor a [definovat styl](https://squidfunk.github.io/mkdocs-material/customization/?h=extra+css#additional-css):
+
+```css title="docs/stylesheets/extra.css"
+/* Print/PDF size */
+@media print {
+    .cv-portrait {
+        width: 50mm;
+        height: auto;
+    }
+}
+```
+
+Do odkazu na obrázek pak stačí doplnit výše definovanou CSS třídu jako atribut (musí být povolený [Attribute List](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=attr+list#attribute-lists)):
+
+```markdown title="docs/cv.md"
+![My Portrait](assets/images/my_portrait.jpg){ .cv-portrait width="300" }
+```

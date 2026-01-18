@@ -66,3 +66,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css

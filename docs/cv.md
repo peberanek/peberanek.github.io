@@ -4,6 +4,8 @@
 
 _Tinkering with open-source software, including Linux, Python and generative AI_
 
+![My Portrait](assets/images/my_portrait.jpg){ .cv-portrait width="300" }
+
 ## Experience
 
 ### Charles University
@@ -11,7 +13,7 @@ _Tinkering with open-source software, including Linux, Python and generative AI_
 _AI Methodologist_ (3/2024 - present)
 
 * Responsible for development and testing of [AI Sandbox](projects.md/#ai-sandbox)
-* Collaborate with external partners on AI-related topics
+* Collaborate with both internal stakeholders and external partners on AI-related topics
 * Initiated the university-wide working group on Generative AI
 * Founded and co-develop the AI Newsletter
 * Attend conferences and workshops to stay up to date with developments in the field
