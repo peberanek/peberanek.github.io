@@ -10,7 +10,7 @@ _Tinkering with open-source software, including Linux, Python and generative AI_
 
 ### Charles University
 
-_AI Methodologist_ (3/2024 - present)
+_AI Methodologist_ (3/2024 - 1/2026)
 
 * Responsible for development and testing of [AI Sandbox](projects.md/#ai-sandbox)
 * Collaborate with both internal stakeholders and external partners on AI-related topics
