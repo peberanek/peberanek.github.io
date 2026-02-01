@@ -11,6 +11,16 @@ The goal of this project is to provide users with access:
 
 The main arguments for such a solution are **cost-effectiveness** compared to bulk subscription purchases, reducing users' motivation to use **unapproved tools**, and **flexibility and control** over the platform and its functionality. The project has been inspired by [Harvard AI Sandbox](https://www.huit.harvard.edu/ai-sandbox), [Stanford AI Playground](https://uit.stanford.edu/aiplayground), and [Chat AI (e-INFRA CZ)](https://docs.cerit.io/en/docs/ai-as-a-service/chat-ai).
 
+![Open WebUI](assets/images/open_webui.png)
+/// caption
+[Open WebUI](https://github.com/open-webui/open-webui) serves as the advanced chat interface
+///
+
+![LiteLLM](assets/images/litellm.png)
+/// caption
+[LiteLLM](https://github.com/BerriAI/litellm) provides the unified API, metrics, cost limiting and more
+///
+
 More information can be found at the links below:
 
 * [Project architecture and demos](https://github.com/peberanek/ai-sandbox)
@@ -31,5 +41,10 @@ Building a framework is not easy, and we learned a lot along the way. Surprising
 _personal project_ (2015 - present)
 
 This long-term project helps me keep track of my money and stay financially organized. It is built on [Beancount](https://github.com/beancount/beancount) (double-entry accounting from text files), enhanced with automated transaction and data imports via various APIs ([Beanclerk](https://github.com/peberanek/beanclerk), [Fio Banka API](https://github.com/peberanek/fio-banka), [Creditas OpenAPI Client](https://github.com/peberanek/creditas)) - typically the most tedious part of personal accounting.
+
+![Fava screenshot](assets/images/fava-2.png)
+/// caption
+Example Balance Sheet in [Fava](https://beancount.github.io/fava/)
+///
 
 You can find more about the motivation and real-world benefits of this approach in my article [Osobní účetnictví: Má to smysl?](posts/osobni-ucetnictvi.md)
