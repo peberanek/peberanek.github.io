@@ -87,3 +87,15 @@ external agency use, particularly in back-office operations. Others cite improve
 retention and sales conversion through automated outreach and intelligent follow-up
 systems. These early results suggest that learning-capable systems, when targeted at
 specific processes, can deliver real value, even without major organizational restructuring.
+
+## Web search v Open Webui
+
+Před delší dobou jsem zkoušel nástroj [Web Search](https://docs.openwebui.com/category/web-search) v Open WebUI, konkrétně s Google PSE (Programmable Search Engine), a výsledky mě moc nepřesvědčily. Nedávno jsem však objevil obdobnou funkcionalitu, kterou poskytuje přímo OpenRouter. Po několika dotazech Teprve nedávno jsem objevil zajímavou funkcionalitu, kterou poskytuje OpenRouter
+Zajímavou alternativu poskytuje OpenRouter
+
+https://github.com/open-webui/open-webui/releases/tag/v0.7.0
+> Users with OpenAI-compatible models that have web search capabilities now see URL citations displayed as sources in the interface
+
+https://openrouter.ai/docs/guides/features/plugins/web-search
+https://docs.openwebui.com/features/web-search/agentic-search
+https://docs.openwebui.com/features/plugin/tools/#tool-calling-modes-default-vs-native
