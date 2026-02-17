@@ -1,6 +1,6 @@
 site_name: Petr Beránek
 site_url: https://peberanek.github.io/
-copyright: Copyright &copy; 2025 Petr Beránek
+copyright: Copyright &copy; 2023 - {year} Petr Beránek
 
 theme:
   name: material
@@ -30,6 +30,9 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+hooks:
+  - docs/hooks/hooks.py
 
 plugins:
   - search
