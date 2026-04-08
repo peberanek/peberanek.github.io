@@ -1,5 +1,7 @@
 ---
-date: 2026-01-30
+date:
+  created: 2026-01-30
+  updated: 2026-04-08
 tags:
   - fish-shell
   - linux
@@ -24,4 +26,6 @@ abbr --add webui 'WEBUI_AUTH=False open-webui serve'
 
     A tento příkaz (tj. `abbr -a -- webui 'WEBUI_AUTH=False open-webui serve'`) pak uložit do konfiguračního souboru.
 
-Výhodou oproti tradičním aliasům je, že po zadání zkratky `webui` se zkratka dá expandovat (typicky pomocí mezeníku nebo Enteru). Je tak zřejmé, jaký příkaz se bude spouštět a případně ho lze upravit.
+Výhodou oproti tradičním aliasům je, že po zadání zkratky `webui` se zkratka dá expandovat (typicky pomocí mezeníku ~~nebo Enteru~~). Je tak zřejmé, jaký příkaz se bude spouštět a případně ho lze upravit.
+
+_Update_: Zkratka se pomocí Enteru expandovat nedá. Příkaz se rovnou spustí.
