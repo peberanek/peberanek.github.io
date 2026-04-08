@@ -2,7 +2,7 @@
 
 [beranek@duck.com](mailto:beranek@duck.com) | +420 608 057 106 | [Blog](index.md) | [Projects](projects.md) | [GitHub](https://github.com/peberanek)
 
-_Tinkering with open-source software, including Linux, Python and generative AI_
+_Experienced open source enthusiast. Focused on Linux, automation with Python, and practical use of LLMs._
 
 ![My Portrait](assets/images/my_portrait.jpg){ .cv-portrait width="300" }
 
@@ -48,7 +48,7 @@ _Various roles in administration and services_ (2012 - 2017)
 
 ## Professional Development
 
-* Charles University, _various workshops and seminars on use, risks and impact of generative AI_ (2024 - present)
+* Charles University, _various workshops and seminars on use, risks and impact of generative AI_ (2024 - 2026)
 * Harvard University, _CS50's Introduction to Computer Science_ (online, 2024)
 * Red Hat University, _Red Hat System Administration I_ (online, 2023)
 * Red Hat University, _Red Hat OpenShift I: Containers & Kubernetes_ (online, 2020)
