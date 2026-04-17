@@ -13,20 +13,18 @@ _Experienced open source enthusiast. Focused on Linux, automation with Python, a
 _AI Methodologist_ (3/2024 - 1/2026)
 
 * Responsible for development and testing of [AI Sandbox](projects.md/#ai-sandbox)
-* Collaborate with both internal stakeholders and external partners on AI-related topics
+* Collaborated with internal stakeholders and external partners on AI-related topics
 * Initiated the university-wide working group on Generative AI
-* Founded and co-develop the AI Newsletter
-* Attend conferences and workshops to stay up to date with developments in the field
+* Attended conferences and workshops to stay up to date with developments in the field
 * Facilitated a small team during a hackathon to develop AI tutors
 
 ### Red Hat
 
-_Software Quality Engineer_ (10/2019 - 3/2022, 10/2022 - 7/2023)
+_Software Quality Engineer_ (10/2019 - 7/2023)
 
 * Developed [an internal testing framework](projects.md/#internal-testing-framework-for-lvm) for LVM and Red Hat High Availability Cluster
 * Collaborated on test analysis, manual and automated testing of LVM
 * Helped with manual and automated testing of Anaconda (the OS installer)
-* Took a 6-month break in 2022 to recover from post-COVID burnout
 
 ### ING Bank
 
@@ -76,9 +74,12 @@ _Various roles in administration and services_ (2012 - 2017)
 ## Skills & Tools
 
 * Languages: English (B2), Czech (native speaker)
-* Generative AI: Open WebUI, LiteLLM, Ollama, API platforms (OpenAI, Anthropic, OpenRouter), ChatGPT, Claude
-* Programming and automation: Python, shell, git & GitHub, Claude Code, Docker, SQL
-* Linux system administration (Ubuntu, RHEL/Fedora)
+* AI-assisted Engineering: Claude Code
+* AI Gateways and API Platforms: LiteLLM, Openrouter, OpenAI, Anthropic
+* Chatbots: Open WebUI, ChatGPT, Gemini, Grok
+* Local LLM Inference: Ollama
+* Programming and automation: Python, shell, git & GitHub, Docker, SQL
+* Experienced Linux user: Ubuntu, RHEL/Fedora
 
 ## Interests & Activities
 
