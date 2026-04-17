@@ -32,7 +32,7 @@ Po troše ladění jsem nakonec vytvořil prompt, který dodal solidní podobu. 
 
 > Cool. Recently, I got glasses and beard. Can you add them to the photo? Keep the face proportions - especially eyes (there is the interesting effect that the glasses optically make my eyes a bit smaller) and the beard length.
 
-Po stránce angličtiny není ten prompt žádný zázrak, ale výsledný obrázek mi tak trochu vyrazil dech:
+Výsledný obrázek mi tak trochu vyrazil dech:
 
 ![Velmi dobrý portrét s brýlemi a vousy](../assets/images/my_portrait_gemini.jpg)
 
