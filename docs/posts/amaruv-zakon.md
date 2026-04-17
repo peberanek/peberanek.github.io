@@ -1,6 +1,5 @@
 ---
 date: 2025-03-09
-pin: true
 tags:
   - ai-risks
 ---
