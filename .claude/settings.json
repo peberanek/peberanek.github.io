@@ -1,7 +1,6 @@
 {
   "permissions": {
     "allow": [
-      "Skill(generate-tags)",
       "Bash(uv run ruff:*)",
       "Bash(uv run ty:*)"
     ]
