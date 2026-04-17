@@ -1,0 +1,29 @@
+---
+date: 2026-03-28
+draft: true  # TODO: remove
+tags:
+  - TODO
+---
+
+# Supply chain útok na LiteLLM
+
+[LiteLLM](https://docs.litellm.ai/) je populární AI gateway (proxy server) a Python SDK, umožňující jednotný přístup k velkým jazykovým modelům od různých poskytovatelů. 24. 3. došlo k nahrání kompromitovaných balíčků na pypi.org:
+
+> TLDR;
+>  
+> * The compromised PyPI packages were **litellm==1.82.7** and **litellm==1.82.8.** Those packages have now been removed from PyPI
+> * We believe that the compromise originated from the Trivy dependency used in our CI/CD security scanning workflow.
+> * Customers running the official LiteLLM Proxy Docker image were not impacted. That deployment path pins dependencies in requirements.txt and does not rely on the compromised PyPI packages.
+> * We are pausing new LiteLLM releases until we complete a broader supply-chain review and confirm the release path is safe.
+> [LiteLLM Blog (Security Update: Suspected Supply Chain Incident)](https://docs.litellm.ai/blog/security-update-march-2026)
+
+* Výše zmíněné verze LiteLLM už byly z pypi.org odebrány a [vývojáři ověřili, že ostatní dostupné verze kompromitovány nebyly](https://docs.litellm.ai/blog/security-update-march-2026#verified-safe-versions).
+* Pravděpodobně došlo ke zneužití účtu hlavního vývojáře, jehož prostřednictvím byly kompromitované balíčky na pypi.org nahrány.
+* Je spojováno s [Trivy security compromize](https://www.aquasec.com/blog/trivy-supply-chain-attack-what-you-need-to-know/), - ukradeny přihlašovací údaje díky kterým získal útočník přístup k LiteLLM publishing pipeline
+* Kompromintované verze obsahovaly credential stealer.
+* Baliky byly dostupne March 24, 2026, between 10:39 UTC and 16:00 UTC
+
+---
+
+* https://docs.litellm.ai/blog/security-update-march-2026
+* https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/
