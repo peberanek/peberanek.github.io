@@ -1,5 +1,8 @@
 ---
-date: 2025-07-28
+date:
+  created: 2025-07-28
+  updated: 2026-04-17
+pin: true
 tags:
   - personal-finance
   - plain-text-accounting
@@ -14,17 +17,17 @@ tags:
 
 Následující text je zamyšlením nad posledními 10 lety, kdy si vedu osobní účetnictví, tj. kompletní přehled majetku a závazků, příjmů a výdajů. Od úplných začátků s tužkou a papírem až po automatizované zpracování pomocí open-source aplikací. V článku uvádím důvody, které mě k tomu vedly a sdílím své zkušenosti.
 
+<!-- more -->
+
 ## Proč jsem s osobním účetnictvím začal
 
-V roce 2015 jsem padnul na finanční dno a k tomu skončil na dva měsíce v nemocnici. Celkem drsná životní lekce. Na druhou stranu, na chvíli jsem nemusel řešit účtenky, penále, a především nesplnitelné požadavky lidí v mém okolí, a to mi dalo příležitost se vzpamatovat a zvednout. Shodou okolností se mi v té době dostala do ruky kniha _Bohatý táta, chudý táta_ od Roberta Kiyosakiho a Sharon Lechter. Třebaže je Kiyosaki poněkud kontroverzní autor (což jsem zjistil až později), jeho historka o bohatém tátovi mě motivovala si udělat v penězích pořádek.
-
-<!-- more -->
+V roce 2015 nebyla má finanční kondice vůbec dobrá, a dost mě to štvalo. Shodou okolností se mi v té době dostala do ruky kniha _Bohatý táta, chudý táta_ od Roberta Kiyosakiho a Sharon Lechter. Třebaže je Kiyosaki poněkud kontroverzní autor (což jsem zjistil až později), jeho historka o bohatém tátovi mě motivovala si udělat v penězích pořádek.
 
 Jednou z oblastí, kterou Kiyosaki uvádí jako klíčovou pro budování bohatství, je znalost účetnictví. Nemá tím na mysli stát se účetním, ale porozumět principům a umět je využít ve svůj prospěch. Základy účetnictví jsem měl na střední škole (jeden z těch předmětů, co si říkáte, že nikdy nevyužijete), a tak mě napadlo vytvořit si funkční model rozvahy, výsledovky a jednotlivých účtů, vše zjednodušené pro osobní potřebu.
 
-Kdo někdy finančně zápasil, asi mi dá za pravdu, že přemýšlet a mluvit v tom stavu o penězích je bolest. Velká bolest. A taky strach, možná i pocit selhání. Člověk by nejraději dělal, že jeho finanční problémy neexistují, vytěsnil je, zapomněl. A tím se vše ještě zhorší. Ono to na první pohled vypadá logicky: protože máme finanční problémy, nechceme o nich mluvit. Já si ale dovolím tvrdit, že je tomu naopak: _protože jsme naučení o naší finanční realitě nemluvit, tabuizovat ji, nepřemýšlet nad ní, tak právě proto máme menší či větší finanční problémy_. A osobní účetnictví se mi osvědčilo jako nástroj, jak si toto přemýšlení ulehčit a dát mu systém a řád.
+Kdo někdy finančně zápasil, asi mi dá za pravdu, že přemýšlet a mluvit v tom stavu o penězích není vůbec jednoduché. Člověk by nejraději dělal, že jeho finanční problémy neexistují, vytěsnil je, zapomněl. A tím se vše typicky ještě zhorší. Ono to na první pohled vypadá logicky: protože máme finanční problémy, nechceme o nich mluvit. Z vlastní zkušenosti si však říkám, jestli to není spíš naopak: _protože jsme zvyklí o naší finanční realitě nemluvit, tabuizovat ji, nepřemýšlet nad ní, tak právě proto máme menší či větší finanční problémy_. A osobní účetnictví se mi osvědčilo jako nástroj, jak si toto přemýšlení ulehčit a dát mu systém a řád.
 
-Zajímavé je, že jakmile jsem začal sepisovat svůj majetek, začaly se objevovat další a další zapomenuté peníze. A dluhy, poctivě vyčíslené, přestaly vypadat tak strašidelně. Dodnes vnímám jako velkou výhodu to, že už nemusím vše držet v hlavě. Možnost mít čísla a data vizualizovaná před sebou mi dává větší klid a mentální kapacitu pro hledání nových řešení. Ať už se jednalo o strategii placení dluhů, osekávání zbytečných výdajů nebo dnes třeba o investice. (Mimochodem, čím dál více začínám souhlasit s názorem, že investice s největší návratností jsou do ty vzdělání.)
+Zajímavé je, že jakmile jsem začal sepisovat svůj majetek, začaly se objevovat další a další zapomenuté peníze. A závazky, poctivě vyčíslené, přestaly vypadat tak strašidelně. Dodnes vnímám jako velkou výhodu to, že už nemusím vše držet v hlavě. Možnost mít čísla a data vizualizovaná před sebou mi dává větší klid a mentální kapacitu pro hledání nových řešení.
 
 ## Od tužky a papíru k automatizaci
 
