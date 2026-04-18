@@ -10,7 +10,7 @@ _Experienced open source enthusiast. Focused on Linux, automation with Python, a
 
 ### Charles University
 
-_AI Methodologist_ (3/2024 - 1/2026)
+_AI Methodologist_ (3/2024 - present)
 
 * Responsible for development and testing of [AI Sandbox](projects.md/#ai-sandbox)
 * Collaborated with internal stakeholders and external partners on AI-related topics
