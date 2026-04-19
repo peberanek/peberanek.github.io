@@ -1,5 +1,7 @@
 ---
-date: 2026-04-18
+date:
+  created: 2026-04-18
+  updated: 2026-04-19
 tags:
   - blogging
   - open-source
@@ -39,3 +41,13 @@ Material for MkDocs by měl dostávat **podporu přibližně do listopadu 2026**
 Zensical je k dispozici pod permisivní MIT licencí (stejně jako Material for MkDocs). Zajímavou změnou je **odklon od sponsorware modelu** (kde některé funkce byly jen pro sponsory) k nabídce pro profesionální použití pomocí Zensical Spark.
 
 Vývoj plánuji dále sledovat a rozhodně jim přeju, ať se tenhle model osvědčí.
+
+**_Update_**: Zdá se, že v posledních verzích Material for MkDocs je potřeba explicitně přidat přepínač `--livereload`. K tomu se od verze 9.7.2 začalo vypisovat varování o nekompatibilitě s MkDocs 2, které lze vypnout nastavením proměnné prostředí `NO_MKDOCS_2_WARNING=1`. Nově tedy pro spuštění vývojového serveru používám příkaz:
+
+```sh
+NO_MKDOCS_2_WARNING=1 uv run mkdocs serve --livereload
+```
+
+Nekompatibilita s MkDocs 2 je zároveň **od verze 9.7.5** explicitně ošetřena:
+> We released 9.7.5, which limits the version range of MkDocs to `<2`. This ensures that your builds will continue to work, even if MkDocs 2.0 is released.  
+> -- [What MkDocs 2.0 means for your documentation projects](https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/)
