@@ -1,17 +1,21 @@
 ---
-date: 2026-05-04
+date:
+  created: 2026-05-04
+  updated: 2026-05-06
 tags:
+  - ai
+  - generative-ai
   - linux
   - claude
 ---
 
 # Jak vypnout Intel RST na laptopu Acer Aspire 3
 
-V rámci testování aplikace, na které nyní pracuji, jsem si rozhodl vytvořit domácí server ze starého laptopu Acer Aspire 3. Při instalaci Ubuntu serveru jsem nicméně narazil na problém, kdy mi instalátor ohlásil, že nejsou k dispozici žádné disky pro instalaci systému, což mě překvapilo. Předinstalované Windowsy běžely bez problémů.
+V rámci testování aplikace, na které nyní pracuji, jsem si rozhodl vytvořit domácí server ze starého laptopu Acer Aspire 3. Při instalaci Ubuntu serveru jsem nicméně narazil na problém, kdy mi instalátor ohlásil, že nejsou k dispozici žádné disky pro instalaci systému. Překvapilo mě to, protože předinstalované Windowsy běžely bez problémů.
 
-Zkusil jsem tedy rozjet Live session Ubuntu desktopu s tím, že disky zkusím zformátovat a mohlo by to pomoct. Instalátor Ubuntu desktopu mi také nahlásil problém s disky, konkrétně problém s aktivní Intel RST (Rapid Storage Technology), která neumožňovala v instalaci pokračovat. RST bylo třeba vypnout.
+Zkusil jsem tedy rozjet Live session Ubuntu desktopu s tím, že disky zkusím zformátovat a mohlo by to pomoct. Instalátor Ubuntu desktopu mi také nahlásil problém s disky, konkrétně s aktivní Intel RST (Rapid Storage Technology), která neumožňovala v instalaci pokračovat. RST bylo třeba vypnout.
 
-Třebaže jsem zkusil věc vyřešit s pomocí Claude Sonnet 4.6, nakonec mi to dalo celkem zabrat (viz shrnutí níže). Pointa byla vypnout RST v BIOSu. _Přepínač je defaultně skrytý_ a pro zobrazení je [nutné stisknout CTRL+s v příslušném menu v BIOSu](https://community.acer.com/en/discussion/comment/895185?tab=all&utm_source=community-share#Comment_895185).
+Třebaže jsem zkusil věc vyřešit s pomocí Claude Sonnet 4.6 (prostřednictvím Open WebUI), nakonec mi to chvíli zabralo, včetně slepých uliček (viz shrnutí níže). Pointa byla vypnout RST v BIOSu. _Přepínač je defaultně skrytý_ a pro zobrazení je [nutné stisknout CTRL+s v příslušném menu v BIOSu](https://community.acer.com/en/discussion/comment/895185?tab=all&utm_source=community-share#Comment_895185).
 
 <!-- more -->
 
@@ -48,4 +52,6 @@ Níže následuje shrnutí chatu s Claudem. Mimochodem mi takovéto shrnutí př
 
 ## Lessons Learned
 
-* Finální informaci (CTRL+s v Biosu pro zobrazení skrytého přepínače pro SATA) mi model neporadil (model byl blízko, radil klávesu F6, která je ale rezervovaná pro změnu hodnot). Používal jsem Claude Sonnet 4.6 _bez přístupu k internetu_. Příště bude užitečnější zvolit model s online přístupem.
+* Finální informaci (CTRL+s v Biosu pro zobrazení skrytého přepínače pro SATA) mi model neporadil (model byl blízko, radil klávesu F6, která je ale rezervovaná pro změnu hodnot). Používal jsem Claude Sonnet 4.6 _bez přístupu k internetu_. Příště bude užitečnější zvolit model s možností hledat na internetu. Používám k tomu [variantu `:online` v OpenRouter](https://openrouter.ai/docs/guides/routing/model-variants/online).
+
+_Update_: Přidal jsem poznámky o volání modelu přes Open WebUI a jak volat model tak, aby měl přístup k vyhledávání na internetu.
