@@ -71,20 +71,20 @@ _Various roles in administration and services_ (2012 - 2017)
 * University of West Bohemia, _Bachelor's degree in Humanities Studies_ (2008 - 2011)
 * Integrovaná střední škola Cheb, _high school diploma_ (2004 - 2008)
 
-## Skills & Tools
+## Skills & Technologies
 
 * Languages: English (B2), Czech (native speaker)
+* Linux: Ubuntu, RHEL/Fedora
+* Programming and automation: Python, Bash, git & GitHub, Docker
 * AI-assisted Engineering: Claude Code
-* AI Gateways and API Platforms: LiteLLM, Openrouter, OpenAI, Anthropic
+* AI Gateways and API Platforms: LiteLLM, Openrouter, OpenAI, Anthropic, Azure AI Foundry
+* Local LLM Inference: Ollama, llama.cpp
 * Chatbots: Open WebUI, ChatGPT, Gemini, Grok
-* Local LLM Inference: Ollama
-* Programming and automation: Python, shell, git & GitHub, Docker, SQL
-* Experienced Linux user: Ubuntu, RHEL/Fedora
 
 ## Interests & Activities
 
 * Therapeutic fitness, kickbiking, walking, swimming
 * Reading, blogging
 * [Personal finance](projects.md/#personal-finance)
-* Experimenting with mindfulness and the Tiny Habits method
+* Practicing mindfulness and the Tiny Habits method
 * [Photography, digital art & design](https://www.behance.net/PetrBeranek)
