@@ -1,12 +1,13 @@
 ---
 date:
   created: 2026-05-04
-  updated: 2026-05-06
+  updated: 2026-05-08
 tags:
   - ai
   - generative-ai
   - linux
   - claude
+  - home-lab
 ---
 
 # Jak vypnout Intel RST na laptopu Acer Aspire 3
@@ -55,3 +56,5 @@ Níže následuje shrnutí chatu s Claudem. Mimochodem mi takovéto shrnutí př
 * Finální informaci (CTRL+s v Biosu pro zobrazení skrytého přepínače pro SATA) mi model neporadil (model byl blízko, radil klávesu F6, která je ale rezervovaná pro změnu hodnot). Používal jsem Claude Sonnet 4.6 _bez přístupu k internetu_. Příště bude užitečnější zvolit model s možností hledat na internetu. Používám k tomu [variantu `:online` v OpenRouter](https://openrouter.ai/docs/guides/routing/model-variants/online).
 
 _Update_: Přidal jsem poznámky o volání modelu přes Open WebUI a jak volat model tak, aby měl přístup k vyhledávání na internetu.
+
+_Update_: Článků na téma domácího labu plánuji víc, takže přidávám tag `home-lab`.
