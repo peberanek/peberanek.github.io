@@ -1,7 +1,7 @@
 ---
 date:
   created: 2026-01-02
-  updated: 2026-04-19
+  updated: 2026-05-08
 tags:
   - ai
   - claude-code
@@ -18,7 +18,7 @@ Už dříve jsem psal o [asistentovi v Open WebUI](../posts/ai-asistent-v-open-w
 
 !!! Poznámka
 
-    Kompletní zdrojový kód je [k dispozici na GitHubu](https://github.com/peberanek/peberanek.github.io).
+    Kompletní zdrojový kód je [k dispozici na GitHubu](https://github.com/peberanek/peberanek.github.io/tree/b6fadcb79e79d49c8a8c4a549cfb6533a3d10ba1).
 
 ## Definice vlastního skillu
 
@@ -175,6 +175,8 @@ allowed-tools: Bash(uv run python list-tags.py)
 4. Remove `draft: true` from $1 frontmatter, if present.
 
 ```
+
+_Update_: Opraven/doplněn odkaz na původní commit s Agent Skill. 
 
 ## Další odkazy
 
