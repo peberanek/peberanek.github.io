@@ -22,6 +22,8 @@ Instalace byla přímočará. Lze použít [custom instalační script](https://
 sudo apt install tailscale
 ```
 
+<!-- more -->
+
 Pak už jen stačí Tailscale spustit a přes odkaz na web přidat stroj do sítě.
 
 ```sh

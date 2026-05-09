@@ -16,6 +16,8 @@ Narazili např. na technické limity knihovny pro vyhledávání na straně klie
 
 Daleko větším problémem je však **situace okolo samotného projektu MkDocs** jakožto klíčové závislosti: **projekt se stal dlouhodobě neudržovaný**, komunikace ohledně jeho správy byla poněkud nejasná a nová verze MkDocs 2 navíc nemá v plánu podporovat pluginy, které jsou pro fungování Material for MkDocs klíčové. Tým tento projekt proto vyhodnotil jako "supply chain risk".
 
+<!-- more -->
+
 Nakonec se rozhodli od MkDocs oprostit a vytvořit výše zmíněný Zensical. Ten je napsaný z většiny v Rustu, nicméně je dostupný na pypi.org a dá se [nainstalovat třeba pomocí `uv`](https://zensical.org/docs/get-started/#install-with-uv):
 
 ```sh

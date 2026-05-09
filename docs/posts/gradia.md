@@ -13,6 +13,8 @@ Níže přikládám screenshoty, vytvořené - jak jinak - pomocí Gradia:
 
 ![Gradia screenshot](../assets/images/gradia.png)
 
+<!-- more -->
+
 K dispozici je řada funkcí: např. výběr barvy a stylu pozadí, zvýrazňování, nebo vkládání šipek a popisků. Zajímavou vlastností je možnost upravit poměr stran výsledného obrázku:
 
 ![Gradia screenshot – výběr poměru stran](../assets/images/gradia-aspect-ratio.png)
