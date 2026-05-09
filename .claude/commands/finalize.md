@@ -25,3 +25,10 @@ allowed-tools: Bash(uv run python list-tags.py)
     When the post is about AI, always include tag `ai`.
 
 4. Remove `draft: true` from $1 frontmatter, if present.
+
+5. Fix date to current date, if it is a new article, or add `updated` date, if it is an update, e.g.:
+    ```yaml
+    date:
+      created: 2026-05-04
+      updated: 2026-05-08
+    ```
