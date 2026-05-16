@@ -7,6 +7,7 @@ tags:
   - python
   - open-source
   - software-development
+  - git
 ---
 
 # Pohodlná správa zásuvných modulů v Gitu
