@@ -11,13 +11,13 @@ tags:
 
 # Automatické nasazení dokumentace s git `post-receive` hookem
 
-Jak už jsem [psal dříve](../posts/upgrade-blogu.md), tento web je vytvořený s Material for MkDocs a nasazení probíhá automaticky pomocí [příslušné Github action](https://github.com/peberanek/peberanek.github.io/blob/24842d96bbf5ccd519564a1f720f1f0923cbc799/.github/workflows/building.yml). Je to velmi pohodlné, nemusím se o nic starat.
+Jak už jsem [psal dříve](../posts/upgrade-blogu.md), tenhle web je vytvořený s Material for MkDocs a nasazení probíhá automaticky pomocí [příslušné Github action](https://github.com/peberanek/peberanek.github.io/blob/24842d96bbf5ccd519564a1f720f1f0923cbc799/.github/workflows/building.yml). Je to velmi pohodlné, nemusím se o nic starat.
 
-Zároveň už si nějakou dobu tvořím osobní znalostní bázi, také formou dokumentace pomocí Material for MkDocs (o tom třeba někdy v budoucnu). Pointa byla tvořit jí jednoduše v textových souborech (v Markdownu), a přitom ji mít dostupnou na všech zařízeních. Píšu si tam i dost soukromé věci, takže ji nechci mít vystavenou veřejně na internetu jako tenhle web. Logickou volbou bylo tedy zkusit ji nasadit v rámci nového [home labu](../posts/soukroma-vpn-s-tailscale.md).
+Zároveň už si nějakou dobu tvořím osobní znalostní bázi, také formou dokumentace pomocí Material for MkDocs (o tom třeba někdy v budoucnu). Pointa byla tvořit jí v textových souborech (v Markdownu) a mít jí dostupnou na všech zařízeních. Píšu si tam i dost soukromé věci, takže bázi nechci mít vystavenou veřejně na internetu jako tenhle web. Logickou volbou bylo tedy zkusit ji nasadit v rámci nového [home labu](../posts/soukroma-vpn-s-tailscale.md).
 
-Přemýšlel jsem, jak provádět nasazení automaticky a jednoduše. Claude mi navrh využít [git `post-receive` hook](https://git-scm.com/docs/githooks#post-receive). Návrh se mi zalíbil. Jedná se o jeden shellový script, který dokumentaci sestaví potom co udělám `git push` do daného repozitáře (zmíněná znalostní báze je zároveň git repo). Výsledný web je přístupný přes VPN pomocí `tailscale serve`.
+Když jsem přemýšlel jak bázi nasadit a zpřístupnit, Claude mi navrh využít [git `post-receive` hook](https://git-scm.com/docs/githooks#post-receive). Návrh se mi zalíbil. Jedná se o jeden shellový script, který dokumentaci sestaví potom co udělám `git push` do daného repozitáře. Výsledný web je přístupný přes VPN pomocí `tailscale serve`.
 
-Níže je příklad zmíněného git hooku v [_bare_ repozitáři na serveru](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server). (Znalostní bázi jsem pojmenoval jednoduše `knowledge`. Viz název adresáře níže.)
+Níže je příklad zmíněného git hooku v [_bare_ repozitáři na serveru](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server).
 
 ```sh title="hooks/post-receive"
 #!/bin/bash
