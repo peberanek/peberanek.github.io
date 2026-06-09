@@ -4,10 +4,8 @@ date:
   updated: 2025-07-05
 tags:
   - automation
-  - python
   - open-source
   - software-development
-  - git
 ---
 
 # Pohodlná správa zásuvných modulů v Gitu

@@ -3,16 +3,13 @@ date:
   created: 2025-09-28
   updated: 2026-01-02
 tags:
+  - agentic-ai
   - ai
-  - generative-ai
-  - ai-sandbox
-  - ai-assistants
-  - blogging
-  - open-webui
-  - python
   - automation
-  - claude-code
-  - chatbots
+  - blogging
+  - open-source
+  - python
+  - today-i-learned
 ---
 
 # AI asistent v Open WebUI

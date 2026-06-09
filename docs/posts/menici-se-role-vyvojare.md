@@ -4,12 +4,8 @@ date:
   updated: 2025-06-30
 tags:
   - ai
-  - generative-ai
-  - simon-willison
-  - vibe-coding
+  - ai-assisted-engineering
   - software-development
-  - intelligence-augmentation
-  - creativity
 ---
 
 # Měnící se role vývojáře

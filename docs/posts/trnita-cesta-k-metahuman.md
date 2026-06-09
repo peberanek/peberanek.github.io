@@ -3,9 +3,8 @@ date:
   created: 2025-12-30
   updated: 2026-01-01
 tags:
-  - creativity
   - linux
-  - windows
+  - today-i-learned
 ---
 
 # Trnitá cesta k vyzkoušení MetaHuman pro Unreal Engine 5

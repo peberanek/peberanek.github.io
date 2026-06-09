@@ -2,8 +2,6 @@
 date: 2025-06-07
 tags:
   - ai
-  - ai-ethics
-  - generative-ai
   - open-source
 ---
 

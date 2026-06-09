@@ -1,12 +1,9 @@
 ---
 date: 2025-11-30
 tags:
+  - agentic-ai
   - ai
-  - ai-agents
-  - ai-assistants
-  - ai-risks
-  - andrej-karpathy
-  - generative-ai
+  - ai-assisted-engineering
   - software-development
 ---
 

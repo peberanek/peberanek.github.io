@@ -2,9 +2,7 @@
 date: 2025-10-11
 tags:
   - ai
-  - ai-agents
-  - ai-predictions
-  - sam-altman
+  - agentic-ai
 ---
 
 # AI a velká očekávání (3)

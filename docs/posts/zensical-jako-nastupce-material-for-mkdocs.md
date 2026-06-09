@@ -6,6 +6,8 @@ tags:
   - blogging
   - open-source
   - software-development
+  - python
+  - file-over-app
 ---
 
 # Zensical jako nástupce Material for MkDocs

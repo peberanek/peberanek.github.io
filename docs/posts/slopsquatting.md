@@ -2,9 +2,9 @@
 date: 2026-05-22
 tags:
   - ai
-  - ai-risks
-  - generative-ai
-  - software-development
+  - ai-assisted-engineering
+  - agentic-ai
+  - cybersecurity
 ---
 
 # Slopsquatting

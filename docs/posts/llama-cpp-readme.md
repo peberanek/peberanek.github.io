@@ -2,10 +2,9 @@
 date: 2026-02-21
 tags:
   - ai
-  - generative-ai
   - open-source
-  - simon-willison
   - software-development
+  - local-inference
 ---
 
 # Minimalistický počátek projektu llama.cpp

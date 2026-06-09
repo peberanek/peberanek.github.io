@@ -1,12 +1,8 @@
 ---
 date: 2025-10-03
 tags:
+  - agentic-ai
   - ai
-  - ai-agents
-  - claude-code
-  - ai-sandbox
-  - generative-ai
-  - fish-shell
 ---
 
 # Claude Code přes LiteLLM

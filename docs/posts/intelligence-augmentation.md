@@ -2,7 +2,7 @@
 date: 2025-09-07
 tags:
   - ai
-  - intelligence-augmentation
+  - automation
 ---
 
 # Intelligence Augmentation

@@ -2,9 +2,7 @@
 date: 2025-04-05
 tags:
   - ai
-  - generative-ai
   - open-source
-  - chatbots
 ---
 
 # Různí chatboti v jedné aplikaci

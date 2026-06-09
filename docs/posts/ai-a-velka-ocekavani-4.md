@@ -2,10 +2,6 @@
 date: 2025-11-20
 tags:
   - ai
-  - ai-ethics
-  - ai-predictions
-  - ai-risks
-  - mr-market
 ---
 
 # AI a velká očekávání (4)

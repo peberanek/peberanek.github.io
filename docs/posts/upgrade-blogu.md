@@ -4,10 +4,9 @@ date:
   updated: 2026-01-18
 tags:
   - blogging
-  - python
-  - open-source
   - automation
-  - creativity
+  - file-over-app
+  - python
 ---
 
 # Upgrade blogu pomocí Material for MkDocs

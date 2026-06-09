@@ -2,10 +2,7 @@
 date: 2025-09-26
 tags:
   - ai
-  - generative-ai
-  - ai-assistants
-  - chatbots
-  - creativity
+  - ai-assisted-engineering
 ---
 
 # Stanford CS221 AI tutoring

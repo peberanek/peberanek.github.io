@@ -2,10 +2,7 @@
 date: 2026-04-11
 tags:
   - ai
-  - chatbots
-  - generative-ai
-  - creativity
-  - image-generation
+  - today-i-learned
 ---
 
 # Editace portrétu s Gemini 3 Flash Image

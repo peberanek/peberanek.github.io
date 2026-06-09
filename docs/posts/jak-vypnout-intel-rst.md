@@ -3,11 +3,10 @@ date:
   created: 2026-05-04
   updated: 2026-05-08
 tags:
-  - ai
-  - generative-ai
-  - linux
-  - claude
+  - ai-assisted-engineering
   - home-lab
+  - linux
+  - today-i-learned
 ---
 
 # Jak vypnout Intel RST na laptopu Acer Aspire 3

@@ -5,12 +5,10 @@ date:
 pin: true
 tags:
   - personal-finance
-  - plain-text-accounting
   - automation
+  - file-over-app
   - open-source
   - python
-  - beancount
-  - creativity
 ---
 
 # Osobní účetnictví: Má to smysl?
@@ -390,7 +388,6 @@ transaction = Transaction(
 )
 
 print_entry(transaction)
-
 ```
 
 Po provedení instrukcí v souboru získáme výstup ve formě transakce ve formátu Beancount.

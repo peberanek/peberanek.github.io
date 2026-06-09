@@ -2,7 +2,6 @@
 date: 2025-04-05
 tags:
   - blogging
-  - creativity
 ---
 
 # O smyslu psaní blogů

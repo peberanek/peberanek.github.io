@@ -2,9 +2,6 @@
 date: 2025-05-02
 tags:
   - ai
-  - ai-ethics
-  - generative-ai
-  - lm-arena
 ---
 
 # Mark Zuckerberg o Chatbot Aréně

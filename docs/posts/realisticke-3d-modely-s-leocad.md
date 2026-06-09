@@ -1,9 +1,8 @@
 ---
 date: 2026-02-12
 tags:
-  - creativity
-  - linux
   - open-source
+  - today-i-learned
 ---
 
 # Realistické 3D modely Lega s LeoCAD a Blender

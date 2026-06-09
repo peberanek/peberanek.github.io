@@ -1,7 +1,7 @@
 ---
 date: 2025-10-10
 tags:
-  - social-media
+  - mental-health
 ---
 
 # prof. Jiří Horáček o stavu duševního zdraví v České republice

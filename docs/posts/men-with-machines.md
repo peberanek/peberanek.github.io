@@ -2,7 +2,6 @@
 date: 2026-05-14
 tags:
   - ai
-  - ai-risks
 ---
 
 # Men with Machines

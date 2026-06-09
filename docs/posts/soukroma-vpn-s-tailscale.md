@@ -5,9 +5,6 @@ date:
 tags:
   - home-lab
   - linux
-  - open-source
-  - open-webui
-  - simon-willison
 ---
 
 # Soukromá VPN s Tailscale

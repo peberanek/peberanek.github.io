@@ -4,9 +4,6 @@ date:
   updated: 2025-06-08
 tags:
   - ai
-  - generative-ai
-  - chatbots
-  - open-webui
   - open-source
 ---
 

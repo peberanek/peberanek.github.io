@@ -2,10 +2,7 @@
 date: 2025-07-24
 tags:
   - ai
-  - generative-ai
-  - ai-risks
-  - creativity
-  - intelligence-augmentation
+  - ai-assisted-engineering
 ---
 
 # Volitional Muscles

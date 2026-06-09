@@ -2,8 +2,6 @@
 date: 2026-04-19
 tags:
   - ai
-  - ai-ethics
-  - ai-risks
 ---
 
 # AI Washing

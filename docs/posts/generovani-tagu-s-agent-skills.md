@@ -3,9 +3,8 @@ date:
   created: 2026-01-02
   updated: 2026-05-08
 tags:
+  - agentic-ai
   - ai
-  - claude-code
-  - ai-agents
   - automation
   - blogging
   - python

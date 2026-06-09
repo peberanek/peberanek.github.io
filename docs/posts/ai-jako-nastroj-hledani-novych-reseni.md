@@ -2,11 +2,6 @@
 date: 2025-03-30
 tags:
   - ai
-  - ai-agents
-  - reinforcement-learning
-  - andrej-karpathy
-  - intelligence-augmentation
-  - creativity
 ---
 
 # AI jako nástroj hledání nových řešení

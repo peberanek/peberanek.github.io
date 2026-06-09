@@ -4,9 +4,8 @@ date:
   updated: 2026-05-17
 tags:
   - automation
-  - git
   - home-lab
-  - open-source
+  - today-i-learned
 ---
 
 # Automatické nasazení dokumentace s git `post-receive` hookem

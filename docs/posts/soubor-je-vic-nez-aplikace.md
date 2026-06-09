@@ -1,9 +1,7 @@
 ---
 date: 2025-03-03
 tags:
-  - beancount
-  - open-source
-  - andrej-karpathy
+  - file-over-app
   - software-development
 ---
 

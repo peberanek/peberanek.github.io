@@ -2,8 +2,6 @@
 date: 2025-04-04
 tags:
   - ai
-  - ai-ethics
-  - ai-risks
 ---
 
 # AI jako nástroj (ne)komunikace

@@ -1,14 +1,15 @@
 ---
-date: 2025-03-05
+date:
+  created: 2025-03-05
+  updated: 2026-06-09
 tags:
   - ai
-  - ai-assistants
-  - generative-ai
-  - ollama
   - open-source
+  - local-inference
+  - python
 ---
 
-# `llm`
+# `llm`: užitečný nástroj do příkazové řádky
 
 Dneska jsem vyzkoušel nástroj do příkazové řádky, nazvaný jednoduše [llm](https://llm.datasette.io/en/stable/). Jednou z výhod je, že dokáže volat i lokální modely běžící přes [Ollamu](https://ollama.com/).
 

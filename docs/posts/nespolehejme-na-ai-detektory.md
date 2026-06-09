@@ -1,16 +1,14 @@
 ---
-date: 2025-06-11
+date:
+  created: 2025-06-11
+  updated: 2026-06-09
 tags:
   - ai
-  - ai-ethics
-  - generative-ai
-  - intelligence-augmentation
-  - creativity
 ---
 
-# Nespoléhejme na "AI detektory"
+# Nespoléhejme na "detektory AI"
 
-Stále se setkávám se snahou vypořádat se s nástupem generativní AI nasazením tzv. AI detektorů:
+Stále se setkávám se snahou vypořádat se s nástupem generativní AI nasazením tzv. detektorů AI:
 
 > This software aims to flag AI-generated content in student work. However, AI detection software is far from foolproof—in fact, it has high error rates and can lead instructors to falsely accuse students of misconduct (Edwards, 2023; Fowler, 2023). OpenAI, the company behind ChatGPT, even shut down their own AI detection software because of its poor accuracy (Nelson, 2023).  
 -- [AI Detectors Don’t Work. Here’s What to Do Instead](https://mitsloanedtech.mit.edu/ai/teach/ai-detectors-dont-work/) 

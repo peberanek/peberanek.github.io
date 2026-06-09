@@ -2,9 +2,6 @@
 date: 2025-06-14
 tags:
   - ai
-  - generative-ai
-  - ai-agents
-  - retrieval-augmented-generation
   - software-development
 ---
 

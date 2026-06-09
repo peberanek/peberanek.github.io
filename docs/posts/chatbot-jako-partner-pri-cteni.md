@@ -2,14 +2,7 @@
 date: 2025-06-13
 tags:
   - ai
-  - generative-ai
-  - chatbots
-  - andrej-karpathy
-  - claude
-  - generative-ai
-  - mr-market
-  - intelligence-augmentation
-  - creativity
+  - today-i-learned
 ---
 
 # Chatbot jako partner při čtení

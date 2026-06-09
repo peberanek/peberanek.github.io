@@ -2,9 +2,8 @@
 date: 2025-06-29
 tags:
   - ai
-  - generative-ai
+  - ai-assisted-engineering
   - software-development
-  - intelligence-augmentation
 ---
 
 # Limity programování s asistencí AI

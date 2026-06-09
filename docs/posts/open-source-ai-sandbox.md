@@ -2,12 +2,8 @@
 date: 2025-03-07
 tags:
   - ai
-  - generative-ai
-  - ai-sandbox
-  - ai-risks
-  - chatbots
   - open-source
-  - open-webui
+  - local-inference
 ---
 
 # Open-source AI Sandbox

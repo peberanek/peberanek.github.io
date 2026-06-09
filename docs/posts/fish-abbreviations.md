@@ -3,8 +3,8 @@ date:
   created: 2026-01-30
   updated: 2026-04-08
 tags:
-  - fish-shell
-  - linux
+  - today-i-learned
+  - automation
 ---
 
 # Fish Abbreviations

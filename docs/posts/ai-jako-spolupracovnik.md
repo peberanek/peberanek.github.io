@@ -2,8 +2,6 @@
 date: 2025-04-14
 tags:
   - ai
-  - generative-ai
-  - intelligence-augmentation
 ---
 
 # AI jako spolupracovník

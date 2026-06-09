@@ -2,9 +2,6 @@
 date: 2026-01-14
 tags:
   - ai
-  - ai-risks
-  - ai-ethics
-  - generative-ai
 ---
 
 # AI jako nástroj podvodníků

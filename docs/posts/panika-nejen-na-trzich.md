@@ -2,10 +2,6 @@
 date: 2025-04-05
 tags:
   - ai
-  - generative-ai
-  - lm-arena
-  - sam-altman
-  - mr-market
 ---
 
 # Nové jazykové modely a panika (nejen) na trzích
