@@ -3,6 +3,7 @@ date: 2026-04-11
 tags:
   - ai
   - today-i-learned
+  - image-generation
 ---
 
 # Editace portrétu s Gemini 3 Flash Image
