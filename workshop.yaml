@@ -1,0 +1,17 @@
+name: peberanek-github-io
+base: ubuntu@24.04
+sdks:
+  - name: uv
+    slots:
+      mkdocs:
+        interface: tunnel
+        endpoint: localhost:8000        # MkDocs inside the workshop
+  - name: system
+    plugs:
+      mkdocs:
+        interface: tunnel
+        endpoint: localhost:8000        # port on your host
+actions:
+  sync: uv sync
+  upgrade: uv lock --upgrade
+  serve: NO_MKDOCS_2_WARNING=1 uv run mkdocs serve --livereload
