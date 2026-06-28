@@ -6,6 +6,7 @@ tags:
   - knowledge-management
   - file-over-app
   - open-source
+  - mental-health
 ---
 
 # Zkušenosti s tvorbou osobní znalostní báze
