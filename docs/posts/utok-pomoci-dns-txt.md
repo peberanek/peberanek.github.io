@@ -66,4 +66,4 @@ Navíc změnou DNS záznamu může útočník tuto stopu snadno skrýt (např. z
 
 > The attack splits its components across three systems that are never examined together: the repository, the DNS infrastructure, and the developer's trust in their AI agent. Static analysis sees a DNS lookup. Network monitoring sees name resolution. The agent sees a pre-authorised setup step. None of the three looks malicious in isolation.
 
-O důvod více, proč uvažovat o důkladné izolaci nejen programovacích agentů, ale i jednotlivých projektů od zbytku systému.
+A nemusí se jednat jen o záškodné repozitáře. I populární [důvěryhodné projekty jako LiteLLM se mohou stát cílem supply chain útoku](https://docs.litellm.ai/blog/security-update-march-2026) (třebaže jiného typu). O důvod více, proč uvažovat o důkladné izolaci nejen programovacích agentů, ale i projektů a jejich závislostí od zbytku systému.
