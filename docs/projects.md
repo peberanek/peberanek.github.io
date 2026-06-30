@@ -2,7 +2,7 @@
 
 ## AI Sandbox
 
-_Charles University_ (2024 - present)
+_Charles University_ (2024 - 2026)
 
 The goal of this project is to provide users with access:
 
