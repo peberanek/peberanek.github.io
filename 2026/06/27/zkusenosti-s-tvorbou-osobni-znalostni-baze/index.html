@@ -1,0 +1,1005 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://peberanek.github.io/2026/06/27/zkusenosti-s-tvorbou-osobni-znalostni-baze/">
+      
+      
+        <link rel="prev" href="../../26/generovani-obrazku-s-imagerouter/">
+      
+      
+        <link rel="next" href="../../30/utok-prostrednictvim-programovaciho-agenta-a-zneuziti-duvery-v-supply-chain/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Zkušenosti s tvorbou osobní znalostní báze - Petr Beránek</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#zkusenosti-s-tvorbou-osobni-znalostni-baze" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Petr Beránek" class="md-header__button md-logo" aria-label="Petr Beránek" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Petr Beránek
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Zkušenosti s tvorbou osobní znalostní báze
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../projects/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Projects
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Petr Beránek" class="md-nav__button md-logo" aria-label="Petr Beránek" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Petr Beránek
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../.." class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../archive/2023/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2023
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../projects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#od-tuzky-a-papiru-k-markdownu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Od tužky a papíru k Markdownu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motivace-pro-znalostni-bazi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motivace pro znalostní bázi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiment-s-llm-wiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment s "LLM Wiki"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projekt-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projekt "Knowledge"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pouzite-technologie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Použité technologie
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otevrene-otazky" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Otevřené otázky
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-06-27 00:00:00+00:00" class="md-ellipsis">June 27, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              7 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <a href="../../../../tags/#tag:agentic-ai" class="md-tag">agentic-ai</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../../tags/#tag:ai" class="md-tag">ai</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../../tags/#tag:file-over-app" class="md-tag">file-over-app</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../../tags/#tag:knowledge-management" class="md-tag">knowledge-management</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../../tags/#tag:mental-health" class="md-tag">mental-health</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../../tags/#tag:open-source" class="md-tag">open-source</a>
+      
+    
+  </nav>
+
+
+
+<h1 id="zkusenosti-s-tvorbou-osobni-znalostni-baze">Zkušenosti s tvorbou osobní znalostní báze</h1>
+<p>V následujícím textu sdílím svou motivaci a zkušenosti s tvorbou osobní znalostní báze (<a href="https://en.wikipedia.org/wiki/Personal_knowledge_base">Personal Knowledge Base</a>) s využitím různých open source nástrojů. Přestože je projekt relativně čerstvý (věnuji se mu pár měsíců), už nyní v něm nacházím velkou přidanou hodnotu.</p>
+<h2 id="od-tuzky-a-papiru-k-markdownu">Od tužky a papíru k Markdownu</h2>
+<p>Posledních 7 let si dělám ručně psané poznámky do sešitu. Jsou rychlé, snadné, přirozené. Člověk není omezován klávesnicí, obrazovkou, stávkujícím softwarem, otravnými notifikacemi a podobně. Psaní mi pomáhá ujasnit si myšlenky, priority, uvolnit mentální kapacitu. Poznačit si, co bych jinak určitě zapomněl. A někdy i odreagovat emoce.</p>
+<p>Ručně psané poznámky mají pochopitelně řadu nevýhod. Pokud škrábete tak strašně, jako jsem psal donedávna i já, může být později těžké to vůbec přečíst. (Mimochodem, přechodem na <a href="https://www.comenia-script.com/">Comenia Script</a> se čitelnost mého psaní <em>dramaticky zlepšila</em>. A přeučení nebylo těžké ani zdlouhavé - za pár dnů tréninku bylo hotovo.) Dále, pokud chce člověk něco opravit nebo změnit, u fyzického psaní a kreslení to jde jen těžko. V poznámkách se taky špatně hledá, staré sešity nejsou po ruce, ztrácí se a podobně.</p>
+<p>Zkoušel jsem proto využít různý software: poznámky ve Wordu nebo obyčejných textových souborech, později i specializované nástroje jako <a href="https://joplinapp.org/">Joplin</a> nebo <a href="https://obsidian.md/">Obsidian</a>. Nic z toho se ale neuchytilo. Myslím, že největší překážky byly následující:</p>
+<ol>
+<li>Můj mentální model poznámek byl příliš složitý: složité hierarchie, snaha zachytit příliš mnoho.</li>
+<li>Nástroje byly buď nevhodné (Word), nebo nepohodlné (Joplin, Obsidian). Učit se pracovat s novým uživatelských rozhraním je kognitivně náročné, a navíc jsem si dost zvykl na rychlé psaní v editoru Vim (tj. bez nutnosti používat myš). (Mimochodem, <a href="https://fishshell.com/docs/current/cmds/fish_vi_key_bindings.html">Fish shell</a> umí emulovat Vim i v terminálu!) Obsidian sice nějakou minimální emulaci Vimu nabízel, ale mým potřebám nestačila.</li>
+<li>Chyběl mi jednoduchý způsob jak k poznámkám přistupovat z různých zařízení (smartphone, PC, laptop) bez nutnosti vytvářet si někde účet a posílat data do cloudu. Z toho důvodu mě nelákaly aplikace jako Notion nebo Evernote, kde zároveň nemusí být snadné svá data později exportovat.</li>
+</ol>
+<blockquote>
+<p>Simplicity changes behavior.<br />
+-- <a href="https://www.behaviormodel.org/videos">BJ Fogg: Fogg Behavior Model</a></p>
+</blockquote>
+<!-- more -->
+
+<p>Nejvíc se mi nakonec osvědčily obyčejné textové soubory v Markdownu, protože <em>snadno zapadly do existujícího workflow</em>. Mohl jsem je psát v editoru VS Code, na který jsem zvyklý z programování. VS Code má navíc dobrý <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim">emulátor Vimu</a> a zároveň dokáže Markdown i vykreslit pomocí zkratky CTRL+Shift+V.</p>
+<p>Digitalizaci jsem začal příležitostným psaním deníku <em>když jsem cítil potřebu</em> si něco poznačit nebo zpracovat. Líbila se mi možnost přidávat odkazy a obrázky, včetně rychlejšího vyhledávání. To fungovalo, bylo to užitečné, bez tlaku teď něco dělat jinak nebo hromadně přepisovat. Jeden soubor v Markdownu. Sice nebyl přístupný na dalších zařízeních, ale tahle <em>jednoduchost a nenárokovost</em> byla tím prvním krokem, co jsem potřeboval. Sešit na rychlé poznámky mi zůstal, deník se stal příležitostným digitálním doplňkem.</p>
+<h2 id="motivace-pro-znalostni-bazi">Motivace pro znalostní bázi</h2>
+<p>V posledních letech jsem opakovaně cítil potřebu soustředit svoje poznámky a související artefakty (typicky obrázky) na jedno místo. Hledat věci po různých adresářích nebo v sešitě začalo být dost otravné. Taky jsem měl chuť se občas nad něčím víc zamyslet a případně to nasdílet i veřejně. Před rokem a čtvrt mě proto <a href="../../../../2025/02/26/zacinam-psat-blog/">Simon Willison inspiroval začít psát blog</a>.</p>
+<p>Přemýšlel jsem, jak na to jít jednoduše, a kombinace GitHub Pages + Markdown zafungovala výborně. Ze začátku mi stačilo jen <code>README.md</code>. Jak se ale blog, resp. web rozšiřoval, přešel jsem na <a href="../../../../2025/06/28/upgrade-blogu-pomoci-material-for-mkdocs/">sestavení pomocí Material for MkDocs</a>. Nástroj je napsaný v Pythonu, zdrojové soubory webu se píší v Markdownu. Opět to zapadlo.</p>
+<p>Řada poznámek zůstala nicméně rozesetá na různých místech, plus mě napadala spousta věcí, které byly čistě interní, nebo potřebovaly ještě uzrát. Zkusil jsem si proto udělat gitovský repozitář "notes" pro deník a pár dalších poznámek, ale stále to nebylo ono.</p>
+<h2 id="experiment-s-llm-wiki">Experiment s "LLM Wiki"</h2>
+<p>Začátkem dubna <a href="https://x.com/karpathy/status/2040470801506541998">Andrej Karpathy zveřejnil svůj příspěvek o LLM Knowledge Bases</a>, který mě zaujal. Pointou je, že znalostní bázi tvoří a udržuje AI agent. Primární rolí uživatele je vybírat datové zdroje.</p>
+<p>Předhodil jsem tedy <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">LLM Wiki idea file</a> (z Karpathyho příspěvku výše) agentům Claude Code a Codex. Jako datové zdroje jsem jim dal repozitář svého blogu, resp. webu a pár dalších souborů s poznámkami.</p>
+<p>A musím říct, že výsledky byly zajímavé. Agenti dokázali v textu najít řadu souvislostí, které mě nenapadly. Bylo to jako když se na ty stejné informace <em>podívá někdo další, jinýma očima</em>.</p>
+<p>Zároveň jsem ale brzy narazil na potíže, např.:</p>
+<ul>
+<li>Jak zajistit, že odkazy, které agent generuje (tzn. prolinkování dokumentů), skutečně existují a že se nějakou změnou nerozbily? Jistě by šlo najít, příp. napsat nějaký custom software, co to vyřeší, ale byla to komplexita navíc, která mě v tu chvíli spíš odrazovala.</li>
+<li>Jak snížit riziko, že agent vytváří nepravdivé informace a závěry? Nelíbí se mi představa nechat běžet agenta na svém počítači pod svým uživatelským účtem v plně autonomním módu (zejména kvůli rizikům jako Prompt Injection nebo Supply Chain útokům; způsoby izolace teprve zkoumám). Každý nový dokument nebo změnu jsem tedy poctivě zkontroloval a v tom množství to byla dost únavná práce. Moc mě to nebavilo.</li>
+<li>Nelíbilo se mi, jak začíná narůstat spotřeba tokenů a s tím i cena za práci. Modely volám přes <a href="https://openrouter.ai/">OpenRouter API</a> (měsíční předplatné ChatGPT nebo Claude se mi nevyplácí). Oproti běžnému "kódění" s Claude Code začala spotřeba citelně stoupat. Jistě, dá se argumentovat, že závisí na ceně modelu, reasoning effort, import velkého množství dokumentů nebude příliš častý, a tak dále. Přesto jsem začal mít otazník u škálování z pohledu ceny.</li>
+</ul>
+<p>Přišlo mi, že komplexita začala pomalu stoupat, namísto, aby klesala. Koncept LLM Wiki pro mě v danou chvíli nebyl dostatečně jednoduchý a pohodlný na realizaci. Rozhodl jsem se proto zkusit jiný přístup: Začít budovat znalostní bázi od nuly, manuálně, a <strong>přidat práci agenta jen tam, kde má největší smysl</strong>, kde bude agent komplexitu snižovat.</p>
+<h2 id="projekt-knowledge">Projekt "Knowledge"</h2>
+<p>Vytvořil jsem proto nový repozitář "knowledge". Rozdíl oproti předchozím pokusům nebyl až tak v obsahu, jako spíš v mém přístupu. Namísto statického odkladiště informací jsem chtěl živou, aktivně udržovanou bázi, která bude užitečná pro to, co právě řeším. Minimalistický praktický obsah, který může v budoucnu využít i nějaký "osobní AI asistent".</p>
+<p>Chvíli jsem si s tím hrál a experimentoval, nicméně k zásadnímu mi pomohly 2 nástroje:</p>
+<ol>
+<li>(Opět) <em>Material for MkDocs</em>: Sestavit poznámky do podoby přehledného a oku lahodícího webu byl citelný upgrade. S pěkným webem jsem dostal i větší chuť se mu věnovat. Vyřešil se tím i problém s validací interních odkazů: když MkDocs narazí na neplatný odkaz, vypíše warning, příp. jde vynutit i error (pomocí <code>mkdocs build --strict</code>). Skvělou vlastností je <a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/">funkce vyhledávání</a>.</li>
+<li><em>Tailscale</em>: Díky <a href="../../../05/09/soukroma-vpn-s-tailscale/">Tailscale jsem si vytvořil soukromou VPN</a>, na které jde vytvořený web rovnou nasdílet (pomocí funkce Tailscale Serve). Znalostní bázi mám tak přístupnou na všech zařízeních, neustále po ruce.</li>
+</ol>
+<p>Vznikl mi tak <strong>soukromý bezpečný digitální prostor</strong>, kde mě neotravují žádné notifikace ani reklamy, nikdo mi nic netlačí a nepodsouvá. Mám prostor, kde se můžu soustředit na to, co je <em>důležité pro mě</em>. Prostor, kde můžu mít přehledně sepsané a utříděné priority, snadno si je připomínat, aktualizovat a rozvíjet.</p>
+<p>Je jasné, že každý z nás potřebuje něco trochu jiného. Mě osobně teď třeba pomáhají přehledy a vizualizace. Viz příklad níže:</p>
+<p>Co mě nabíjí:</p>
+<div class="admonition tip">
+<p class="admonition-title">Trávit čas mezi aktivními lidmi</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Procházky, výlety do přírody, variabilita, změna prostředí</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Pracovat na něčem, co přináší mi skutečnou hodnotu</p>
+</div>
+<p>Co mě vyčerpává:</p>
+<div class="admonition danger">
+<p class="admonition-title">Trávení času u počítače</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Někoho o něčem přesvědčovat</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Chaos, mikromanagement, nesplněné sliby</p>
+</div>
+<p><em>Vytvořeno pomocí <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/">Admonitions</a></em></p>
+<p>Hlavní strana báze je pro mě takový rychlý rozcestník, ke kterému se každý den vracím. Dělám si poznámky do deníku, občas k nějaké technologii, se kterou zrovna experimentuji. Je to úzce svázané se snahou budovat a posilovat zdravou pravidelnost, mentální regeneraci a podobně. O to třeba v nějakém dalším článku.</p>
+<h2 id="pouzite-technologie">Použité technologie</h2>
+<p>Pro přehled přidávám stručný seznam použitých technologií s komentáři:</p>
+<ul>
+<li><a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>: Nástroj pro vytvoření webové podoby znalostní báze. Dokumenty se píši v Markdownu. Vyhovuje mi snadné použití, moderní vzhled, řada užitečných pluginů jako vyhledávání na straně klienta. V dohledné době plánuji <a href="../../../04/18/zensical-jako-nastupce-material-for-mkdocs/">nahradit nástupnickým nástrojem Zensical</a>.</li>
+<li>Textový editor, v mém případě VS Code: Pointou je, aby tvorba znalostní báze co nejsnáze zapadla do existujícího workflow. Vyhovují mi vlastnosti jako již zmíněná emulace Vimu, vestavěný terminál nebo otevření okna webového prohlížeče přímo v editoru.</li>
+<li>Git: Jsem zvyklý projekty verzovat. Git se zároveň hodí jako nástroj pro sdílení a práci na různých zařízeních (PC, laptop). Sdílení probíhá prostřednictvím bare repozitáře na vlastním serveru, kde se web i <a href="../../../05/17/automaticke-nasazeni-dokumentace-s-git-post-receive-hookem/">automaticky sestaví a nasadí pomocí <code>post-receive</code> hooku</a>.</li>
+<li><a href="https://tailscale.com/">Tailscale</a>: Proprietární technologie VPN, která staví na protokolu <a href="https://www.wireguard.com/">WireGuard</a>. Pomocí <a href="https://tailscale.com/docs/features/tailscale-serve">Tailscale Serve</a> sdílím webové stránky a lokální služby v rámci VPN.</li>
+<li>Google Docs: Editovat znalostní bázi (Git repo) na smartphonu by nejspíš šlo, ale ne moc pohodlně. Pro rychlé poznámky a odkazy využívám Google Docs, které jsou dostupné na všech zařízeních. Jednou za čas poznámky přepíšu. Je to trochu opruz, ale dá se to zvládnout.</li>
+</ul>
+<h2 id="otevrene-otazky">Otevřené otázky</h2>
+<ul>
+<li><em>Bezpečné využívání AI agentních systémů</em>. Velké jazykové modely a AI agentní systémy přináší řadu rizik, které je třeba brát v potaz. Viz <a href="https://genai.owasp.org/llm-top-10/">OWASP Top 10 Risk &amp; Mitigations for LLMs and Gen AI Apps</a>:<ul>
+<li>Při tvorbě znalostní báze, např. při psaní deníku, se nechci nijak cenzurovat. Objevují se zde tedy dost osobní informace, a to nejen o mě, ale potenciálně i o lidech, které znám. Říkám si tedy jak eliminovat, nebo alespoň snížit riziko úniku těchto dat.<ul>
+<li>Ideální by bylo využívat jen modely běžící na mém vlastním hardware. Existuje dostatečně "malý" a zároveň výkonný model, zejména s ohledem na češtinu?</li>
+<li>Služba OpenRouter nabízí vynucení politiky <a href="https://openrouter.ai/docs/guides/features/zdr">Zero Data Retention</a>, případně <a href="https://openrouter.ai/docs/guides/features/guardrails/overview">Guardrails</a>. Samozřejmě nezbývá, než poskytovatelům věřit. Je to akceptovatelné řešení?</li>
+</ul>
+</li>
+<li>Kontrolovat a schvalovat příkazy a změny, které AI agent provádí, je kognitivně vyčerpávající. Rád bych měl proto možnost spustit agenta v plně autonomním režimu. Následující dvě řešení mě zaujaly, nicméně bude potřeba ověřit si technické detaily a praktičnost:<ul>
+<li><a href="https://ubuntu.com/workshop/docs/">Ubuntu Workshop</a>: neprivilegované systémové kontejnery vytvářené pomocí LXD.</li>
+<li><a href="https://docs.docker.com/ai/sandboxes/">Docker Sandboxes</a>: virtuální stroje vytvářené pomocí microVM.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Výše zmíněné otázky jsou předmětem mého dalšího průzkumu.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2026 Petr Beránek
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "content.code.copy", "content.code.annotate", "header.autohide"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
