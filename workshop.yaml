@@ -6,12 +6,12 @@ sdks:
     slots:
       mkdocs:
         interface: tunnel
-        endpoint: localhost:8000        # MkDocs inside the workshop
+        endpoint: localhost:10020        # MkDocs inside the workshop
   - name: system
     plugs:
       mkdocs:
         interface: tunnel
-        endpoint: localhost:8000        # port on your host
+        endpoint: localhost:10020        # port on your host
 actions:
   sync: uv sync
   upgrade: uv lock --upgrade
