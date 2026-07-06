@@ -1,5 +1,6 @@
 ---
 date: 2026-06-27
+pin: true
 tags:
   - ai
   - agentic-ai
@@ -12,6 +13,8 @@ tags:
 # Zkušenosti s tvorbou osobní znalostní báze
 
 V následujícím textu sdílím svou motivaci a zkušenosti s tvorbou osobní znalostní báze ([Personal Knowledge Base](https://en.wikipedia.org/wiki/Personal_knowledge_base)) s využitím různých open source nástrojů. Přestože je projekt relativně čerstvý (věnuji se mu pár měsíců), už nyní v něm nacházím velkou přidanou hodnotu.
+
+<!-- more -->
 
 ## Od tužky a papíru k Markdownu
 
@@ -27,8 +30,6 @@ Zkoušel jsem proto využít různý software: poznámky ve Wordu nebo obyčejn�
 
 > Simplicity changes behavior.  
 > -- [BJ Fogg: Fogg Behavior Model](https://www.behaviormodel.org/videos)
-
-<!-- more -->
 
 Nejvíc se mi nakonec osvědčily obyčejné textové soubory v Markdownu, protože _snadno zapadly do existujícího workflow_. Mohl jsem je psát v editoru VS Code, na který jsem zvyklý z programování. VS Code má navíc dobrý [emulátor Vimu](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) a zároveň dokáže Markdown i vykreslit pomocí zkratky CTRL+Shift+V.
 
