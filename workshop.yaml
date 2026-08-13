@@ -15,4 +15,4 @@ sdks:
 actions:
   sync: uv sync
   upgrade: uv lock --upgrade
-  serve: NO_MKDOCS_2_WARNING=1 uv run mkdocs serve --livereload
+  serve: NO_MKDOCS_2_WARNING=1 uv run mkdocs serve --livereload --dev-addr 127.0.0.1:10020
