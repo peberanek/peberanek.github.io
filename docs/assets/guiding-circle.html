@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A live 24-hour day ring with seven unevenly spaced checkpoints."
+    />
+    <title>The Guiding Circle</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --background: #0d1117;
+        --panel: #151c26;
+        --text: #edf3f8;
+        --muted: #8f9dad;
+        --track: #263340;
+        --active-track: #2d6256;
+        --jade-track: #438d6d;
+        --blue-track: #4f9fe0;
+        --mint: #68d5b5;
+        --mint-bright: #b2f5dd;
+        --sleep: #565474;
+        --border: #293747;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-width: 320px;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 18% 8%, rgba(57, 92, 101, 0.19), transparent 34rem),
+          radial-gradient(circle at 86% 80%, rgba(74, 64, 106, 0.15), transparent 30rem),
+          var(--background);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body::before {
+        position: fixed;
+        z-index: -1;
+        inset: 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+        background-size: 100% 42px;
+        content: "";
+        pointer-events: none;
+      }
+
+      .stage {
+        width: min(92vmin, 760px);
+      }
+
+      .day-ring {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+      }
+
+      .track,
+      .active-arc,
+      .jade-arc,
+      .blue-arc,
+      .sleep-arc {
+        fill: none;
+        stroke-linecap: butt;
+        stroke-width: 24;
+      }
+
+      .track {
+        stroke: var(--track);
+      }
+
+      .active-arc {
+        stroke: var(--active-track);
+      }
+
+      .jade-arc {
+        stroke: var(--jade-track);
+      }
+
+      .blue-arc {
+        stroke: var(--blue-track);
+      }
+
+      .sleep-arc {
+        stroke: var(--sleep);
+      }
+
+      .inner-rule {
+        fill: none;
+        stroke: rgba(135, 153, 168, 0.3);
+        stroke-width: 1;
+      }
+
+      .checkpoint-dot {
+        fill: var(--mint-bright);
+      }
+
+      .checkpoint-label {
+        fill: var(--muted);
+        font-size: 19.5px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-anchor: middle;
+      }
+
+      .current-guide {
+        stroke: rgba(104, 213, 181, 0.42);
+        stroke-dasharray: 3 8;
+        stroke-width: 1.2;
+      }
+
+      .current-marker {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      .marker-halo {
+        fill: var(--background);
+        stroke: var(--mint-bright);
+        stroke-width: 3;
+      }
+
+      .marker-dot {
+        fill: var(--mint-bright);
+      }
+
+      .current-marker.is-sleeping .marker-halo {
+        stroke: #c9c5e8;
+      }
+
+      .current-marker.is-sleeping .marker-dot {
+        fill: #c9c5e8;
+      }
+
+      .center-disc {
+        fill: var(--panel);
+        stroke: var(--border);
+        stroke-width: 1.5;
+      }
+
+      .center-copy {
+        pointer-events: none;
+        text-anchor: middle;
+      }
+
+      .ring-time {
+        fill: var(--text);
+        font-size: 50px;
+        font-weight: 720;
+        letter-spacing: -0.06em;
+      }
+
+      .ring-remaining {
+        fill: var(--mint);
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      @media (max-width: 480px) {
+        .stage {
+          width: 96vmin;
+        }
+
+        .checkpoint-label {
+          font-size: 21px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="stage">
+      <svg
+        id="day-ring"
+        class="day-ring"
+        viewBox="0 0 720 720"
+        role="img"
+        aria-labelledby="ring-title ring-description"
+      >
+        <title id="ring-title">The Guiding Circle</title>
+        <desc id="ring-description">
+          A 24-hour circular timeline with seven unevenly spaced checkpoints
+          and a marker showing the current local time.
+        </desc>
+        <defs>
+          <filter id="marker-glow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="7" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+
+        <circle class="track" cx="360" cy="360" r="230" />
+        <path id="active-arc" class="active-arc" />
+        <path id="jade-arc" class="jade-arc" />
+        <path id="morning-blue-arc" class="blue-arc" />
+        <path id="evening-blue-arc" class="blue-arc" />
+        <path id="sleep-arc" class="sleep-arc" />
+        <circle class="inner-rule" cx="360" cy="360" r="218" />
+        <g id="checkpoint-layer" aria-label="Checkpoints"></g>
+
+        <line id="current-guide" class="current-guide" x1="360" y1="360" x2="360" y2="130" />
+        <g id="current-marker" class="current-marker" filter="url(#marker-glow)">
+          <circle class="marker-halo" r="14" />
+          <circle class="marker-dot" r="6" />
+        </g>
+
+        <circle class="center-disc" cx="360" cy="360" r="103" />
+        <g class="center-copy">
+          <text id="ring-time" class="ring-time" x="360" y="0" aria-live="polite">--:--</text>
+          <text id="ring-remaining" class="ring-remaining" x="360" y="0">
+            <tspan id="ring-remaining-duration">--</tspan>
+            <tspan id="ring-remaining-target" x="360" dy="1.4em">to --:00</tspan>
+          </text>
+        </g>
+      </svg>
+    </main>
+
+    <script>
+      (() => {
+        const CHECKPOINTS = [6, 8, 11, 14, 17, 20, 22];
+        const SLEEP_START = 22;
+        const SLEEP_END = 6;
+        const SVG_NS = "http://www.w3.org/2000/svg";
+        const CENTER = { x: 360, y: 360 };
+        const CENTER_COPY_GAP = 16;
+        const CENTER_COPY_OFFSET_Y = 8;
+        const TRACK_RADIUS = 230;
+        const LABEL_RADIUS = TRACK_RADIUS + 59;
+
+        const ring = document.querySelector("#day-ring");
+        const checkpointLayer = document.querySelector("#checkpoint-layer");
+        const currentGuide = document.querySelector("#current-guide");
+        const currentMarker = document.querySelector("#current-marker");
+        const ringTime = document.querySelector("#ring-time");
+        const ringRemaining = document.querySelector("#ring-remaining");
+        const ringRemainingDuration = document.querySelector("#ring-remaining-duration");
+        const ringRemainingTarget = document.querySelector("#ring-remaining-target");
+        const centerCopy = document.querySelector(".center-copy");
+
+        function setAttributes(element, attributes) {
+          Object.entries(attributes).forEach(([name, value]) => {
+            element.setAttribute(name, value);
+          });
+        }
+
+        function svgElement(tagName, attributes) {
+          const element = document.createElementNS(SVG_NS, tagName);
+          setAttributes(element, attributes);
+          return element;
+        }
+
+        function normalizedHour(hour) {
+          return ((hour % 24) + 24) % 24;
+        }
+
+        function hourToRadians(hour) {
+          return -Math.PI / 2 + (normalizedHour(hour) / 24) * Math.PI * 2;
+        }
+
+        function pointOnCircle(radius, hour) {
+          const angle = hourToRadians(hour);
+          return {
+            x: CENTER.x + Math.cos(angle) * radius,
+            y: CENTER.y + Math.sin(angle) * radius,
+          };
+        }
+
+        function arcPath(startHour, endHour, radius) {
+          const start = pointOnCircle(radius, startHour);
+          const end = pointOnCircle(radius, endHour);
+          const largeArc = endHour - startHour > 12 ? 1 : 0;
+          return `M ${start.x.toFixed(3)} ${start.y.toFixed(3)} A ${radius} ${radius} 0 ${largeArc} 1 ${end.x.toFixed(3)} ${end.y.toFixed(3)}`;
+        }
+
+        function formatTime(date) {
+          return `${String(date.getHours()).padStart(2, "0")}:${String(date.getMinutes()).padStart(2, "0")}`;
+        }
+
+        function currentHour(date) {
+          return date.getHours() + date.getMinutes() / 60 + date.getSeconds() / 3600;
+        }
+
+        function isSleepHour(hour) {
+          return hour >= SLEEP_START || hour < SLEEP_END;
+        }
+
+        function nextCheckpoint(hour) {
+          return CHECKPOINTS.find((checkpoint) => checkpoint > hour) ?? CHECKPOINTS[0];
+        }
+
+        function remainingUntil(checkpoint, hour) {
+          let seconds = (checkpoint - hour) * 60 * 60;
+          if (seconds <= 0) {
+            seconds += 24 * 60 * 60;
+          }
+
+          const minutes = Math.floor(seconds / 60);
+          if (minutes < 1) {
+            return "under 1 min";
+          }
+
+          const hours = Math.floor(minutes / 60);
+          const remainder = minutes % 60;
+          if (hours && remainder) {
+            return `${hours}h ${remainder}m`;
+          }
+          if (hours) {
+            return `${hours}h`;
+          }
+          return `${remainder}m`;
+        }
+
+        function renderCheckpoints() {
+          CHECKPOINTS.forEach((checkpoint) => {
+            const marker = pointOnCircle(TRACK_RADIUS, checkpoint);
+            const label = pointOnCircle(LABEL_RADIUS, checkpoint);
+
+            checkpointLayer.append(
+              svgElement("circle", {
+                class: "checkpoint-dot",
+                cx: marker.x,
+                cy: marker.y,
+                r: 4.5,
+              }),
+              svgElement("text", {
+                class: "checkpoint-label",
+                x: label.x,
+                y: label.y,
+                "dominant-baseline": "middle",
+              }),
+            );
+
+            checkpointLayer.lastChild.textContent = `${String(checkpoint).padStart(2, "0")}:00`;
+          });
+        }
+
+        function scaleTypography() {
+          const ringWidth = ring.getBoundingClientRect().width;
+          if (!ringWidth) {
+            return;
+          }
+          const scale = ringWidth / 720;
+          const responsiveSize = (baseSize, minimumPixels) =>
+            `${Math.max(baseSize, minimumPixels / scale)}px`;
+
+          ringTime.style.fontSize = responsiveSize(50, 22);
+          ringRemaining.style.fontSize = responsiveSize(18, 12);
+          checkpointLayer.querySelectorAll(".checkpoint-label").forEach((label) => {
+            label.style.fontSize = responsiveSize(19.5, 12);
+          });
+
+          layoutCenterCopy();
+        }
+
+        function layoutCenterCopy() {
+          centerCopy.removeAttribute("transform");
+          ringTime.setAttribute("y", 0);
+          ringRemaining.setAttribute("y", 0);
+          const timeBounds = ringTime.getBBox();
+          const remainingBounds = ringRemaining.getBBox();
+          const remainingY =
+            timeBounds.y + timeBounds.height + CENTER_COPY_GAP - remainingBounds.y;
+          ringRemaining.setAttribute("y", remainingY);
+
+          const positionedRemainingBounds = ringRemaining.getBBox();
+          const gapCenter =
+            (timeBounds.y + timeBounds.height + positionedRemainingBounds.y) / 2;
+          centerCopy.setAttribute(
+            "transform",
+            `translate(0 ${CENTER.y + CENTER_COPY_OFFSET_Y - gapCenter})`,
+          );
+        }
+
+        function updateClock() {
+          const now = new Date();
+          const hour = currentHour(now);
+          const point = pointOnCircle(TRACK_RADIUS, hour);
+          const sleeping = isSleepHour(hour);
+          const time = formatTime(now);
+          const next = nextCheckpoint(hour);
+
+          ringTime.textContent = time;
+          ringRemainingDuration.textContent = remainingUntil(next, hour);
+          ringRemainingTarget.textContent = `to ${String(next).padStart(2, "0")}:00`;
+          layoutCenterCopy();
+          ring.classList.toggle("is-sleeping", sleeping);
+          currentMarker.classList.toggle("is-sleeping", sleeping);
+          setAttributes(currentGuide, {
+            x1: CENTER.x,
+            y1: CENTER.y,
+            x2: point.x,
+            y2: point.y,
+          });
+          setAttributes(currentMarker, {
+            transform: `translate(${point.x} ${point.y})`,
+          });
+          ring.setAttribute("aria-label", `Current local time: ${time}`);
+
+          window.setTimeout(updateClock, Math.max(50, 1000 - now.getMilliseconds()));
+        }
+
+        document.querySelector("#active-arc").setAttribute("d", arcPath(8, 17, TRACK_RADIUS));
+        document.querySelector("#jade-arc").setAttribute("d", arcPath(17, 20, TRACK_RADIUS));
+        document.querySelector("#morning-blue-arc").setAttribute("d", arcPath(6, 8, TRACK_RADIUS));
+        document.querySelector("#evening-blue-arc").setAttribute("d", arcPath(20, 22, TRACK_RADIUS));
+        document.querySelector("#sleep-arc").setAttribute("d", arcPath(22, 30, TRACK_RADIUS));
+        renderCheckpoints();
+        scaleTypography();
+        window.addEventListener("resize", scaleTypography);
+        updateClock();
+      })();
+    </script>
+  </body>
+</html>
