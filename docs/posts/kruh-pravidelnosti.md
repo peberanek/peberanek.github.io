@@ -1,7 +1,9 @@
 ---
 date: 2026-09-03
 tags:
-  - TODO
+  - agentic-ai
+  - ai
+  - mental-health
 ---
 
 # Vibe coding Kruhu pravidelnosti
@@ -27,7 +29,7 @@ Už delší dobu se snažím ve svém životě posílit klidnou pravidelnost. Zp
 První verze ala papír a tužka
 ///
 
-To je samozřejmě ideální scénář, _šablonu_. Zároveň musím říct, že pravidelné časy na jídlo se mi dost osvědčily. Odpadlo zbytečné rozhodování a po relativně krátké době si tělo začalo samo říkat: "Hele, už je 11, už je čas se najíst".
+To je samozřejmě ideální scénář, _šablona_. Nicméně musím říct, že pravidelné časy na jídlo se mi dost osvědčily. Odpadlo zbytečné rozhodování a po relativně krátké době si tělo začalo samo říkat: "Hele, už je 11, už je čas se najíst".
 
 Navíc je mezi checkpointy dost času na práci, další aktivity nebo pauzy. Záměrně nikde nepíšu, zda se jedná o snídani, oběd, svačinu, večeři apod. Šablona je tak mnohem flexibilnější. Někdy prostě vstanu později a celé se to o 1 jídlo posune. No stress. Důležité je, že ostatní checkpointy zůstávají.
 
@@ -41,4 +43,4 @@ Přiznám se, že se jedná o první program, který jsem vytvořil, resp. si ne
 
 Zdrojový kód je [k dispozici na GitHubu](https://github.com/peberanek/peberanek.github.io/blob/main/docs/assets/guiding-circle.html).
 
-_Update:_ Doplněn chybějící odkaz na Github
+_Update:_ Doplněn chybějící odkaz na Github a opravil pár překlepů.
