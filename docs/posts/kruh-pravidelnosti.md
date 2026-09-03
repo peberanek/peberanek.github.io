@@ -39,4 +39,6 @@ Zkusil jsem barevně odlišit různé fáze dne a vystoupily díky tomu věci, k
 
 Přiznám se, že se jedná o první program, který jsem vytvořil, resp. si nechal vygenerovat, a vůbec netuším, jak funguje. Ověření funkčnosti je ale celkem případě přímočaré, takže jsem s tím v míru. V JavaScriptu prakticky neprogramuji. Vytvoření něčeho podobného by mi zabralo dost času a úsilí, s agentem to ale bych hotové za chvíli a ještě mi pomohl koncept lépe promyslet a vylepšit.
 
-Zdrojový kód je k dispozici na GitHubu.
+Zdrojový kód je [k dispozici na GitHubu](https://github.com/peberanek/peberanek.github.io/blob/main/docs/assets/guiding-circle.html).
+
+_Update:_ Doplněn chybějící odkaz na Github
