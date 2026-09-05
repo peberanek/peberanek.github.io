@@ -1,8 +1,11 @@
 ---
-date: 2026-09-03
+date:
+  created: 2026-09-03
+  updated: 2026-09-05
 tags:
   - agentic-ai
   - ai
+  - ai-assisted-engineering
   - mental-health
 ---
 
@@ -12,7 +15,7 @@ tags:
 
 <iframe
   src="/assets/guiding-circle.html"
-  title="The Guiding Cirle"
+  title="The Guiding Circle"
   width="100%"
   style="display: block; height: auto; aspect-ratio: 1; border: 0"
   loading="lazy"
@@ -20,7 +23,7 @@ tags:
 
 ## Motivace
 
-Už delší dobu se snažím ve svém životě posílit klidnou pravidelnost. Zpravidelnit spánkový režim, jídlo a pohybové aktivity. Nutriční specialistka mi doporučila jíst 5x denně v pravidelných intervalech. Když jsem si to rozpočítal, tak to vychází na 1 jídlo každé 3 hodiny. Zároveň najíst se hned ráno po probuzení mi nevyhovuje, a poslední jídlo před ulehnutím by mělo být optimálně 2 hodiny předem. Spolu se vstáváním (v 6) a ulehnutím (ve 22) z toho vzešlo 7 časových bodů, _checkpointů_:
+Už delší dobu se ve svém životě snažím posílit pravidelnost, ať už jde o spánkový režim, jídlo, nebo pohybové aktivity. Nutriční specialistka mi doporučila jíst pětkrát denně v pravidelných intervalech. Když jsem si to rozpočítal, vychází to na jedno jídlo každé tři hodiny. Najíst se hned ráno po probuzení mi nicméně nevyhovuje, takže tam potřebuji nějaký čas navíc. Poslední jídlo před ulehnutím by mělo být optimálně dvě hodiny předem. Tím vzniklo sedm časových bodů, _checkpointů_:
 
 <!-- more -->
 
@@ -29,18 +32,18 @@ Už delší dobu se snažím ve svém životě posílit klidnou pravidelnost. Zp
 První verze ala papír a tužka
 ///
 
-To je samozřejmě ideální scénář, _šablona_. Nicméně musím říct, že pravidelné časy na jídlo se mi dost osvědčily. Odpadlo zbytečné rozhodování a po relativně krátké době si tělo začalo samo říkat: "Hele, už je 11, už je čas se najíst".
+To je samozřejmě ideální scénář, _šablona_. Vstát v šest se mi ne vždy podaří. Totéž platí o ulehnutí v deset večer. Nicméně musím říct, že pravidelné časy na jídlo se mi dost osvědčily. Odpadlo zbytečné rozhodování a po relativně krátké době si tělo začalo samo říkat: „Hele, už je jedenáct, je čas se najíst.“
 
-Navíc je mezi checkpointy dost času na práci, další aktivity nebo pauzy. Záměrně nikde nepíšu, zda se jedná o snídani, oběd, svačinu, večeři apod. Šablona je tak mnohem flexibilnější. Někdy prostě vstanu později a celé se to o 1 jídlo posune. No stress. Důležité je, že ostatní checkpointy zůstávají.
+Navíc je mezi checkpointy dost času na práci i další aktivity a vznikají tak během dne přirozené pauzy. Záměrně nikde nepíšu, zda se jedná o snídani, oběd, svačinu, nebo večeři. Šablona je tak mnohem flexibilnější. Někdy prostě vstanu později a celé se to o jedno jídlo posune. Žádný stres. Důležité je, že ostatní checkpointy zůstávají a můžu do režimu zase snadno naskočit.
 
-Nedávno jsem si říkal, že by se hodilo vidět, kde se právě v rámci dne nacházím. Tak jsem agentovi (OpenCode + GPT-5.6 Luna) stručně popsal, co potřebuju a nechal si vytvořit digitální verzi. Agent měl dobrý dotaz, jak reprezentovat čas mezi 22. a 6. ráno, tedy prostor pro spánek. To mě před tím nenapadlo a přirozeně z toho vyšel kruh.
+## Vibe Coding
 
-Zkusil jsem barevně odlišit různé fáze dne a vystoupily díky tomu věci, které jsem před tím neviděl: polovina dne (od 20 do 8) je čas na psychické uvolnění, odpočinek a spánek, druhá polovina (od 8 do 20) na aktivity. Třebaže se jedná o velmi jednoduchou aplikaci, často mi během dne pomůže se zastavit a v klidu si naplánovat, co dál. Zbytečně se nepřetěžovat.
+Nedávno jsem si říkal, že by se hodilo vidět, kde se právě v rámci checkpointů nacházím. Tak jsem agentovi (OpenCode + GPT-5.6 Luna) stručně popsal, co potřebuji, a nechal si vytvořit digitální verzi. Agent měl dobrý dotaz: jak reprezentovat čas mezi 22. a 6. hodinou ráno, tedy prostor pro spánek? To mě předtím nenapadlo a vyšel z toho kruh, který je mnohem přirozenější reprezentací než úsečka.
 
-## Poznámky
+Zkusil jsem barevně odlišit různé fáze dne a vystoupily díky tomu věci, které jsem předtím neviděl: polovina dne (od 20 do 8 hodin) je čas na regeneraci, uvolnění a spánek, druhá polovina (od 8 do 20 hodin) na aktivity. Třebaže se jedná o velmi jednoduchou aplikaci, často mi během dne pomůže se zastavit a v klidu si naplánovat, co dál.
 
-Přiznám se, že se jedná o první program, který jsem vytvořil, resp. si nechal vygenerovat, a vůbec netuším, jak funguje. Ověření funkčnosti je ale celkem případě přímočaré, takže jsem s tím v míru. V JavaScriptu prakticky neprogramuji. Vytvoření něčeho podobného by mi zabralo dost času a úsilí, s agentem to ale bych hotové za chvíli a ještě mi pomohl koncept lépe promyslet a vylepšit.
+Přiznám se, že se jedná o první program, který jsem vytvořil, respektive si nechal vygenerovat, a netuším, jak funguje. Ověření funkčnosti je ale přímočaré, takže jsem s tím v míru. V JavaScriptu prakticky neprogramuji. Vytvoření něčeho podobného by mi zabralo dost času a úsilí a nejspíš bych se do toho vůbec nepouštěl. S agentem to bylo hotové za chvíli a navíc mi pomohl koncept lépe promyslet a vylepšit.
 
 Zdrojový kód je [k dispozici na GitHubu](https://github.com/peberanek/peberanek.github.io/blob/main/docs/assets/guiding-circle.html).
 
-_Update:_ Doplněn chybějící odkaz na Github a opravil pár překlepů.
+_Update:_ Doplnil jsem chybějící odkaz na GitHub, text mírně upravil a opravil překlepy.
