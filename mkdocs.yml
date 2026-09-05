@@ -51,6 +51,7 @@ nav:
   - Blog:
     - Home: index.md
     - Tags: tags.md
+  - Tools: tools.md
   - Projects: projects.md
   - About: about.md
 
