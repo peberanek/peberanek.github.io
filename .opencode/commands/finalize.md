@@ -1,14 +1,12 @@
 ---
 description: Finalize blog post for publication
-argument-hint: [blog-post-path]
-allowed-tools: Bash(uv run python list-tags.py)
+agent: build
+model: openrouter/openai/gpt-5.6-terra
 ---
 
-1. Read the blog post at 1$. Point out its weaknesses like speculation or incorrect claims. I may or may not want to resolve them.
+1. Proofread the blog post at $1.
 
-2. Proofread the blog post at $1.
-
-3. Generate tags for $1 using skill `generate-tags`.
+1. Generate tags for $1:
     1. Generate existing tags by running:
     ```sh
     uv run python list-tags.py
