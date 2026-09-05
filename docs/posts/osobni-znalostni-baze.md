@@ -1,6 +1,5 @@
 ---
 date: 2026-06-27
-pin: true
 tags:
   - ai
   - agentic-ai
