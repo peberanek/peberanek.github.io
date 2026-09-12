@@ -1,7 +1,7 @@
 ---
 date:
   created: 2026-09-03
-  updated: 2026-09-05
+  updated: 2026-09-12
 tags:
   - agentic-ai
   - ai
@@ -47,3 +47,12 @@ Přiznám se, že se jedná o první program, který jsem vytvořil, respektive 
 Zdrojový kód je [k dispozici na GitHubu](https://github.com/peberanek/peberanek.github.io/blob/main/docs/assets/guiding-circle.html).
 
 _Update:_ Doplnil jsem chybějící odkaz na GitHub, text mírně upravil a opravil překlepy.
+
+_Update:_ Nikdy mě nenapadlo, že klasický ciferník je zároveň dvanácti i dvacetičtyřhodinový. S trochou představivosti si tak Kruh pravidelnosti jde promítnout i na klasické hodinky: 
+
+![Fotka hodinek s vyznačenými časy](../assets/images/the-guiding-circle-on-watch.jpg)
+/// caption
+Kruh pravidelnosti na klasických náramkových hodinkách s některými vyznačenými časy.
+///
+
+Checkpointy v 11 a v 17 hodin nesedí přesně s ciferníkem, ale opět s trochou představivosti si je jde domyslet.
